@@ -1,0 +1,137 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+		h1 {
+			font-size: 3em !important;
+		}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+		h1 {
+			font-size: 4em !important;
+		}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+		h1 {
+			font-size: 5em !important;
+		}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em !important;
+	}
+}
+
+@keyframes changeBackgroundColor {
+  from {
+  	background: url('../img/bg0.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: black;
+  }
+
+  to {
+    background: url('../img/bg1.jpg') no-repeat;
+    background-size: 100%;
+	background-attachment: fixed;
+	background-color: black;
+  }
+}
+
+html {
+	margin: 0 auto;
+	max-width: 1366px;
+	max-height: 768px;
+}
+
+body {
+
+	height: 100%;
+	width: 100%;
+	animation: changeBackgroundColor 3s; /* propriedade de animação */
+}
+
+
+.container {
+	width: 100%;
+	height: 100%;
+	background: none;
+}
+
+ #mainContainer {
+ 	width: 38%;
+ 	height: 100%;
+ 	margin: auto;
+ }
+
+ #mainLogo {
+ 	width: 200px;
+ 	height: 200px;
+ 	margin: 25% auto;
+ }
+
+ .mainText {
+ 	color: white;
+ 	text-align: center;
+ 	margin-top: 10%;
+ 	margin-right: 8%;
+ }
+
+#mainButtons {
+ 	margin-left: 0;
+ }
+
+.btn-custom {
+	color: white !important;
+	border-radius: 500px !important;
+	-webkit-border-radius: 500px !important;
+	-moz-border-radius: 500px !important;
+	-o-border-radius: 500px !important;
+	text-transform: uppercase !important;
+	transition: background 0.4s, color 0.4s !important;
+	padding: 10px 20px !important;
+}
+
+.btn-vermelho {
+	background: #7c25f8 !important;
+}
+
+.btn-vermelho:hover {
+	background: #6207e3 !important;
+	color:white;
+}
+
+.btn-branco {
+	margin-left: 3%;
+	border: 2px solid white !important;
+}
+
+.btn-branco:hover {
+	background: white;
+	color: black !important;
+}
+
+#rodape {
+	margin-top: 22%;
+	margin-left: 1%;
+}
+
+.footerText {
+	color: white;
+	float: left;
+}

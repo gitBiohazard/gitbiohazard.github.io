@@ -1,0 +1,194 @@
+/* ESTRUTURA DO SITE */
+
+body {
+	background: #f4f2ec url(../img/fundo.png) repeat-x;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+	color: #af670a;
+}
+
+a:hover {
+	color: #227115;
+}
+
+#container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+/***************** TOPO ******************************/
+#logo h1 {
+	float: left;
+}
+
+#logo a {
+	width: 248px;
+	height: 21px;
+	background: url(../img/logo.png);
+	text-indent: -99999px;
+	display: block;
+}
+
+header {
+	padding: 15px 0;
+	height: 65px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 20px;
+	float: right;
+}
+
+nav ul li {
+	float: left
+}
+
+nav ul li a {
+	padding: 5px 15px;
+	text-transform: uppercase;
+	margin-left: 5px;
+	display: block;
+}
+
+nav ul li a:hover {
+	background-color: #af670a;
+	color: #f4f2ec;
+}
+
+/************************ PRINCIPAL ******************************/
+
+#conteudo {
+	width: 710px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+aside {
+	width: 350px;
+	float: right;
+	background: #ebe7dd;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+section#visita {
+	background: #cdc8b1;
+	padding: 10px 27px 27px 27px;
+	margin-top: 10px;
+}
+
+h4 {
+	color: #86521a;
+	text-transform: uppercase;
+	padding-bottom: 3px;
+	margin: 0;
+}
+
+h3 {
+	color: #86521a;
+	font-size: 1em;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+/****************************** FORMULÁRIO *******************************/
+
+input {
+	width: 80px;
+	height: 20px;
+	background: #fff;
+	border: none;
+	font-size: 1em;
+
+}
+
+input.campo {
+	border: 1px solid #ada484;
+}
+
+input.botao {
+	color: white;
+	background: #9b9271;
+	width: 100%;
+	height: 40px;
+	font-size: 1.2em;
+}
+
+fieldset {
+	border: none;
+}
+
+fieldset legend {
+	display: none;
+}
+
+/*********************************** GALERIA **********************************/
+section#galeria {
+	padding: 0 27px 0 27px;
+}
+section#galeria a {
+	display: block;
+	background: url(../img/fundo-foto.png) no-repeat;
+	float: left;
+	padding: 17px 15px;
+	margin: 10px 0 0 15px;
+}
+
+section#galeria img {
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+section#galeria h4 {
+	margin-top: 27px;
+	font-size: 1.2em;
+}
+
+/*********************************** CONTEUDO *************************************/
+
+article#video {
+	float: left;
+	width: 310px;
+	margin-left: 25px
+}
+
+article#mapa {
+	float: left;
+	width: 310px;
+	margin-left: 37px;
+}
+
+article#exposicoes {
+	float: left;
+	width: 310px;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+article#historia {
+	float: left;
+	width: 310px;
+	margin-top: 15px;
+	margin-left: 37px;
+}
+
+/************************** RODAPÉ ******************************************/
+
+footer {
+	clear: both;
+	padding: 20px 0 30px 0;
+	text-align: center;
+	background: url(../img/fundo-rodape.png) no-repeat top center;
+}
+
+footer>p a {
+	padding: 2px 10px;
+}
+
+#copyright {
+	padding: none;
+}

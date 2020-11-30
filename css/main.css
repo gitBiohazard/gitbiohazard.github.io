@@ -1,0 +1,157 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+		h1 {
+			font-size: 2.5em !important;
+		}
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+		h1 {
+			font-size: 3em !important;
+		}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+		h1 {
+			font-size: 4em !important;
+		}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+		h1 {
+			font-size: 5em !important;
+		}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+		h1 {
+			font-size: 6em !important;
+		}
+}
+
+@keyframes changeBackgroundColor {
+  from {
+  	background: url('../img/bg0.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: black;
+  }
+
+  to {
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: 100%;
+	background-color: black;
+  }
+}
+
+html {
+	margin: 0 auto;
+	max-width: 1366px;
+	max-height: 768px;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	animation: changeBackgroundColor 1.5s; /* propriedade de animação */
+}
+
+.btn-custom {
+	color: white !important;
+	border-radius: 500px !important;
+	-webkit-border-radius: 500px !important;
+	-moz-border-radius: 500px !important;
+	-o-border-radius: 500px !important;
+	text-transform: uppercase !important;
+	transition: background 0.4s, color 0.4s !important;
+	padding: 10px 20px !important;
+}
+
+.btn-vermelho {
+	background: #ff1a1a !important;
+}
+
+.btn-vermelho:hover {
+	background: #e60000 !important;
+	color:white;
+}
+
+.btn-branco {
+	margin-left: 3%;
+	border: 2px solid white !important;
+}
+
+.btn-branco:hover {
+	background: white;
+	color: black !important;
+}
+
+.ml-x {
+	margin-left: 93% !important;
+}
+
+.ml-y {
+	margin-left: 80% !important;
+}
+
+
+/******************* NAV-BAR *******************/
+
+nav.navbar-transparente {
+	background: rgba(0,0,0,0.5)
+}
+
+.nav-link-white {
+	color: white !important;
+}
+.nav-link-white:hover {
+	color: #9bf0e1 !important;
+}
+
+.navbar-toggler-formated {
+	color: rgba(0,0,0,0.5) !important;
+	border-color: rgba(0,0,0,0.1) !important;
+}
+
+.logo {
+	font-size: 0.5em;
+
+}
+
+/******************* SECTION 1 *******************/
+
+p {
+	color: white;
+}
+
+#nome {
+	color: white;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+#sobre {
+	background-color: black;
+}
+
+h2 {
+	color: white;
+}
+
+h1 {
+	color: white;
+}
