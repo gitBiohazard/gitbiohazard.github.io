@@ -37,56 +37,30 @@
 	}
 }
 
-@keyframes changeBackgroundColor {
-  from {
-  	background: url('../img/bg0.jpg') no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-color: black;
-  }
-
-  to {
-    background: url('../img/bg.jpg') no-repeat;
-    background-size: 100%;
-	background-attachment: fixed;
-	background-color: black;
-  }
-}
-
 html {
 	margin: 0 auto;
-	max-width: 1366px;
-	max-height: 768px;
+	max-width: 1600px;
+	max-height: 900px;
 }
 
 body {
 
 	height: 100%;
 	width: 100%;
-	animation: changeBackgroundColor 3s; /* propriedade de animação */
+	overflow-x: hidden;
+	background-color: black;
+	background: url('../img/bg.jpg') no-repeat,
+				url('../img/bg0.jpg');
+	background-size: 100%;
 }
 
 .container {
 	background: none;
 }
 
- #mainContainer {
- 	width: 38%;
- 	height: 100%;
- 	margin: 0 auto;
- }
-
- #mainLogo {
- 	width: 200px;
- 	height: 200px;
- 	margin: 28% auto;
- }
-
  .mainText {
  	color: white;
  	text-align: center;
- 	margin-top: 10%;
- 	margin-right: 8%;
  }
 
 .btn-custom {
@@ -110,7 +84,6 @@ body {
 }
 
 .btn-branco {
-	margin-left: 3%;
 	border: 2px solid white !important;
 }
 
@@ -119,12 +92,6 @@ body {
 	color: black !important;
 }
 
-#rodape {
-	margin-top: 22%;
-	margin-left: 1%;
-}
-
-.footerText {
-	color: white;
-	float: left;
+.capa {
+	text-align:center
 }

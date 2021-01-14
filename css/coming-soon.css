@@ -37,33 +37,20 @@
 	}
 }
 
-@keyframes changeBackgroundColor {
-  from {
-  	background: url('../img/bg0.jpg') no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-color: black;
-  }
-
-  to {
-    background: url('../img/bg1.jpg') no-repeat;
-    background-size: 100%;
-	background-attachment: fixed;
-	background-color: black;
-  }
-}
-
 html {
 	margin: 0 auto;
-	max-width: 1366px;
-	max-height: 768px;
+	max-width: 1600px;
+	max-height: 900px;
 }
 
 body {
 
 	height: 100%;
 	width: 100%;
-	animation: changeBackgroundColor 3s; /* propriedade de animação */
+	background: url('../img/bg1.jpg') no-repeat,
+				url('../img/bg0.jpg');
+	background-size: 100%;
+	background-color: black;
 }
 
 
@@ -73,27 +60,9 @@ body {
 	background: none;
 }
 
- #mainContainer {
- 	width: 38%;
- 	height: 100%;
- 	margin: auto;
- }
-
- #mainLogo {
- 	width: 200px;
- 	height: 200px;
- 	margin: 25% auto;
- }
-
  .mainText {
  	color: white;
  	text-align: center;
- 	margin-top: 10%;
- 	margin-right: 8%;
- }
-
-#mainButtons {
- 	margin-left: 0;
  }
 
 .btn-custom {
@@ -126,12 +95,6 @@ body {
 	color: black !important;
 }
 
-#rodape {
-	margin-top: 22%;
-	margin-left: 1%;
-}
-
-.footerText {
-	color: white;
-	float: left;
+.capa {
+	text-align: center;
 }

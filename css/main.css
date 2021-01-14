@@ -41,32 +41,22 @@
 		}
 }
 
-@keyframes changeBackgroundColor {
-  from {
-  	background: url('../img/bg0.jpg') no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-color: black;
-  }
-
-  to {
-    background: url('../img/bg.jpg') no-repeat;
-    background-size: 100%;
-	background-color: black;
-  }
-}
-
 html {
 	margin: 0 auto;
-	max-width: 1366px;
-	max-height: 768px;
+	max-width: 1600px;
+	max-height: 900px;
 }
 
 body {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
-	animation: changeBackgroundColor 1.5s; /* propriedade de animação */
+	background-color: black;
+	background: url('../img/bg.jpg') no-repeat,
+				url('../img/bg0.jpg');
+	background-size: 100%;
+
+	
 }
 
 .btn-custom {

@@ -41,24 +41,9 @@
 		}
 }
 
-@keyframes changeBackgroundColor {
-  from {
-  	background: url('../img/bg0.jpg') no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-color: black;
-  }
-
-  to {
-    background: url('../img/bg3.jpg') no-repeat;
-    background-size: 100%;
-	background-color: black;
-  }
-}
-
 html {
-	max-width: 1366px;
-	max-height: 768px;
+	max-width: 1600px;
+	max-height: 900px;
 	margin: 0 auto;
 }
 
@@ -66,7 +51,10 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
-	animation: changeBackgroundColor 1.5s; /* propriedade de animação */
+	background: url('../img/bg3.jpg') no-repeat,
+				url('../img/bg0.jpg');
+	background-size: 100%;
+	background-color: black;
 }
 
 .btn-custom {
