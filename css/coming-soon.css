@@ -41,6 +41,7 @@ html {
 	margin: 0 auto;
 	max-width: 1920px;
 	max-height: 1080px;
+	scroll-behavior: smooth;
 }
 
 body {

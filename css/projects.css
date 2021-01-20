@@ -45,6 +45,7 @@ html {
 	max-width: 1920px;
 	max-height: 1080px;
 	margin: 0 auto;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -184,4 +185,8 @@ h2 {
 .smImgFormat {
 	border-radius: 0 5px 0 5px;
 	width: 200px;
+}
+
+.capa {
+	text-align: center;
 }

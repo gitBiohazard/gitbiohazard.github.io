@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="main">
 	<head>
 		<title>Projetos - Lufe</title>
 		<link rel="icon" href="../img/logo-redondo.png">
@@ -12,6 +12,7 @@
 		<![endif]-->
 
 	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="../css/animate.css">
 	    <link rel="stylesheet" href="../css/projects.css">
 	    <link rel="stylesheet" href="../css/bootstrap.min.css">
 	    <link rel="stylesheet" href="../icons/fontawesome/css/all.css">
@@ -34,7 +35,7 @@
 					    	<ul class="navbar-nav ml-auto">
 								<li class="nav-item"><a class="nav-link" href="../pt-br/principal">Principal</a></li>
 								<li class="nav-item"><a class="nav-link " href="../pt-br/principal#sobre">Sobre mim</a></li>
-								<li class="nav-item"><a class="nav-link" href="">Projetos</a></li>
+								<li class="nav-item"><a class="nav-link" href="#main">Projetos</a></li>
 								<li class="nav-item"><a class="nav-link disabled d-none d-md-block" href="">|</a></li>
 								<li class="nav-item">
 									<a class="nav-link nav-link-white" href="../developing/em-desenvolvimento">
@@ -57,10 +58,13 @@
 				<i class="fab fa-whatsapp"></i>
 			</a>
 		</div>
-		<section class="d-flex" style="margin-top: 150px; margin-left: 50px;">
+		<section class="d-flex" style="margin-top: 150px;">
 			<div class="container align-self-center">
-				<div class="row">
-					<div class="col-md-6 align-self-top">
+				<div class="row capa">
+					<div class="col-md-12 d-md-none mb-3 capa" data-anime="top">
+						<img src="../img/logo-transparente2.png" width="180">
+					</div>
+					<div class="col-md-6 align-self-top" data-anime="top">
 						<p class="lead">Seja bem vindo aos</p>
 						<h1 id="nome">Meus Projetos</h1><br><br>
 
@@ -73,7 +77,7 @@
 						</a>
 
 					</div>
-					<div class="col-md-6 d-none d-md-block">
+					<div class="col-md-6 d-none d-md-block" data-anime="top">
 						<img src="../img/logo-transparente2.png" width="400">
 					</div>
 				</div>
@@ -82,8 +86,8 @@
 
 		<section id="sobre">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
+				<div class="row pt-5">
+					<div class="col-md-6" data-anime="left">
 						<h2 class="display-4">Sobre os projetos</h2>
 						<p class="lead mt-3 text-justify p-1">
 							Antes de mais nada, é importante deixar claro que todos os projetos aqui apresentados são de caráter acadêmico e demonstrativo. Desenvolvidos utilizando HTML5, CSS3, JavaScript, Bootstrap 4, adaptados para todos os dispositivos e baseado nos conceitos de design UI & UX.
@@ -115,7 +119,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-6" data-anime="top">
 						<div class="d-none d-lg-block ml-2">
 							<div class="caixa d-flex mt-5" style="padding-bottom: 70px;">
 								<a href="../projects/Projeto Spotify/index" target="_blank">
@@ -193,7 +197,7 @@
 			</div>
 		</section>
 
-		<div class="ml-4 d-sm-block d-md-none">
+		<div class="ml-4 d-sm-block d-md-none" data-anime="top">
 			<a href="../curriculum/curriculum.pdf" class="btn btn-custom btn-verde mb-3 d-md-inline d-sm-block" style="font-weight: 600;" target="_blank">
 				<i class="fas fa-file-download"></i> Baixar meu currículo
 			</a>
@@ -226,5 +230,6 @@
 	    <script src="../js/jquery-3.5.1.slim.min.js"></script>
 	    <script src="../js/popper.min.js"></script>
 	    <script src="../js/bootstrap.min.js"></script>
+	    <script src="../js/script.js"></script>
 	</body>
 </html>

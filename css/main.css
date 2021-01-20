@@ -45,6 +45,7 @@ html {
 	margin: 0 auto;
 	max-width: 1920px;
 	max-height: 1080px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -144,4 +145,8 @@ h2 {
 
 h1 {
 	color: white;
+}
+
+.capa {
+	text-align:center
 }
