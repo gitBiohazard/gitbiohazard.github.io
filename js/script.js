@@ -1,4 +1,11 @@
-// Jumps internos animados
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+
+ // Elementos aparecem de forma animada na tela
 
 const debounce = function(func, wait, immediate) {
   let timeout;
