@@ -1,5 +1,5 @@
 class Despesa {
-
+	
 	constructor(ano, mes, dia, tipo, descricao, valor) {
 		this.ano = ano
 		this.mes = mes
