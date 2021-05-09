@@ -196,7 +196,4 @@ function pesquisarDespesa() {
 
 
 	this.carregaListaDespesas(despesas, true)
-
-
-
 }
