@@ -4,95 +4,895 @@
  *
  */
 
- /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+ 
 
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    #main .auto-width {
+        width: auto !important;
+    }
+
+    #main h1 {
+        font-size: 4em !important;
+    }
+
+    #main .lined::after,
+    #main .lined::before {
+        width: 10% !important;
+    }
+    body.ametista,
+    body.diamante,
+    body.esmeralda,
+    body.rubelita,
+    body.rubi,
+    body.safira,
+    body.topaz {
+    background: linear-gradient(to bottom,#101215,#16181b) !important;
+    }
+
+    body.ametista .navbar {
+        border-bottom: 4px solid #66029e;
+    }
+
+    body.diamante .navbar {
+        border-bottom: 4px solid #79bafc;
+    }
+
+    body.esmeralda .navbar {
+        border-bottom: 4px solid #02c4a3;
+    }
+
+    body.rubelita .navbar {
+        border-bottom: 4px solid #ff02ff;
+    }
+
+    body.rubi .navbar {
+        border-bottom: 4px solid #ff1c1c;
+    }
+
+    body.safira .navbar {
+        border-bottom: 4px solid #0202ff;
+    }
+
+    body.topaz .navbar {
+        border-bottom: 4px solid #ffbc02;
+    }
+
+    .hero {
+        position: static !important;
+        margin-top: 50px !important;
+        width: 80%;
+    }
+
+    #footer .theme-menu {
+        left: calc((100vw - 100px) /2) !important;
+        top: -380px !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-		h1 {
-			font-size: 3em !important;
-		}
+    #main .auto-width {
+        width: auto !important;
+    }
+
+    #main h1 {
+        font-size: 4em !important;
+    }
+
+    #main .lined::after,
+    #main .lined::before {
+        width: 10% !important;
+    }
+    body.ametista,
+    body.diamante,
+    body.esmeralda,
+    body.rubelita,
+    body.rubi,
+    body.safira,
+    body.topaz {
+    background: linear-gradient(to bottom,#101215,#16181b) !important;
+    }
+
+    body.ametista .navbar {
+        border-bottom: 4px solid #66029e;
+    }
+
+    body.diamante .navbar {
+        border-bottom: 4px solid #79bafc;
+    }
+
+    body.esmeralda .navbar {
+        border-bottom: 4px solid #02c4a3;
+    }
+
+    body.rubelita .navbar {
+        border-bottom: 4px solid #ff02ff;
+    }
+
+    body.rubi .navbar {
+        border-bottom: 4px solid #ff1c1c;
+    }
+
+    body.safira .navbar {
+        border-bottom: 4px solid #0202ff;
+    }
+
+    body.topaz .navbar {
+        border-bottom: 4px solid #ffbc02;
+    }
+
+    .hero {
+        position: static !important;
+        margin-top: 50px !important;
+        width: 80%;
+    }
+
+    #footer .theme-menu {
+        left: calc((100vw - 100px) /2) !important;
+        top: -380px !important;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-		h1 {
-			font-size: 4em !important;
-		}
+    #main .auto-width {
+        width: auto !important;
+    }
+
+    #main h1 {
+        font-size: 4em !important;
+    }
+
+    #main .lined::after,
+    #main .lined::before {
+        width: 10% !important;
+    }
+    body.ametista,
+    body.diamante,
+    body.esmeralda,
+    body.rubelita,
+    body.rubi,
+    body.safira,
+    body.topaz {
+    background: linear-gradient(to bottom,#101215,#16181b) !important;
+    }
+
+    body.ametista .navbar {
+        border-bottom: 4px solid #66029e;
+    }
+
+    body.diamante .navbar {
+        border-bottom: 4px solid #79bafc;
+    }
+
+    body.esmeralda .navbar {
+        border-bottom: 4px solid #02c4a3;
+    }
+
+    body.rubelita .navbar {
+        border-bottom: 4px solid #ff02ff;
+    }
+
+    body.rubi .navbar {
+        border-bottom: 4px solid #ff1c1c;
+    }
+
+    body.safira .navbar {
+        border-bottom: 4px solid #0202ff;
+    }
+
+    body.topaz .navbar {
+        border-bottom: 4px solid #ffbc02;
+    }
+
+    .hero {
+        position: static !important;
+        margin-top: 50px !important;
+        width: 80%;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-		h1 {
-			font-size: 5em !important;
-		}
+    #main .auto-width {
+        width: auto !important;
+    }
+
+    #main h1 {
+        font-size: 4em !important;
+    }
+
+    #main .lined::after,
+    #main .lined::before {
+        width: 10% !important;
+    }
+    body.ametista,
+    body.diamante,
+    body.esmeralda,
+    body.rubelita,
+    body.rubi,
+    body.safira,
+    body.topaz {
+    background: linear-gradient(to bottom,#101215,#16181b) !important;
+    }
+
+    body.ametista .navbar {
+        border-bottom: 4px solid #66029e;
+    }
+
+    body.diamante .navbar {
+        border-bottom: 4px solid #79bafc;
+    }
+
+    body.esmeralda .navbar {
+        border-bottom: 4px solid #02c4a3;
+    }
+
+    body.rubelita .navbar {
+        border-bottom: 4px solid #ff02ff;
+    }
+
+    body.rubi .navbar {
+        border-bottom: 4px solid #ff1c1c;
+    }
+
+    body.safira .navbar {
+        border-bottom: 4px solid #0202ff;
+    }
+
+    body.topaz .navbar {
+        border-bottom: 4px solid #ffbc02;
+    }
+
+    .hero {
+        position: static !important;
+        margin-top: 50px !important;
+        width: 80%;
+    }
+
+    #projects .project-box {
+        width: 200px !important;
+    }
+
+    #projects .project-box h1 {
+        font-size: 4em !important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	h1 {
-		font-size: 6em !important;
-	}
+
 }
 
-html {
-	margin: 0 auto;
-	max-width: 1920px;
-	max-height: 1080px;
-	scroll-behavior: smooth;
+
+/* Ametista */
+
+body.ametista {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #66029e);
 }
+
+body.ametista .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #8702c6, #66029e) !important;
+}
+
+body.ametista .btn-custom {
+    background: linear-gradient(to left, #8702c6, #66029e) !important;
+    color: white !important;
+}
+
+body.ametista .btn-custom:hover {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.ametista .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.ametista .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.ametista::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.ametista::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #8702c6, #66029e);
+}
+
+body.ametista #about-me {
+    border-top: 8px solid #66029e !important;
+}
+
+body.ametista #projects {
+    border-top: 8px solid #66029e !important;
+}
+
+body.ametista #footer {
+    border-top: 8px solid #66029e !important;
+}
+
+body.ametista .hero {
+    box-shadow: 0 0 30px #66029e;
+}
+
+
+/* Diamante */
+
+body.diamante {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #79bafc);
+}
+
+body.diamante .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #9fcbff, #79bafc) !important;
+}
+
+body.diamante .btn-custom {
+    background: linear-gradient(to left, #9fcbff, #79bafc) !important;
+    color: black !important;
+}
+
+body.diamante .btn-custom:hover {
+    color: white !important;
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.diamante .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.diamante .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.diamante::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.diamante::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #9fcbff, #79bafc);
+}
+
+body.diamante #about-me {
+    border-top: 8px solid #79bafc !important;
+}
+
+body.diamante #projects {
+    border-top: 8px solid #79bafc !important;
+}
+
+body.diamante #footer {
+    border-top: 8px solid #79bafc !important;
+}
+
+body.diamante .hero {
+    box-shadow: 0 0 30px #79bafc;
+}
+
+
+/* Esmeralda */
+
+body.esmeralda {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #02c4a3);
+}
+
+body.esmeralda .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #05f9a7, #02c4a3) !important;
+}
+
+body.esmeralda .btn-custom {
+    background: linear-gradient(to left, #05f9a7, #02c4a3) !important;
+    color: black !important;
+}
+
+body.esmeralda .btn-custom:hover {
+    color: white !important;
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.esmeralda .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.esmeralda .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.esmeralda::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.esmeralda::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #05f9a7, #02c4a3);
+}
+
+body.esmeralda #about-me {
+    border-top: 8px solid #02c4a3 !important;
+}
+
+body.esmeralda #projects {
+    border-top: 8px solid #02c4a3 !important;
+}
+
+body.esmeralda #footer {
+    border-top: 8px solid #02c4a3 !important;
+}
+
+body.esmeralda .hero {
+    box-shadow: 0 0 30px #02c4a3;
+}
+
+/* Rubelita */
+
+body.rubelita {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #ff02ff);
+}
+
+body.rubelita .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #ff54f7, #ff02ff) !important;
+}
+
+body.rubelita .btn-custom {
+    background: linear-gradient(to left, #ff54f7, #ff02ff) !important;
+    color: black !important;
+}
+
+body.rubelita .btn-custom:hover {
+    color: white !important;
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.rubelita .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.rubelita .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.rubelita::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.rubelita::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #ff54f7, #ff02ff);
+}
+
+body.rubelita #about-me {
+    border-top: 8px solid #ff02ff !important;
+}
+
+body.rubelita #projects {
+    border-top: 8px solid #ff02ff !important;
+}
+
+body.rubelita #footer {
+    border-top: 8px solid #ff02ff !important;
+}
+
+body.rubelita .hero {
+    box-shadow: 0 0 30px #ff02ff;
+}
+
+/* Rubi */
+
+body.rubi {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #ff1c1c);
+}
+
+body.rubi .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #ff4f4f, #ff1c1c) !important;
+}
+
+body.rubi .btn-custom {
+    background: linear-gradient(to left, #ff4f4f, #ff1c1c) !important;
+    color: white !important;
+}
+
+body.rubi .btn-custom:hover {
+    color: white !important;
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.rubi .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.rubi .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.rubi::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.rubi::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #ff4f4f, #ff1c1c);
+}
+
+body.rubi #about-me {
+    border-top: 8px solid #ff1c1c !important;
+}
+
+body.rubi #projects {
+    border-top: 8px solid #ff1c1c !important;
+}
+
+body.rubi #footer {
+    border-top: 8px solid #ff1c1c !important;
+}
+
+body.rubi .hero {
+    box-shadow: 0 0 30px #ff1c1c;
+}
+
+/* Safira */
+
+body.safira {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #0202ff);
+}
+
+body.safira .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #5757ff, #0202ff) !important;
+}
+
+body.safira .btn-custom {
+    background: linear-gradient(to left, #5757ff, #0202ff) !important;
+    color: white !important;
+}
+
+body.safira .btn-custom:hover {
+    color: white !important;
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.safira .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.safira .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.safira::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.safira::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #5757ff, #0202ff);
+}
+
+body.safira #about-me {
+    border-top: 8px solid #0202ff !important;
+}
+
+body.safira #projects {
+    border-top: 8px solid #0202ff !important;
+}
+
+body.safira #footer {
+    border-top: 8px solid #0202ff !important;
+}
+
+body.safira .hero {
+    box-shadow: 0 0 30px #0202ff;
+}
+
+/* Topaz */
+
+body.topaz {
+    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #ffbc02);
+}
+
+body.topaz .hvr-underline-from-center:before{
+  background: linear-gradient(to left, #ffd44f, #ffbc02) !important;
+}
+
+body.topaz .btn-custom {
+    background: linear-gradient(to left, #ffd44f, #ffbc02) !important;
+    color: black !important;
+}
+
+body.topaz .btn-custom:hover {
+    color: white !important;
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.topaz .navbar-toggler {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.topaz .navbar-toggler:focus {
+    background: #262626 !important;
+    border: 1px solid #262626 !important;
+}
+
+body.topaz::-webkit-scrollbar {
+    width: 12px;
+    background: #0c0d0f;
+}
+
+body.topaz::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left, #ffd44f, #ffbc02);
+}
+
+body.topaz #about-me {
+    border-top: 8px solid #ffbc02 !important;
+}
+
+body.topaz #projects {
+    border-top: 8px solid #ffbc02 !important;
+}
+
+body.topaz #footer {
+    border-top: 8px solid #ffbc02 !important;
+}
+
+body.topaz .hero {
+    box-shadow: 0 0 30px #ffbc02;
+}
+
+
+/* Escalas de cinza
+
+1 - #101215
+2 - #16181b
+3 - #1e2023
+4 - #262626
+
+*/
+
+/* Temas
+
+Ametista - #8702c6 e #66029e
+Diamante - #9fcbff e #79bafc
+Esmeralda - #05f9a7 e #02c4a3
+Rubelita - #ff54f7 e #ff02ff
+Rubi - #ff4f4f e #ff1c1c
+Safira - #5757ff e #0202ff
+Topaz - #ffd44f e #ffbc02
+
+*/
+
+/* Root */
+
 
 body {
-
-	height: 100%;
-	width: 100%;
-	overflow-x: hidden;
-	background-color: black;
-	background: url('../img/bg.jpg') no-repeat,
-				url('../img/bg0.jpg');
-	background-size: 100%;
+    background: #16181b;
+    overflow-x: hidden;
 }
 
-.container {
-	background: none;
-}
 
- .mainText {
- 	color: white;
- 	text-align: center;
- }
 
-.btn-custom {
-	color: white !important;
-	border-radius: 500px !important;
-	-webkit-border-radius: 500px !important;
-	-moz-border-radius: 500px !important;
-	-o-border-radius: 500px !important;
-	text-transform: uppercase !important;
-	transition: background 0.4s, color 0.4s !important;
-	padding: 10px 20px !important;
-}
-
-.btn-vermelho {
-	background: #ff1a1a !important;
-}
-
-.btn-vermelho:hover {
-	background: #e60000 !important;
-	color:white;
-}
-
-.btn-branco {
-	border: 2px solid white !important;
-}
-
-.btn-branco:hover {
-	background: white;
-	color: black !important;
+@font-face {
+    font-family: Rolling;
+    src: url(../fonts/Rolling.woff);
 }
 
 .capa {
-	text-align:center
+    text-align: center;
+}
+
+.pointer  {
+    cursor: pointer;
+}
+
+
+/* Header */
+
+#header {
+    z-index: 1000;
+    position: relative;
+}
+
+.navbar-bg {
+    background-color: #101215;
+}
+
+
+#header .navbar li {
+    margin: 0 10px;
+}
+
+/* Main */
+
+#main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+#main h1 {
+    font-size: 8em;
+    font-weight: bolder;
+    vertical-align: middle;
+    font-family: Rolling;
+}
+
+#main .brand {
+    position: absolute;
+    right: -500px;
+}
+
+#main .lined::after,
+#main .lined::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 2px;
+    width: 20%;
+    background-color: white;
+    margin: 0 10px;
+}
+
+#main .auto-width {
+    width: 500px;
+}
+
+.btn-custom {
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    background: white !important;
+    color: black !important;
+    font-weight: bolder !important;
+}
+
+.btn-custom:hover {
+    background: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.btn-custom:focus {
+    box-shadow: none !important;
+}
+
+
+
+/* About me */
+
+#about-me {
+    border-top: 12px solid white !important;
+    background: #101215 !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#about-me h1 {
+    color: white !important;
+    font-family: Rolling;
+    font-size: 5em;
+}
+
+#about-me p {
+    color: white;
+}
+
+.hero {
+    position: absolute;
+    border-radius: 12px;
+    top: 100px;
+    right: -700px;
+}
+
+/* Projects */
+
+#projects {
+    border-top: 12px solid white !important;
+    background: #101215 !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects h1 {
+    color: white !important;
+    font-family: Rolling;
+    font-size: 5em;
+}
+
+#projects p {
+    color: white;
+}
+
+#projects .project-box {
+    cursor: pointer !important;
+    height: 150px;
+    width: 250px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#projects .cyberpunk {
+    background: linear-gradient(to right, yellow, #ffbc02) !important;
+}
+
+#projects .spotify {
+    background: linear-gradient(to right, #8702c6, #66029e) !important;
+}
+
+#projects .museu {
+    background: linear-gradient(to right, #241300, #301f00) !important;
+}
+
+#projects .noticias {
+    background: linear-gradient(to right, #130081, #010030) !important;
+}
+
+#projects .parallax {
+    background: linear-gradient(to right, #00cab9, #00cf5d) !important;
+}
+
+#projects .finans {
+    background: linear-gradient(to right, #ecff42, #ffe136) !important;
+}
+
+#projects .carousel-card {
+    height: 100%;
+    text-align: center !important;
+}
+
+
+
+/* Footer */
+
+#footer {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1e2023, #0c0d0f);
+}
+
+#footer p {
+    color: white !important;
+}
+
+#footer .theme-changer {
+    cursor:pointer;
+}
+
+#footer .theme-menu {
+    position: absolute;
+    padding: 10px 20px;
+    background: #1e2023;
+    border: 8px solid #0c0d0f;
+    border-radius: 12px;
+    top: -60px;
+    left: calc((100vw - 446px) /2);
 }

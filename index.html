@@ -1,45 +1,140 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Index</title>
-		<link rel="icon" href="img/logo-redondo.png">
-		<!-- Required meta tags -->
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- DevSpec v2 
+@author Luiz Felipe Pedrosa Cavalcante
+gitHub - @gitBiohazard
+sources:
+    Bootstrap v5
+    html5shiv.js
+    Fontawesome
+-->
 
-	    <!--[if lt IE 9]>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/brands/Rubi.png" type="image/x-icon">
+    <!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 		<![endif]-->
 
-	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="css/index.css">
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
-	    <link rel="stylesheet" href="icons/fontawesome/css/all.css">
-	    <link rel="stylesheet" href="icons/iconic/font/css/open-iconic-bootstrap.css">
-	</head>
-	<body id="index">
-		<section style="margin-top: 150px;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 capa">
-						<img width="180" height="170" src="img/logo-transparente.png">
-						<p class="lead mainText">Select the language</p><br>
-						<div>
-							<a href="pt-br/principal" class="btn btn-custom btn-vermelho mr-2" style="font-weight: 600;">
-								PT-BR
-							</a>
-							<a href="en-us/main" class="btn btn-custom btn-branco" style="font-weight: 600;">
-								EN-US 
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--JavaScript -->
-	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="../js/jquery-3.5.1.slim.min.js"></script>
-	    <script src="../js/popper.min.js"></script>
-	    <script src="../js/bootstrap.min.js"></script>
-	</body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/fontawesome/css/all.css">
+    <title>Bem vindo! - Luiz Felipe Pedrosa Cavalcante</title>
+</head>
+
+<style>
+    body.ametista,
+    body.diamante,
+    body.esmeralda,
+    body.rubelita,
+    body.rubi,
+    body.safira,
+    body.topaz {
+        background: linear-gradient(to bottom, #101215, #16181b) !important;
+    }
+</style>
+
+<body class="rubi">
+
+    <main id="main" class="index">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 capa" data-anime="left">
+                    <img id="mobileMainFox" src="img/brands/rubi.png" width="100" class="d-inline-block mb-4">
+                    <p class="lead lined">
+                        Seja muito
+                    </p>
+                    <h1>Bem vindo!</h1>
+                    <p class="lead mb-4">
+                        Escolha o idioma:
+                    </p>
+                    <a href="pt-br/principal.html" class="btn btn-custom d-inline-block">
+                        PT-BR
+                    </a>
+                    <a href="en-us/main.html" class="btn btn-custom d-inline-block">
+                        EN-US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 capa mt-4">
+                    <div class="mb-4 d-inline-block">
+                        <div id="theme-menu" class="d-none theme-menu">
+                            <img onclick="changeTheme('ametista')" src="img/brands/ametista.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('diamante')" src="img/brands/Diamante.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('esmeralda')" src="img/brands/Esmeralda.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('rubelita')" src="img/brands/Rubelita.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('rubi')" src="img/brands/Rubi.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('safira')" src="img/brands/Safira.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('topaz')" src="img/brands/Topaz.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                        </div>
+                    </div>
+                    <span>
+                        <button id="theme-trigger" class="btn btn-custom d-inline-block mb-4" onclick="changeMenu()">
+                            Mudar tema
+                        </button>
+                    </span>
+                    <p class="lead">
+                        Copyright 2020 © Lufe Corp. | luizfelipecav@outlook.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/intro.js"></script>
+
+    <!-- Favorite color -->
+    <script>
+
+        let favoriteColor = localStorage.getItem('favoriteColor');
+        if (favoriteColor != null) {
+            const holder = document.querySelector('body');
+            const mainFox = document.querySelector('#mainFox');
+            const mobileMainFox = document.querySelector('#mobileMainFox');
+            holder.classList.remove('ametista', 'diamante', 'esmeralda', 'rubelita', 'rubi', 'safira', 'topaz');
+            holder.classList.add(favoriteColor);
+            mobileMainFox.src = "img/brands/" + favoriteColor + ".png";
+            localStorage.setItem('favoriteColor', favoriteColor);
+        }
+
+        function changeMenu() {
+            const menu = document.querySelector('#theme-menu');
+            menu.classList.toggle('d-none');
+
+        }
+
+        function changeTheme(color) {
+            const holder = document.querySelector('body');
+            const mainFox = document.querySelector('#mainFox');
+            const mobileMainFox = document.querySelector('#mobileMainFox');
+            holder.classList.remove('ametista', 'diamante', 'esmeralda', 'rubelita', 'rubi', 'safira', 'topaz');
+            holder.classList.add(color);
+            mobileMainFox.src = "img/brands/" + color + ".png";
+            localStorage.setItem('favoriteColor', color);
+            changeMenu();
+        }
+    </script>
+</body>
+
 </html>

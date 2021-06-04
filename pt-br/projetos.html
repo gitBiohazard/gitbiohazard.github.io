@@ -1,234 +1,275 @@
-<!DOCTYPE html>
-<html id="main">
-	<head>
-		<title>Projetos - Lufe</title>
-		<link rel="icon" href="../img/logo-redondo.png">
-		<!-- Required meta tags -->
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- DevSpec v2 
+@author Luiz Felipe Pedrosa Cavalcante
+gitHub - @gitBiohazard
+sources:
+    Bootstrap v5
+    html5shiv.js
+    Fontawesome
+-->
 
-	    <!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/brands/Ametista.png" type="image/x-icon">
+    <!--[if lt IE 9]>
+			<script src="../js/html5shiv.js"></script>
 		<![endif]-->
 
-	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="../css/animate.css">
-	    <link rel="stylesheet" href="../css/projects.css">
-	    <link rel="stylesheet" href="../css/bootstrap.min.css">
-	    <link rel="stylesheet" href="../icons/fontawesome/css/all.css">
-	    <link rel="stylesheet" href="../icons/iconic/font/css/open-iconic-bootstrap.css">
-	</head>
-	<body>
-		<header>
-			<div>
-				<nav class="navbar navbar-expand-md navbar-dark navbar-transparente fixed-top">
-					<div class="container">
-							<a href="" class="navbar-brand">
-							<img class="float-left" src="../img/logo-transparente.png" width="50">
-							<p class="nav-link lead logo font-italic float-left mb-1 disabled">Portfólio - Projetos</p>
-							<h1 class="sr-only">Portfólio - Projetos</h1>
-						</a>
-					    <button class="navbar-toggler navbar-toggler-formated" data-toggle="collapse" data-target="#nav-target">
-					        <span class="navbar-toggler-icon"></span>
-					    </button>
-					    <div class="collapse navbar-collapse" id="nav-target">
-					    	<ul class="navbar-nav ml-auto">
-								<li class="nav-item"><a class="nav-link" href="../pt-br/principal">Principal</a></li>
-								<li class="nav-item"><a class="nav-link " href="../pt-br/principal#sobre">Sobre mim</a></li>
-								<li class="nav-item"><a class="nav-link" href="#main">Projetos</a></li>
-								<li class="nav-item"><a class="nav-link disabled d-none d-md-block" href="">|</a></li>
-								<li class="nav-item">
-									<a class="nav-link nav-link-white" href="../developing/em-desenvolvimento">
-										Para Desenvolvedores
-									</a>
-								</li>
-							</ul>
-					    </div>
-					</div>
-				</nav>
-			</div>
-		</header>
-		<div class="d-none d-md-block fixed-bottom mb-4 ml-x">
-			<a href="https://api.whatsapp.com/send?phone=5511940419049&text=Ol%C3%A1!" class="btn btn-custom-2 btn-whats mb-3 d-md-inline" style="font-weight: 600;" target="_blank">
-				<i class="fab fa-whatsapp"></i>
-			</a>
-		</div>
-		<div class="d-md-none fixed-bottom mb-4 ml-y">
-			<a href="https://api.whatsapp.com/send?phone=5511940419049&text=Ol%C3%A1!" class="btn btn-custom-2 btn-whats mb-3 d-md-inline" style="font-weight: 600;" target="_blank">
-				<i class="fab fa-whatsapp"></i>
-			</a>
-		</div>
-		<section class="d-flex" style="margin-top: 150px;">
-			<div class="container align-self-center">
-				<div class="row capa">
-					<div class="col-md-12 d-md-none mb-3 capa" data-anime="top">
-						<img src="../img/logo-transparente2.png" width="180">
-					</div>
-					<div class="col-md-6 align-self-top" data-anime="top">
-						<p class="lead">Seja bem vindo aos</p>
-						<h1 id="nome">Meus Projetos</h1><br><br>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/intro.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../icons/fontawesome/css/all.css">
+    <title>Meus Projetos - Luiz Felipe Pedrosa Cavalcante</title>
+</head>
 
-						<a href="#sobre" class="btn btn-custom btn-preto mb-3 d-md-inline d-none" style="font-weight: 600;">
-							Ver mais
-						</a>
+<body class="esmeralda">
 
-						<a href="#sobre" class="btn btn-custom-2 btn-branco mb-3 d-md-none" style="font-weight: 600;">
-							Ver mais
-						</a>
+    <header id="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-bg">
+            <div class="container">
+                <a href="principal.html" class="navbar-brand lead">
+                    <img src="../img/Yo.png" width="50" class="hvr-grow">
+                    <i class="ms-3">Meu portfólio</i>
+                </a>
+                <button class="navbar-toggler btn-custom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ametista">
+                        <li class="nav-item">
+                            <a class="nav-link lead hvr-underline-from-center" href="principal.html#about-me"><i>Sobre
+                                    mim</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lead hvr-underline-from-center" href="#"><i>Projetos</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lead ametista-text hvr-underline-from-center" href="desenvolvedor.html">
+                                <i>Para desenvolvedores</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
 
-					</div>
-					<div class="col-md-6 d-none d-md-block" data-anime="top">
-						<img src="../img/logo-transparente2.png" width="400">
-					</div>
-				</div>
-			</div>
-		</section>
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 capa" data-anime="left">
+                    <div class="auto-width">
+                        <img id="mobileMainFox" src="../img/brands/Esmeralda.png" width="100"
+                            class="d-inline-block d-lg-none mb-4">
+                        <p class="lead lined">
+                            Seja bem vindo aos
+                        </p>
+                        <h1>Meus Projetos</h1>
+                        <a href="#projects" class="btn btn-custom d-inline-block">
+                            Ver mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img id="mainFox" src="../img/brands/Esmeralda.png" width="1000" class="brand d-none d-lg-block" data-anime="right">
+    </main>
 
-		<section id="sobre">
-			<div class="container">
-				<div class="row pt-5">
-					<div class="col-md-6" data-anime="left">
-						<h2 class="display-4">Sobre os projetos</h2>
-						<p class="lead mt-3 text-justify p-1">
-							Antes de mais nada, é importante deixar claro que todos os projetos aqui apresentados são de caráter acadêmico e demonstrativo. Desenvolvidos utilizando HTML5, CSS3, JavaScript, Bootstrap 4, adaptados para todos os dispositivos e baseado nos conceitos de design UI & UX.
-						</p><br>
-						<a href="https://www.fiverr.com/share/L4EQw7" class="btn btn-custom-2 btn-branco mb-3 ml-0 d-md-inline" style="font-weight: 600;" target="_blank">
-							<i class="fas fa-dollar-sign"></i> Quero um website responsivo
-						</a><br><br>
-						<h2 class="display-4">O que é design UI/UX?</h2>
-						<p class="lead mt-3 text-justify p-1">
-							UI significa User Interface, o que remete a interface gráfica apresentada ao usuário, que por meio dela se comunica com o site ou software de maneira intuitiva. <br><br>
-							UX significa User Experience, que traz sentimento às experiências do usuário que está utilizando a interface e navegando pela plataforma digital.
-						</p><br>
-						<div class="d-none d-md-block">
-							<a href="../curriculum/curriculum.pdf" class="btn btn-custom btn-verde mb-3 d-md-inline d-sm-block" style="font-weight: 600;" target="_blank">
-								<i class="fas fa-file-download"></i> Baixar meu currículo
-							</a>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-anime="top">
+                    <h1>Sobre os projetos</h1>
+                    <p class="lead">
+                        Antes de mais nada, é importante deixar claro que todos os projetos aqui apresentados são de
+                        caráter acadêmico e demonstrativo. Desenvolvidos utilizando HTML5, CSS3, JavaScript, Bootstrap
+                        4 e 5, adaptados para todos os dispositivos e baseado nos conceitos de design UI & UX.
+                    </p>
+                    <h1>Conceitos</h1>
+                    <p class="lead">
+                        UI significa User Interface, o que remete a interface gráfica apresentada ao usuário, que por
+                        meio dela se comunica com o site ou software de maneira intuitiva.
+                        <br><br>
+                        UX significa User Experience, que traz sentimento às experiências do usuário que está utilizando
+                        a interface e navegando pela plataforma digital.
+                    </p>
+                    <a href="../cv/curriculum.pdf" target="_blank" class="btn btn-custom d-inline-block">
+                        Baixar meu currículo
+                    </a>
+                    <button onclick="window.open('https://github.com/gitbiohazard')" class="btn btn-custom d-inline-block">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button onclick="window.open('https://www.linkedin.com/in/lufe-pedrosa/')" class="btn btn-custom d-none d-md-inline-block">
+                        <i class="fab fa-linkedin-in"></i>
+                    </button>
+                    <button onclick="window.open('https://instagram.com/el_lu.fe')" class="btn btn-custom d-none d-md-inline-block">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                </div>
 
-							<a href="https://www.linkedin.com/in/lufe-pedrosa/" class="btn btn-custom-2 btn-branco mb-3 d-md-inline" style="font-weight: 600;" target="_blank">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
+                <div class="col-lg-6 d-lg-block d-none">
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div onclick="window.open('../projects/Cyberpunk/index.html')" class="project-box hvr-grow cyberpunk justify-content-center">
+                                <img src="../img/Cyberpunk.png" width="100%" class="img-fluid d-inline">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div onclick="window.open('../projects/Spotify/index.html')" class="project-box hvr-grow spotify justify-content-center">
+                                <img src="../img/Spotify.svg" width="80%" class="img-fluid d-inline">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div onclick="window.open('../projects/Museu/index.html')" class="project-box hvr-grow museu justify-content-center">
+                                <img src="../img/Museu.png" width="80%" class="img-fluid d-inline">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div onclick="window.open('../projects/Noticias/index.html')" class="project-box hvr-grow noticias justify-content-center">
+                                <img src="../img/Noticias.png" width="50%" class="img-fluid d-inline">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div onclick="window.open('../projects/Parallax/index.html')" class="project-box hvr-grow parallax justify-content-center">
+                                <h1>Parallax</h1>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div onclick="window.open('../projects/Finans/index.html')" class="project-box hvr-grow finans justify-content-center">
+                                <img src="../img/Finans.png" width="60%" class="img-fluid d-inline">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-							<a href="https://github.com/gitbiohazard" class="btn btn-custom-2 btn-branco mb-3 d-md-inline" style="font-weight: 600;" target="_blank">
-								<i class="fab fa-github"></i>
-							</a>
+                <div class="col-lg-6 mt-5 d-lg-none">
+                    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner capa">
+                          <div class="carousel-item active">
+                            <div onclick="window.open('../projects/Cyberpunk/index.html')" class="project-box hvr-grow cyberpunk justify-content-center d-inline-block">
+                                <div class="d-flex carousel-card align-items-center">
+                                    <img src="../img/Cyberpunk.png" width="100%" class="img-fluid d-inline">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div onclick="window.open('../projects/Spotify/index.html')" class="project-box hvr-grow spotify justify-content-center d-inline-block">
+                                <div class="d-flex carousel-card align-items-center">
+                                    <img src="../img/Spotify.svg" width="80%" class="img-fluid d-inline mx-auto">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div onclick="window.open('../projects/Museu/index.html')" class="project-box hvr-grow museu justify-content-center d-inline-block">
+                                <div class="d-flex carousel-card align-items-center">
+                                    <img src="../img/Museu.png" width="80%" class="img-fluid d-inline mx-auto">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div onclick="window.open('../projects/Noticias/index.html')" class="project-box hvr-grow noticias justify-content-center d-inline-block">
+                                <div class="d-flex carousel-card align-items-center">
+                                    <img src="../img/Noticias.png" width="50%" class="img-fluid d-inline mx-auto">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div onclick="window.open('../projects/Parallax/index.html')" class="project-box hvr-grow parallax justify-content-center d-inline-block">
+                                <div class="d-flex carousel-card align-items-center">
+                                    <h1 class="mx-auto">Parallax</h1>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div onclick="window.open('../projects/Finans/index.html')" class="project-box hvr-grow finans justify-content-center d-inline-block">
+                                <div class="d-flex carousel-card align-items-center">
+                                    <img src="../img/Finans.png" width="60%" class="img-fluid d-inline mx-auto">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
-							<a href="https://www.instagram.com/el_lu.fe/" class="btn btn-custom-2 btn-branco mb-3 d-md-inline" style="font-weight: 600;" target="_blank">
-								<i class="fab fa-instagram"></i>
-							</a><br><br><br>
-						</div>
-					</div>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 capa mt-4">
+                    <div class="mb-4 d-inline-block">
+                        <div id="theme-menu" class="d-none theme-menu">
+                            <img onclick="changeTheme('ametista')" src="../img/brands/ametista.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('diamante')" src="../img/brands/Diamante.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('esmeralda')" src="../img/brands/Esmeralda.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('rubelita')" src="../img/brands/Rubelita.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('rubi')" src="../img/brands/Rubi.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('safira')" src="../img/brands/Safira.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('topaz')" src="../img/brands/Topaz.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                        </div>
+                    </div>
+                    <span>
+                        <button id="theme-trigger" class="btn btn-custom d-inline-block mb-4" onclick="changeMenu()">
+                            Mudar tema
+                        </button>
+                    </span>
+                    <p class="lead">
+                        Copyright 2020 © Lufe Corp. | luizfelipecav@outlook.com | <a href="../en-us/projects.html">View in English</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-					<div class="col-md-6" data-anime="top">
-						<div class="d-none d-lg-block ml-2">
-							<div class="caixa d-flex mt-5" style="padding-bottom: 70px;">
-								<a href="../projects/Spotify/index" target="_blank">
-									<img class="imgFormat item" src="../img/projeto1.png">
-								</a>
-								<a href="../projects/Cyberpunk/index" target="_blank" class="ml-auto">
-									<img class="imgFormat item" src="../img/Cyberpunk.png">
-								</a>
-							</div>
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/theme-changer.js"></script>
+    <script src="../js/intro.js"></script>
 
-							<div class="caixa d-flex" style="padding-bottom: 70px;">
-								<a href="../projects/Museu/index" target="_blank">
-									<img class="imgFormat item" src="../img/projeto3.png">
-								</a>
-								<a href="../projects/Noticias/index" target="_blank" class="ml-auto">
-									<img class="imgFormat item" src="../img/projeto4.png">
-								</a>
-							</div>
+    <!-- Favorite color -->
+    <script>
 
-							<div class="caixa d-flex" style="padding-bottom: 160px;">	
-								<a href="../projects/Parallax/index" target="_blank">
-									<img class="imgFormat item" src="../img/projeto5.png">
-								</a>
-								<a href="../projects/Finans/index" target="_blank" class="ml-auto">
-									<img class="imgFormat item" src="../img/projeto2.png">
-								</a>
-							</div>
-						</div>
-						<div class="d-md-none mb-5" style="padding-bottom: 30px;">
-							<div id="carousel-principal" class="carousel slide" data-slide="carousel">
-								<div class="carousel-inner" style="padding-left: 22%;">
-									<div class="carousel-item active">
-										<a href="../projects/Spotify/index" target="_blank">
-											<img class="smImgFormat item" src="../img/projeto1.png">
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a href="../projects/Cyberpunk/index" target="_blank" class="ml-auto">
-											<img class="smImgFormat item" src="../img/Cyberpunk.png">
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a href="../projects/Museu/index" target="_blank">
-											<img class="smImgFormat item" src="../img/projeto3.png">
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a href="../projects/Noticias/index" target="_blank" class="ml-auto">
-											<img class="smImgFormat item" src="../img/projeto4.png">
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a href="../projects/Parallax/index" target="_blank">
-											<img class="smImgFormat item" src="../img/projeto5.png">
-										</a>
-									</div>
-									<div class="carousel-item">
-										<a href="../projects/Finans/index" target="_blank" class="ml-auto">
-											<img class="smImgFormat item" src="../img/projeto2.png">
-										</a>
-									</div>
-								</div>
+        let favoriteColor = localStorage.getItem('favoriteColor');
+        if (favoriteColor != null) {
+            const holder = document.querySelector('body');
+            const mainFox = document.querySelector('#mainFox');
+            const mobileMainFox = document.querySelector('#mobileMainFox');
+            holder.classList.remove('ametista', 'diamante', 'esmeralda', 'rubelita', 'rubi', 'safira', 'topaz');
+            holder.classList.add(favoriteColor);
+            mainFox.src = "../img/brands/" + favoriteColor + ".png";
+            mobileMainFox.src = "../img/brands/" + favoriteColor + ".png";
+            localStorage.setItem('favoriteColor', favoriteColor);
+        }
+    </script>
+</body>
 
-								<a href="#carousel-principal" class="carousel-control-prev" data-slide="prev">
-									<i class="fas fa-angle-left fa-3x"></i>
-								</a>
-								<a href="#carousel-principal" class="carousel-control-next" data-slide="next">
-									<i class="fas fa-angle-right fa-3x"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="ml-4 d-sm-block d-md-none" data-anime="top">
-			<a href="../curriculum/curriculum.pdf" class="btn btn-custom btn-verde mb-3 d-md-inline d-sm-block" style="font-weight: 600;" target="_blank">
-				<i class="fas fa-file-download"></i> Baixar meu currículo
-			</a>
-
-			<a href="https://www.linkedin.com/in/lufe-pedrosa/" class="btn btn-custom-2 btn-branco mb-3 d-md-inline" style="font-weight: 600;" target="_blank">
-				<i class="fab fa-linkedin-in"></i>
-			</a><br><br><br>
-		</div>
-
-		
-		<footer id="rodape" class="mt-2">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 mb-3 d-none d-md-block">
-						<img src="../img/logo-transparente.png" width="100">
-					</div>
-					<div class="col-md-9 mt-5 mb-3">
-						<p class="lead mb-3">
-							Copyright 2020 &copy Lufe Corp. | luizfelipecav@outlook.com  | <a href="../en-us/projects">View in English</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-
-
-		<!--JavaScript -->
-	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="../js/jquery-3.5.1.slim.min.js"></script>
-	    <script src="../js/popper.min.js"></script>
-	    <script src="../js/bootstrap.min.js"></script>
-	    <script src="../js/script.js"></script>
-	</body>
 </html>

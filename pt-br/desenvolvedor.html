@@ -1,0 +1,120 @@
+<!-- DevSpec v2 
+@author Luiz Felipe Pedrosa Cavalcante
+gitHub - @gitBiohazard
+sources:
+    Bootstrap v5
+    html5shiv.js
+    Fontawesome
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/brands/Topaz.png" type="image/x-icon">
+    <!--[if lt IE 9]>
+			<script src="../js/html5shiv.js"></script>
+		<![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/intro.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../icons/fontawesome/css/all.css">
+    <title>Em desenvolvimento - Luiz Felipe Pedrosa Cavalcante</title>
+</head>
+
+<style>
+    body.ametista,
+    body.diamante,
+    body.esmeralda,
+    body.rubelita,
+    body.rubi,
+    body.safira,
+    body.topaz {
+    background: linear-gradient(to bottom,#101215,#16181b) !important;
+    }
+</style>
+
+<body class="topaz">
+
+    <main id="main" class="index">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 capa" data-anime="left">
+                    <img id="mobileMainFox" src="../img/brands/topaz.png" width="100" class="d-inline-block mb-4">
+                    <img id="mainFox" src="../img/brands/topaz.png" width="100" class="d-none">
+                    <p class="lead lined">
+                        Essa página está
+                    </p>
+                    <h1>Em produção!</h1>
+                    <button onclick="window.history.back()" class="btn btn-custom d-inline-block">
+                        Voltar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 capa mt-4">
+                    <div class="mb-4 d-inline-block">
+                        <div id="theme-menu" class="d-none theme-menu">
+                            <img onclick="changeTheme('ametista')" src="../img/brands/ametista.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('diamante')" src="../img/brands/Diamante.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('esmeralda')" src="../img/brands/Esmeralda.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('rubelita')" src="../img/brands/Rubelita.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('rubi')" src="../img/brands/Rubi.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('safira')" src="../img/brands/Safira.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                            <img onclick="changeTheme('topaz')" src="../img/brands/Topaz.png" width="50"
+                                class="img-fluid d-block d-md-inline pointer">
+                        </div>
+                    </div>
+                    <span>
+                        <button id="theme-trigger" class="btn btn-custom d-inline-block mb-4" onclick="changeMenu()">
+                            Mudar tema
+                        </button>
+                    </span>
+                    <p class="lead">
+                        Copyright 2020 © Lufe Corp. | luizfelipecav@outlook.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/theme-changer.js"></script>
+    <script src="../js/intro.js"></script>
+
+    <!-- Favorite color -->
+    <script>
+
+        let favoriteColor = localStorage.getItem('favoriteColor');
+        if (favoriteColor != null) {
+            const holder = document.querySelector('body');
+            const mainFox = document.querySelector('#mainFox');
+            const mobileMainFox = document.querySelector('#mobileMainFox');
+            holder.classList.remove('ametista', 'diamante', 'esmeralda', 'rubelita', 'rubi', 'safira', 'topaz');
+            holder.classList.add(favoriteColor);
+            mainFox.src = "../img/brands/" + favoriteColor + ".png";
+            mobileMainFox.src = "../img/brands/" + favoriteColor + ".png";
+            localStorage.setItem('favoriteColor', favoriteColor);
+        }
+    </script>
+</body>
+
+</html>
