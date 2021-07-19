@@ -13,24 +13,23 @@ sources:
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 		<![endif]-->
 
     <!-- CSS -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="icons/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <title>My Portfolio - Luiz Felipe Pedrosa Cavalcante</title>
 </head>
 
-<body onclick="return false;" onscroll="return false;">
+<body>
     <span id="circle" class="circle d-lg-block d-none"></span>
-    <main>
-
+    <main class="position-relative">
         <div id="redes-sociais" class="d-none d-md-block">
             <div onmouseover="onSocialOver()" onmouseout="onSocialOut()" onclick="onSocialClick()"
                 class="redes floating d-flex align-items-center justify-content-center">
@@ -166,18 +165,20 @@ sources:
                                 Send me a message at luizfelipecav@outlook.com <br><br>
                                 or search for me on my social networks:
                             </p>
-                            <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank" class="contact-btn"
+                            <div class="mobile-adjust">
+                                <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank" class="contact-btn mt-3"
                                 data-tilt>
                                 <span>LinkedIn</span>
-                            </a>
-                            <a href="https://instagram.com/el_lu.fe/" target="_blank" class="contact-btn ms-3"
-                                data-tilt>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="https://github.com/gitBiohazard" target="_blank" class="contact-btn ms-3"
-                                data-tilt>
-                                <span>gitHub</span>
-                            </a>
+                                </a>
+                                <a href="https://instagram.com/el_lu.fe/" target="_blank" class="contact-btn ms-3 mt-3"
+                                    data-tilt>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://github.com/gitBiohazard" target="_blank" class="contact-btn ms-3 mt-3"
+                                    data-tilt>
+                                    <span>gitHub</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

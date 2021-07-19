@@ -6,6 +6,14 @@
 
  /* Extra small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) {
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    main .capa {
+        overflow: hidden;
+    }
     main .capa h1 {
         font-family: "Raleway";
         font-weight: bold;
@@ -27,6 +35,10 @@
 
     #redes-sociais, .redes {
         right: 0 !important;
+    }
+
+    .mobile-adjust {
+        text-align: center;
     }
 }
 
@@ -62,12 +74,13 @@
     border-radius: 50%;
 }
 
+html,
 body {
     background:  url(../img/bg.png) no-repeat;
     /* background: #000; */
     background-size: cover;
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
 }
 
 @font-face {
@@ -147,6 +160,7 @@ main .social:before {
 main .capa {
     height: 100vh;
     display: flex;
+    overflow: hidden !important;
 }
 
 main .capa h1 {
