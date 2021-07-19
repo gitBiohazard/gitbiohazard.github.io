@@ -4,263 +4,45 @@
  *
  */
 
- 
-
  /* Extra small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) {
-    #main .auto-width {
-        width: auto !important;
+    main .capa h1 {
+        font-family: "Raleway";
+        font-weight: bold;
+        font-size: 2em !important;
+        color: white;
+    }
+    
+    main .capa h1:nth-child(1) {
+        font-size: 2em !important;
+    }
+    
+    main .capa h1:nth-child(2) {
+        margin-left: 0 !important;
+    }
+    
+    main .capa h1:nth-child(3) {
+        margin-left: 0 !important;
     }
 
-    #main h1 {
-        font-size: 4em !important;
-        font-weight: normal !important;
-    }
-
-    #main .lined::after,
-    #main .lined::before {
-        width: 10% !important;
-    }
-    body.ametista,
-    body.diamante,
-    body.esmeralda,
-    body.rubelita,
-    body.rubi,
-    body.safira,
-    body.topaz {
-    background: linear-gradient(to bottom,#101215,#16181b) !important;
-    }
-
-    body.ametista .navbar {
-        border-bottom: 4px solid #66029e;
-    }
-
-    body.diamante .navbar {
-        border-bottom: 4px solid #79bafc;
-    }
-
-    body.esmeralda .navbar {
-        border-bottom: 4px solid #02c4a3;
-    }
-
-    body.rubelita .navbar {
-        border-bottom: 4px solid #ff02ff;
-    }
-
-    body.rubi .navbar {
-        border-bottom: 4px solid #ff1c1c;
-    }
-
-    body.safira .navbar {
-        border-bottom: 4px solid #0202ff;
-    }
-
-    body.topaz .navbar {
-        border-bottom: 4px solid #ffbc02;
-    }
-
-    .hero {
-        position: static !important;
-        margin-top: 50px !important;
-        width: 80%;
-    }
-
-    #footer .theme-menu {
-        left: calc((100vw - 100px) /2) !important;
-        top: -380px !important;
+    #redes-sociais, .redes {
+        right: 0 !important;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    #main .auto-width {
-        width: auto !important;
-    }
-
-    #main h1 {
-        font-size: 4em !important;
-        font-weight: normal !important;
-    }
-
-    #main .lined::after,
-    #main .lined::before {
-        width: 10% !important;
-    }
-    body.ametista,
-    body.diamante,
-    body.esmeralda,
-    body.rubelita,
-    body.rubi,
-    body.safira,
-    body.topaz {
-    background: linear-gradient(to bottom,#101215,#16181b) !important;
-    }
-
-    body.ametista .navbar {
-        border-bottom: 4px solid #66029e;
-    }
-
-    body.diamante .navbar {
-        border-bottom: 4px solid #79bafc;
-    }
-
-    body.esmeralda .navbar {
-        border-bottom: 4px solid #02c4a3;
-    }
-
-    body.rubelita .navbar {
-        border-bottom: 4px solid #ff02ff;
-    }
-
-    body.rubi .navbar {
-        border-bottom: 4px solid #ff1c1c;
-    }
-
-    body.safira .navbar {
-        border-bottom: 4px solid #0202ff;
-    }
-
-    body.topaz .navbar {
-        border-bottom: 4px solid #ffbc02;
-    }
-
-    .hero {
-        position: static !important;
-        margin-top: 50px !important;
-        width: 80%;
-    }
-
-    #footer .theme-menu {
-        left: calc((100vw - 100px) /2) !important;
-        top: -380px !important;
-    }
+		
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #main .auto-width {
-        width: auto !important;
-    }
-
-    #main h1 {
-        font-size: 4em !important;
-    }
-
-    #main .lined::after,
-    #main .lined::before {
-        width: 10% !important;
-    }
-    body.ametista,
-    body.diamante,
-    body.esmeralda,
-    body.rubelita,
-    body.rubi,
-    body.safira,
-    body.topaz {
-    background: linear-gradient(to bottom,#101215,#16181b) !important;
-    }
-
-    body.ametista .navbar {
-        border-bottom: 4px solid #66029e;
-    }
-
-    body.diamante .navbar {
-        border-bottom: 4px solid #79bafc;
-    }
-
-    body.esmeralda .navbar {
-        border-bottom: 4px solid #02c4a3;
-    }
-
-    body.rubelita .navbar {
-        border-bottom: 4px solid #ff02ff;
-    }
-
-    body.rubi .navbar {
-        border-bottom: 4px solid #ff1c1c;
-    }
-
-    body.safira .navbar {
-        border-bottom: 4px solid #0202ff;
-    }
-
-    body.topaz .navbar {
-        border-bottom: 4px solid #ffbc02;
-    }
-
-    .hero {
-        position: static !important;
-        margin-top: 50px !important;
-        width: 80%;
-    }
-
+		
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    #main .auto-width {
-        width: auto !important;
-    }
-
-    #main h1 {
-        font-size: 4em !important;
-    }
-
-    #main .lined::after,
-    #main .lined::before {
-        width: 10% !important;
-    }
-    body.ametista,
-    body.diamante,
-    body.esmeralda,
-    body.rubelita,
-    body.rubi,
-    body.safira,
-    body.topaz {
-    background: linear-gradient(to bottom,#101215,#16181b) !important;
-    }
-
-    body.ametista .navbar {
-        border-bottom: 4px solid #66029e;
-    }
-
-    body.diamante .navbar {
-        border-bottom: 4px solid #79bafc;
-    }
-
-    body.esmeralda .navbar {
-        border-bottom: 4px solid #02c4a3;
-    }
-
-    body.rubelita .navbar {
-        border-bottom: 4px solid #ff02ff;
-    }
-
-    body.rubi .navbar {
-        border-bottom: 4px solid #ff1c1c;
-    }
-
-    body.safira .navbar {
-        border-bottom: 4px solid #0202ff;
-    }
-
-    body.topaz .navbar {
-        border-bottom: 4px solid #ffbc02;
-    }
-
-    .hero {
-        position: static !important;
-        margin-top: 50px !important;
-        width: 80%;
-    }
-
-    #projects .project-box {
-        width: 200px !important;
-    }
-
-    #projects .project-box h1 {
-        font-size: 4em !important;
-    }
+		
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -268,645 +50,472 @@
 
 }
 
-/* Nav-toggler */
+/* Main */
 
-body.ametista .navbar-toggler i,
-body.diamante .navbar-toggler i,
-body.esmeralda .navbar-toggler i,
-body.rubelita .navbar-toggler i,
-body.rubi .navbar-toggler i,
-body.safira .navbar-toggler i,
-body.topaz .navbar-toggler i{
-    color: white !important;
-}
-
-
-/* Ametista */
-
-body.ametista {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #66029e);
-}
-
-body.ametista .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #8702c6, #66029e) !important;
-}
-
-body.ametista .btn-custom {
-    background: linear-gradient(to left, #8702c6, #66029e) !important;
-    color: white !important;
-}
-
-body.ametista .btn-custom:hover {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.ametista .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.ametista .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.ametista::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.ametista::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #8702c6, #66029e);
-}
-
-body.ametista #about-me {
-    border-top: 8px solid #66029e !important;
-}
-
-body.ametista #projects {
-    border-top: 8px solid #66029e !important;
-}
-
-body.ametista #footer {
-    border-top: 8px solid #66029e !important;
-}
-
-body.ametista .hero {
-    box-shadow: 0 0 30px #66029e;
-}
-
-
-/* Diamante */
-
-body.diamante {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #79bafc);
-}
-
-body.diamante .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #9fcbff, #79bafc) !important;
-}
-
-body.diamante .btn-custom {
-    background: linear-gradient(to left, #9fcbff, #79bafc) !important;
-    color: black !important;
-}
-
-body.diamante .btn-custom:hover {
-    color: white !important;
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.diamante .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.diamante .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.diamante::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.diamante::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #9fcbff, #79bafc);
-}
-
-body.diamante #about-me {
-    border-top: 8px solid #79bafc !important;
-}
-
-body.diamante #projects {
-    border-top: 8px solid #79bafc !important;
-}
-
-body.diamante #footer {
-    border-top: 8px solid #79bafc !important;
-}
-
-body.diamante .hero {
-    box-shadow: 0 0 30px #79bafc;
-}
-
-
-/* Esmeralda */
-
-body.esmeralda {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #02c4a3);
-}
-
-body.esmeralda .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #05f9a7, #02c4a3) !important;
-}
-
-body.esmeralda .btn-custom {
-    background: linear-gradient(to left, #05f9a7, #02c4a3) !important;
-    color: black !important;
-}
-
-body.esmeralda .btn-custom:hover {
-    color: white !important;
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.esmeralda .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.esmeralda .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.esmeralda::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.esmeralda::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #05f9a7, #02c4a3);
-}
-
-body.esmeralda #about-me {
-    border-top: 8px solid #02c4a3 !important;
-}
-
-body.esmeralda #projects {
-    border-top: 8px solid #02c4a3 !important;
-}
-
-body.esmeralda #footer {
-    border-top: 8px solid #02c4a3 !important;
-}
-
-body.esmeralda .hero {
-    box-shadow: 0 0 30px #02c4a3;
-}
-
-/* Rubelita */
-
-body.rubelita {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #ff02ff);
-}
-
-body.rubelita .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #ff54f7, #ff02ff) !important;
-}
-
-body.rubelita .btn-custom {
-    background: linear-gradient(to left, #ff54f7, #ff02ff) !important;
-    color: black !important;
-}
-
-body.rubelita .btn-custom:hover {
-    color: white !important;
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.rubelita .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.rubelita .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.rubelita::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.rubelita::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #ff54f7, #ff02ff);
-}
-
-body.rubelita #about-me {
-    border-top: 8px solid #ff02ff !important;
-}
-
-body.rubelita #projects {
-    border-top: 8px solid #ff02ff !important;
-}
-
-body.rubelita #footer {
-    border-top: 8px solid #ff02ff !important;
-}
-
-body.rubelita .hero {
-    box-shadow: 0 0 30px #ff02ff;
-}
-
-/* Rubi */
-
-body.rubi {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #ff1c1c);
-}
-
-body.rubi .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #ff4f4f, #ff1c1c) !important;
-}
-
-body.rubi .btn-custom {
-    background: linear-gradient(to left, #ff4f4f, #ff1c1c) !important;
-    color: white !important;
-}
-
-body.rubi .btn-custom:hover {
-    color: white !important;
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.rubi .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.rubi .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.rubi::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.rubi::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #ff4f4f, #ff1c1c);
-}
-
-body.rubi #about-me {
-    border-top: 8px solid #ff1c1c !important;
-}
-
-body.rubi #projects {
-    border-top: 8px solid #ff1c1c !important;
-}
-
-body.rubi #footer {
-    border-top: 8px solid #ff1c1c !important;
-}
-
-body.rubi .hero {
-    box-shadow: 0 0 30px #ff1c1c;
-}
-
-/* Safira */
-
-body.safira {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #0202ff);
-}
-
-body.safira .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #5757ff, #0202ff) !important;
-}
-
-body.safira .btn-custom {
-    background: linear-gradient(to left, #5757ff, #0202ff) !important;
-    color: white !important;
-}
-
-body.safira .btn-custom:hover {
-    color: white !important;
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.safira .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.safira .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.safira::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.safira::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #5757ff, #0202ff);
-}
-
-body.safira #about-me {
-    border-top: 8px solid #0202ff !important;
-}
-
-body.safira #projects {
-    border-top: 8px solid #0202ff !important;
-}
-
-body.safira #footer {
-    border-top: 8px solid #0202ff !important;
-}
-
-body.safira .hero {
-    box-shadow: 0 0 30px #0202ff;
-}
-
-/* Topaz */
-
-body.topaz {
-    background: linear-gradient(to right, #0c0d0f,#101215,#16181b, #ffbc02);
-}
-
-body.topaz .hvr-underline-from-center:before{
-  background: linear-gradient(to left, #ffd44f, #ffbc02) !important;
-}
-
-body.topaz .btn-custom {
-    background: linear-gradient(to left, #ffd44f, #ffbc02) !important;
-    color: black !important;
-}
-
-body.topaz .btn-custom:hover {
-    color: white !important;
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.topaz .navbar-toggler {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.topaz .navbar-toggler:focus {
-    background: #262626 !important;
-    border: 1px solid #262626 !important;
-}
-
-body.topaz::-webkit-scrollbar {
-    width: 12px;
-    background: #0c0d0f;
-}
-
-body.topaz::-webkit-scrollbar-thumb {
-    background: linear-gradient(to left, #ffd44f, #ffbc02);
-}
-
-body.topaz #about-me {
-    border-top: 8px solid #ffbc02 !important;
-}
-
-body.topaz #projects {
-    border-top: 8px solid #ffbc02 !important;
-}
-
-body.topaz #footer {
-    border-top: 8px solid #ffbc02 !important;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
 
-body.topaz .hero {
-    box-shadow: 0 0 30px #ffbc02;
+.circle {
+	position: absolute;
+    background: rgba(255,255,255,.2);
+	width: 60px; 
+	height: 60px; 
+    border-radius: 50%;
 }
-
-
-/* Escalas de cinza
-
-1 - #101215
-2 - #16181b
-3 - #1e2023
-4 - #262626
-
-*/
-
-/* Temas
-
-Ametista - #8702c6 e #66029e
-Diamante - #9fcbff e #79bafc
-Esmeralda - #05f9a7 e #02c4a3
-Rubelita - #ff54f7 e #ff02ff
-Rubi - #ff4f4f e #ff1c1c
-Safira - #5757ff e #0202ff
-Topaz - #ffd44f e #ffbc02
-
-*/
-
-/* Root */
-
 
 body {
-    background: #16181b;
-    overflow-x: hidden;
+    background:  url(../img/bg.png) no-repeat;
+    /* background: #000; */
+    background-size: cover;
+    overflow: hidden;
+    max-width: 100%;
 }
-
-
 
 @font-face {
-    font-family: Rolling;
-    src: url(../fonts/Rolling.woff);
+    font-family: "Raleway";
+    src: url(../fonts/Raleway.woff);
 }
 
-.capa {
-    text-align: center;
-}
-
-.pointer  {
-    cursor: pointer;
-}
-
-
-/* Header */
-
-#header {
-    z-index: 1000;
-    position: relative;
-}
-
-.navbar-bg {
-    background-color: #101215;
-}
-
-
-#header .navbar li {
-    margin: 0 10px;
+@font-face {
+    font-family: "Raleway-Italic";
+    src: url(../fonts/Raleway-I.woff);
 }
 
 /* Main */
 
-#main {
-    position: relative;
+main .social h1 {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: white;
+}
+
+main .social {
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    overflow:visible;
+    transition: .3s;
+}
+
+main .social:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -500px;
+    left: -500px;
+    right: -500px;
+    bottom: -500px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    transition: .3s;
+ }
+
+ main .btn-custom {
+    position: absolute;
+    background: white;
+    padding: 5px 15px;
+    font-family: "Raleway";
+    font-weight: bolder;
+    color: black;
+    border: none;
+    font-size: 24px;
+ }
+
+ main .btn-custom:hover {
+     background: transparent;
+     border: 1px solid rgba(255,255,255,.2);
+     color: white;
+     font-weight: normal;
+ }
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+main .capa {
     height: 100vh;
     display: flex;
-    align-items: center;
-    color: white;
-    overflow: hidden;
 }
 
-#main h1 {
-    font-size: 8em;
+main .capa h1 {
+    font-family: "Raleway";
     font-weight: bold;
-    vertical-align: middle;
-    font-family: Rolling;
-}
-
-#main .brand {
-    position: absolute;
-    right: -500px;
-}
-
-#main .lined::after,
-#main .lined::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 2px;
-    width: 20%;
-    background-color: white;
-    margin: 0 10px;
-}
-
-#main .auto-width {
-    width: 500px;
-}
-
-.btn-custom {
-    border-radius: 8px !important;
-    padding: 10px 20px !important;
-    background: white !important;
-    color: white !important;
-    font-weight: bolder !important;
-}
-
-.btn-custom:hover {
-    background: transparent !important;
-    border: 1px solid white !important;
-    color: white !important;
-}
-
-.btn-custom:focus {
-    box-shadow: none !important;
-}
-
-
-
-/* About me */
-
-#about-me {
-    border-top: 12px solid white !important;
-    background: #101215 !important;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-#about-me h1 {
-    color: white !important;
-    font-family: Rolling;
-    font-size: 5em;
-}
-
-#about-me p {
+    font-size: 84px;
     color: white;
 }
 
-.hero {
+main .capa h1:nth-child(1) {
+    font-size: 24px !important;
+}
+
+main .capa h1:nth-child(2) {
+    margin-left: 20px;
+}
+
+main .capa h1:nth-child(3) {
+    margin-left: 80px;
+}
+
+main .about-me {
     position: absolute;
-    border-radius: 12px;
-    top: 100px;
-    right: -700px;
-}
-
-/* Projects */
-
-#projects {
-    border-top: 12px solid white !important;
-    background: #101215 !important;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-#projects h1 {
-    color: white !important;
-    font-family: Rolling;
-    font-size: 5em;
-}
-
-#projects p {
-    color: white;
-}
-
-#projects .project-box {
-    cursor: pointer !important;
-    height: 150px;
-    width: 250px;
-    background: white;
-    border-radius: 12px;
+    bottom: -30px;
+    right: -50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,.2);
     display: flex;
     align-items: center;
+    justify-content: center;
+    animation-duration: 4s;
+    transition: .3s;
 }
 
-#projects .cyberpunk {
-    background: linear-gradient(to right, yellow, #ffbc02) !important;
+main .about-me:hover {
+    bottom: -30px;
+    right: -50px;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(255,255,255,1);
+    background: white;
+    transition: .3s;
+    cursor: pointer;
 }
 
-#projects .spotify {
-    background: linear-gradient(to right, #8702c6, #66029e) !important;
+main .about-me h1 {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: white;
+    transition: .4s;
 }
 
-#projects .museu {
-    background: linear-gradient(to right, #241300, #301f00) !important;
+.black-letter {
+    color: black;
+    font-weight: bold;
 }
 
-#projects .noticias {
-    background: linear-gradient(to right, #130081, #010030) !important;
+/* About page */
+
+#about {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    animation: opacity 1s forwards;
 }
 
-#projects .parallax {
-    background: linear-gradient(to right, #00cab9, #00cf5d) !important;
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-#projects .finans {
-    background: linear-gradient(to right, #ecff42, #ffe136) !important;
+.cursor-black {
+    background: black !important;
 }
 
-#projects .carousel-card {
-    height: 100%;
-    text-align: center !important;
+.circle-black {
+    border: 1px solid rgba(0,0,0,.2) !important;
+}
+
+#about {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#about::-webkit-scrollbar {
+    width: 0 !important;
 }
 
 
+#about .back-home {
+    z-index: 5;
+    position: fixed;
+    bottom: -30px;
+    right: -50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(0,0,0,.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 4s;
+    transition: .3s;
+}
 
-/* Footer */
+#about .back-home:hover {
+    bottom: -30px;
+    right: -50px;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(0,0,0,1);
+    background: black;
+    transition: .3s;
+    cursor: pointer;
+}
 
-#footer {
+#about .back-home h1 {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    transition: .4s;
+}
+
+#about .back-home h1.white-letter {
+    color: white;
+    font-weight: bold;
+}
+
+#about h1 {
+    color: black;
+    font-family: "Raleway";
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+#about p {
+    color: black;
+    font-family: "Raleway";
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#about .my-face {
+    transform-style: preserve-3d;
+}
+
+#about .my-face .job {
     position: relative;
-    height: auto;
-    padding: 20px;
-    background: linear-gradient(to bottom, #1e2023, #0c0d0f);
+    bottom: 30px;
+    left: 30px;
+    background-color: #000;
+    display: inline-block;
+    padding: 5px 20px;
+    transform: translateZ(20px);
+    transform-style: preserve-3d;
 }
 
-#footer p {
+#about .my-face .job h1 {
+    font-size: 24px;
+    vertical-align:middle;
+    color: white;
+    transform: translateZ(10px);
+}
+
+#about .projects {
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#about .manifesto {
+    margin: 0 auto;
+    font-size: 13rem;
+    white-space: nowrap;
+}
+
+#about .project-item {
+    background: #000;
+    height: 500px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .project-item img{
+    transform: translateZ(20px);
+}
+
+#about .cyberpunk:hover {
+    background: linear-gradient(to right, #ffc400, #ff9d00);
+}
+
+#about .spotify:hover {
+    background: linear-gradient(to right, rgb(123, 0, 180), rgb(89, 0, 131));
+}
+
+#about .finans:hover {
+    background: linear-gradient(to right, #ffae00, #ffd16e);
+}
+
+#about a.btn-custom {
+    background: white;
+    font-family: "Raleway";
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px;
+    transform: translateZ(20px);
+}
+
+#about a.btn-custom:hover {
+    background: #000;
     color: white !important;
 }
 
-#footer .theme-changer {
-    cursor:pointer;
+#about .cyberpunk a.btn-custom {
+    color: rgb(246, 250, 0);
 }
 
-#footer .theme-menu {
+#about .spotify a.btn-custom {
+    color: rgb(123, 0, 180);
+}
+
+#about .finans a.btn-custom {
+    color: rgb(253, 186, 0);
+}
+
+#redes-sociais {
     position: absolute;
-    padding: 10px 20px;
-    background: #1e2023;
-    border: 8px solid #0c0d0f;
-    border-radius: 12px;
-    top: -60px;
-    left: calc((100vw - 446px) /2);
+    width: 600px;
+    height: 300px;
+    right: 0;
+    top:0;
+}
+
+.redes {
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+    right: 250px;
+    top: 80px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(255,255,255,.2);
+    transition:.4s;
+}
+
+.redes:hover {
+    width: 120px;
+    height: 120px;
+    background: white;
+    cursor: pointer;
+}
+
+.redes h1 {
+    font-family: "Raleway";
+    font-size: 18px;
+    color: white;
+}
+
+.black-letter {
+    color: black !important;
+    font-weight: bolder;
+}
+
+.rede-1 {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.2);
+    top: 40px;
+    left: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede-1:hover, .rede-2:hover, .rede-3:hover {
+    background: white;
+    color: black !important;
+    width: 80px;
+    height: 80px;
+}
+
+.rede-2 {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.2);
+    top: 120px;
+    left: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede-3 {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.2);
+    top: 200px;
+    left: 190px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede-1, .rede-2, .rede-3 {
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    animation: opacity 1s;
+    transition: .4s;
+}
+
+.sub {
+    background-color: black;
+    color: white;
+}
+
+.font-size-18px {
+    font-size: 18px !important;
+}
+
+#contact {
+    height: 100vh;
+}
+
+.contact-btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.4);
+    padding: 5px 20px;
+    color: black;
+    font-family: "Raleway";
+    font-size: 36px;
+    font-weight: bold;
+    transition: .4s;
+    transform-style: preserve-3d;
+}
+
+.contact-btn:hover {
+    color: white;
+    background-color: #000;
+}
+
+.contact-btn span {
+    transform: translateZ(40px);
 }

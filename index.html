@@ -14,127 +14,183 @@ sources:
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/brands/rubi.png" type="image/x-icon">
     <!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 		<![endif]-->
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/intro.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="icons/fontawesome/css/all.css">
-    <title>Bem vindo! - Luiz Felipe Pedrosa Cavalcante</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>My Portfolio - Luiz Felipe Pedrosa Cavalcante</title>
 </head>
 
-<style>
-    body.ametista,
-    body.diamante,
-    body.esmeralda,
-    body.rubelita,
-    body.rubi,
-    body.safira,
-    body.topaz {
-        background: linear-gradient(to bottom, #101215, #16181b) !important;
-    }
-</style>
+<body onclick="return false;" onscroll="return false;">
+    <span id="circle" class="circle d-lg-block d-none"></span>
+    <main>
 
-<body class="rubi" ondragstart="return false">
+        <div id="redes-sociais" class="d-none d-md-block">
+            <div onmouseover="onSocialOver()" onmouseout="onSocialOut()" onclick="onSocialClick()"
+                class="redes floating d-flex align-items-center justify-content-center">
+                <h1 class="social-text">Social</h1>
+            </div>
+            <div class="linkedin floating d-none">
+                <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank" class="rede-1">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="instagram floating d-none">
+                <a href="https://instagram.com/el_lu.fe/" target="_blank" class="rede-2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="github floating d-none">
+                <a href="https://github.com/gitBiohazard" target="_blank" class="rede-3">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
 
-    <main id="main" class="index">
+
+        <div class="social floating d-flex align-items-center justify-content-center">
+            <h1>Home</h1>
+        </div>
+
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 capa" data-anime="left">
-                    <img id="mobileMainFox" src="img/brands/rubi.png" width="100" class="d-inline-block mb-4">
-                    <p class="lead lined">
-                        Seja muito
-                    </p>
-                    <h1>Bem vindo!</h1>
-                    <p class="lead mb-4">
-                        Escolha o idioma:
-                    </p>
-                    <a href="pt-br/principal" class="btn btn-custom d-inline-block">
-                        PT-BR
-                    </a>
-                    <a href="en-us/main" class="btn btn-custom d-inline-block">
-                        EN-US
-                    </a>
+            <div class="row">
+                <div class="col-lg-12 capa align-items-center justify-content-center">
+                    <div>
+                        <h1>Luiz Pedrosa</h1>
+                        <h1>UI-UX designer</h1>
+                        <h1>Front-end developer</h1>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn-custom" onclick="onContactClick()">Contact me</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div onmouseover="onAboutOver()" onmouseout="onAboutOut()" onclick="onAboutClick()" class="about-me floating">
+            <h1 class="button-text">about me</h1>
         </div>
     </main>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 capa mt-4">
-                    <div class="mb-4 d-inline-block">
-                        <div id="theme-menu" class="d-none theme-menu">
-                            <img onclick="changeTheme('ametista')" src="img/brands/ametista.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
-                            <img onclick="changeTheme('diamante')" src="img/brands/diamante.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
-                            <img onclick="changeTheme('esmeralda')" src="img/brands/esmeralda.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
-                            <img onclick="changeTheme('rubelita')" src="img/brands/rubelita.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
-                            <img onclick="changeTheme('rubi')" src="img/brands/rubi.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
-                            <img onclick="changeTheme('safira')" src="img/brands/safira.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
-                            <img onclick="changeTheme('topaz')" src="img/brands/topaz.png" width="50"
-                                class="img-fluid d-block d-md-inline pointer">
+    
+
+    <section id="about" class="d-none">
+        <div onmouseover="onHomeOver()" onmouseout="onHomeOut()" onclick="onHomeClick()" class="back-home floating">
+            <h1 class="button-text-2">back</h1>
+        </div>
+
+        <div id="content" class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="my-3">About me</h1>
+                        <p class="pe-5">
+                            My name is Luiz Felipe and i'm majoring in Information Systems and working as <span
+                                class="sub">
+                                Front-end
+                                Developer
+                            </span>.
+                            <br><br>
+                            I fell into this fantastic world of programming by accident. When I was 14, I tried a few
+                            lines of code and I haven't stopped since.
+                            <br><br>
+                            I studied and practiced for some years the most known and used programming languages, as
+                            well as frameworks. And so, today I have solid knowledge in object-oriented programming,
+                            Data Structure, web development <span class="sub">(with HTML, CSS and JavaScript)</span> and
+                            mobile development <span class="sub">(with
+                                Ionic and Angular)</span>.
+                            <br><br>
+                            Recently, working as a <span class="sub">programming instructor</span>, I had the
+                            opportunity to share my knowledge
+                            with others by teaching some of what I know.
+                            <br><br>
+                            Nowadays, I work as a front-end developer, transforming visual identities and creating
+                            unique experiences for all kind of people through the latest technologies <span class="sub">
+                                (like Bootstrap 5
+                                and React.js)
+                            </span>.
+                        </p>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <div class="my-face" data-rellax-speed="-6" data-tilt>
+                            <img src="img/Yo.png" width="100%">
+                            <div class="job shadow">
+                                <h1 class="mt-2 shadow">Front-end dev</h1>
+                            </div>
+                        </div>
+                        <p class="ps-3 font-size-18px">
+                            "I'm just someone who is passionate about my family, my art and my work."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="projects position-relative">
+                        <h1 class="manifesto">MY PROJECTS</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div onmouseover="onProjectOver('cyberpunk')" onmouseout="onProjectOut('cyberpunk')"
+                                    class="col-lg mt-4 me-5 project-item cyberpunk p-5 shadow" data-tilt>
+                                    <img src="img/Cyberpunk.png" width="100%">
+                                    <a id="cyberpunk-btn" target="_blank" href="projects/Cyberpunk/index" class="btn-custom shadow d-none">Check it out!</a>
+                                </div>
+                                <div onmouseover="onProjectOver('spotify')" onmouseout="onProjectOut('spotify')"
+                                    class="col-lg mt-4 me-5 project-item spotify p-5 shadow" data-tilt>
+                                    <img src="img/Spotify.svg" width="100%">
+                                    <a id="spotify-btn" target="_blank" href="projects/Spotify/index" class="btn-custom shadow d-none">Check it out!</a>
+                                </div>
+                                <div onmouseover="onProjectOver('finans')" onmouseout="onProjectOut('finans')"
+                                    class="col-lg mt-4 project-item finans p-5 shadow" data-tilt>
+                                    <img src="img/Finans.png" width="100%">
+                                    <a id="finans-btn" target="_blank" href="projects/Finans/index" class="btn-custom shadow d-none">Check it out!</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <span>
-                        <button id="theme-trigger" class="btn btn-custom d-inline-block mb-4" onclick="changeMenu()">
-                            Mudar tema
-                        </button>
-                    </span>
-                    <p class="lead">
-                        Copyright 2020 © Lufe Corp. | luizfelipecav@outlook.com
-                    </p>
+                </div>
+            </div>
+            <div id="contact" class="footer py-5">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <h1>Lets talk?</h1>
+                            <p class="mt-5">
+                                Call me at +55 11 940419049 <br>
+                                Send me a message at luizfelipecav@outlook.com <br><br>
+                                or search for me on my social networks:
+                            </p>
+                            <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank" class="contact-btn"
+                                data-tilt>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://instagram.com/el_lu.fe/" target="_blank" class="contact-btn ms-3"
+                                data-tilt>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://github.com/gitBiohazard" target="_blank" class="contact-btn ms-3"
+                                data-tilt>
+                                <span>gitHub</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
     <!-- JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/intro.js"></script>
-
-    <!-- Favorite color -->
-    <script>
-
-        let favoriteColor = localStorage.getItem('favoriteColor');
-        if (favoriteColor != null) {
-            const holder = document.querySelector('body');
-            const mainFox = document.querySelector('#mainFox');
-            const mobileMainFox = document.querySelector('#mobileMainFox');
-            holder.classList.remove('ametista', 'diamante', 'esmeralda', 'rubelita', 'rubi', 'safira', 'topaz');
-            holder.classList.add(favoriteColor);
-            mobileMainFox.src = "img/brands/" + favoriteColor + ".png";
-            localStorage.setItem('favoriteColor', favoriteColor);
-        }
-
-        function changeMenu() {
-            const menu = document.querySelector('#theme-menu');
-            menu.classList.toggle('d-none');
-
-        }
-
-        function changeTheme(color) {
-            const holder = document.querySelector('body');
-            const mainFox = document.querySelector('#mainFox');
-            const mobileMainFox = document.querySelector('#mobileMainFox');
-            holder.classList.remove('ametista', 'diamante', 'esmeralda', 'rubelita', 'rubi', 'safira', 'topaz');
-            holder.classList.add(color);
-            mobileMainFox.src = "img/brands/" + color + ".png";
-            localStorage.setItem('favoriteColor', color);
-            changeMenu();
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
