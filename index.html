@@ -1,10 +1,11 @@
-<!-- DevSpec v2 
+<!-- Portfólio
 @author Luiz Felipe Pedrosa Cavalcante
 gitHub - @gitBiohazard
 sources:
     Bootstrap v5
+    Locomotive Scroll
+    hover.css
     html5shiv.js
-    Fontawesome
 -->
 
 <!DOCTYPE html>
@@ -13,186 +14,260 @@ sources:
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 		<![endif]-->
 
     <!-- CSS -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="icons/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/locomotive.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>My Portfolio - Luiz Felipe Pedrosa Cavalcante</title>
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>gitBiohazard - Felipe Pedrosa</title>
 </head>
 
-<body>
-    <span id="circle" class="circle d-lg-block d-none"></span>
-    <main class="position-relative">
-        <div id="redes-sociais" class="d-none d-md-block">
-            <div onmouseover="onSocialOver()" onmouseout="onSocialOut()" onclick="onSocialClick()"
-                class="redes floating d-flex align-items-center justify-content-center">
-                <h1 class="social-text">Social</h1>
-            </div>
-            <div class="linkedin floating d-none">
-                <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank" class="rede-1">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-            <div class="instagram floating d-none">
-                <a href="https://instagram.com/el_lu.fe/" target="_blank" class="rede-2">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <div class="github floating d-none">
-                <a href="https://github.com/gitBiohazard" target="_blank" class="rede-3">
-                    <i class="fab fa-github"></i>
-                </a>
+<body data-scroll-container>
+    <div class="loading">
+        <div>
+            <img src="img/loading.png" width="200">
+            <h1>loading</h1>
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
+    </div>
+    <div id="desktop" class="d-xl-block d-none">
+        <noscript>
+            <h1>
+                JavaScript needed to view this content, try again when the JavaScript is enabled.
+            </h1>
+        </noscript>
+        <section id="capa" data-scroll-section ondragstart="return false;">
+            <video loop muted autoplay poster="2" class="fullscreen-bg__video">
+                <source src="img/bg.mp4" type="video/mp4">
+            </video>
+            <h1 data-scroll data-scroll-speed="-3">
+                <span>Felipe Pedrosa</span><br>
+                <span>UI-UX designer</span><br>
+                <span>Front-end developer</span>
+            </h1>
+            <img data-scroll data-scroll-speed="2" src="img/grass-back.png" class="back">
+            <img data-scroll data-scroll-speed="3" src="img/grass-front.png" class="front">
+            <img data-scroll data-scroll-speed="1" src="img/child.png" class="child d-xl-block d-none" data-anime="top">
+            <img data-scroll data-scroll-speed="1" src="img/dog.png" class="dog d-xl-block d-none" data-anime="top">
+            <img data-scroll data-scroll-speed="1" src="img/house.png" class="house d-xl-block d-none">
+            <img data-scroll data-scroll-speed="1" src="img/tree.png" class="tree d-xl-block d-none">
+
+            <div class="mouse" data-scroll data-scroll-speed="2">
+                <span>let me tell you my story</span>
+                <div class="scroll"></div>
+            </div>
+        </section>
 
 
-        <div class="social floating d-flex align-items-center justify-content-center">
-            <h1>Home</h1>
-        </div>
+        <section id="content" data-scroll-section data-scroll-speed="3">
+            <h1>
+                <span>My name is Luiz Felipe and i'm</span><br>
+                <span>majoring in Information Systems</span><br>
+                <span>and working as Front-end</span><br>
+                <span>Developer.</span>
+            </h1>
+            <img data-scroll data-scroll-speed="3" src="img/grass-white.png" class="grass">
+            <img data-scroll data-scroll-speed="2" src="img/cat.png" class="cat">
+        </section>
 
-        <div class="container">
+        <section id="mystart" data-scroll-section data-scroll-speed="2">
+            <h1 data-scroll data-scroll-speed="1">
+                <span>I fell into this fantastic world</span><br>
+                <span>of programming by accident. </span><br>
+                <span>When I was 14 I tried a few </span><br>
+                <span>lines of code and I haven't</span><br>
+                <span>stopped since.</span>
+            </h1>
+            <img data-scroll data-scroll-speed="2" src="img/grass-black.png" class="grass">
+            <img data-scroll data-scroll-speed="3" src="img/hand.png" class="hand">
+        </section>
+
+        <section id="nowadays" data-scroll-section data-scroll-speed="3">
             <div class="row">
-                <div class="col-lg-12 capa align-items-center justify-content-center">
-                    <div>
-                        <h1>Luiz Pedrosa</h1>
-                        <h1>UI-UX designer</h1>
-                        <h1>Front-end developer</h1>
-                        <div class="d-flex justify-content-center mt-5">
-                            <button class="btn-custom" onclick="onContactClick()">Contact me</button>
+                <div class="col-6">
+                    <p data-scroll data-scroll-speed="1">
+                        I studied and practiced for some years the most known and used programming languages, as well as
+                        frameworks. And so, today I have solid knowledge in object-oriented programming, Data Structure,
+                        web
+                        development (with HTML, CSS and JavaScript) and mobile development (with Ionic and Angular).
+                        <br><br>
+
+                        Recently, working as a programming instructor, I had the opportunity to share my knowledge with
+                        others
+                        by teaching some of what I know. <br><br>
+
+                        Nowadays, I work as a front-end developer, transforming visual identities and creating unique
+                        experiences for all kind of people through the latest technologies (like Bootstrap 5 and
+                        React.js).
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img data-scroll data-scroll-speed="2" src="img/man.png" class="man">
+                    <img data-scroll data-scroll-speed="3" src="img/grass-white.png" class="grass">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" data-scroll-section data-scroll-speed="3">
+            <div>
+                <h1 class="mt-4">
+                    my recent <span data-pet>projects</span>
+                </h1>
+                <div class="row mt-5">
+                    <div class="col d-flex justify-content-between">
+                        <div class="project shadow cyberpunk hvr-bob" data-project="cyberpunk">
+                            <img src="img/Cyberpunk.png" width="250">
+                            <a href="projects/Cyberpunk/index" target="_blank" class="d-none"
+                                data-button="cyberpunk">Check it out!</a>
+                        </div>
+                        <div class="project shadow spotify hvr-bob" data-project="spotify">
+                            <img src="img/Spotify.svg" width="250">
+                            <a href="projects/Spotify/index" target="_blank" class="d-none" data-button="spotify">Check
+                                it out!</a>
+                        </div>
+                        <div class="project shadow finans hvr-bob" data-project="finans">
+                            <img src="img/finans.png" width="200">
+                            <a href="projects/Finans/index" target="_blank" class="d-none" data-button="finans">Check it
+                                out!</a>
+                        </div>
+                        <div class="project shadow hvr-bob" data-project="mycat" onmouseover="petAppear()"
+                            onmouseout="petAppear()">
+                            <img src="img/torresmo.jpeg" width="100%">
+                            <a href="https://instagram.com/el_lu.fe" target="_blank" class="d-none"
+                                data-button="mycat">Check it out!</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <img src="img/grass-front.png" data-scroll data-scroll-speed="3" class="ground">
+        </section>
 
-        <div onmouseover="onAboutOver()" onmouseout="onAboutOut()" onclick="onAboutClick()" class="about-me floating">
-            <h1 class="button-text">about me</h1>
-        </div>
-    </main>
+        <section id="contact" data-scroll-section data-scroll-speed="3">
+            <h1 class="mt-5">Let's talk?</h1>
+            <p>
+                Call me at +55 11 940419049 <br>
+                Send me a message at luizfelipecav@outlook.com <br><br>
 
-    
+                or search for me on my social networks:
+            </p>
+            <a href="https://instagram.com/el_lu.fe" target="_blank">instagram</a>
+            <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank">linkedIn</a>
+            <a href="https://github.com/gitBiohazard" target="_blank">gitHub</a>
+            <img src="img/grass-white.png" class="grass">
+            <img src="img/favicon.png" width="300" class="tree">
+        </section>
+    </div>
+    <div id="mobile" class="d-xl-none">
+        <section id="section1">
+            <h1 data-anime="bottom">
+                <span>Felipe Pedrosa</span> <br>
+                UI-UX designer <br>
+                Front-end developer
+            </h1>
+            <img src="img/grass-back.png" class="back">
+            <img src="img/grass-front.png" class="front">
+            <img src="img/child.png" class="child">
+            <img src="img/dog.png" class="dog">
+            <img src="img/tree.png" class="tree">
+            <img src="img/house.png" class="house">
+        </section>
 
-    <section id="about" class="d-none">
-        <div onmouseover="onHomeOver()" onmouseout="onHomeOut()" onclick="onHomeClick()" class="back-home floating">
-            <h1 class="button-text-2">back</h1>
-        </div>
+        <section id="section2">
+            <h1>
+                <span data-anime="bottom">My name is Luiz Felipe and i'm</span><br>
+                <span data-anime="bottom">majoring in Information Systems</span><br>
+                <span data-anime="bottom">and working as Front-end</span><br>
+                <span data-anime="bottom">Developer.</span>
+            </h1>
+            <img src="img/grass-white.png" class="grass">
+            <img src="img/cat.png" class="cat" data-anime="bottom">
+        </section>
 
-        <div id="content" class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h1 class="my-3">About me</h1>
-                        <p class="pe-5">
-                            My name is Luiz Felipe and i'm majoring in Information Systems and working as <span
-                                class="sub">
-                                Front-end
-                                Developer
-                            </span>.
-                            <br><br>
-                            I fell into this fantastic world of programming by accident. When I was 14, I tried a few
-                            lines of code and I haven't stopped since.
-                            <br><br>
-                            I studied and practiced for some years the most known and used programming languages, as
-                            well as frameworks. And so, today I have solid knowledge in object-oriented programming,
-                            Data Structure, web development <span class="sub">(with HTML, CSS and JavaScript)</span> and
-                            mobile development <span class="sub">(with
-                                Ionic and Angular)</span>.
-                            <br><br>
-                            Recently, working as a <span class="sub">programming instructor</span>, I had the
-                            opportunity to share my knowledge
-                            with others by teaching some of what I know.
-                            <br><br>
-                            Nowadays, I work as a front-end developer, transforming visual identities and creating
-                            unique experiences for all kind of people through the latest technologies <span class="sub">
-                                (like Bootstrap 5
-                                and React.js)
-                            </span>.
-                        </p>
-                    </div>
-                    <div class="col-md-4 position-relative">
-                        <div class="my-face" data-rellax-speed="-6" data-tilt>
-                            <img src="img/Yo.png" width="100%">
-                            <div class="job shadow">
-                                <h1 class="mt-2 shadow">Front-end dev</h1>
-                            </div>
-                        </div>
-                        <p class="ps-3 font-size-18px">
-                            "I'm just someone who is passionate about my family, my art and my work."
-                        </p>
-                    </div>
+        <section id="section3">
+            <h1>
+                <span data-anime="bottom">I fell into this fantastic world</span><br>
+                <span data-anime="bottom">of programming by accident.</span><br>
+                <span data-anime="bottom">When I was 14 I tried a few</span><br>
+                <span data-anime="bottom">lines of code and I haven't</span><br>
+                <span data-anime="bottom">stopped since.</span>
+            </h1>
+            <img src="img/hand.png" class="hand" data-anime="bottom">
+            <img src="img/grass-black.png" class="grass">
+        </section>
+
+        <section id="section4">
+            <h1 data-anime="bottom">
+                I studied and practiced for some years the most known and used programming languages, as well as
+                frameworks. And so, today I have solid knowledge in object-oriented programming, Data Structure, web
+                development (with HTML, CSS and JavaScript) and mobile development (with Ionic and Angular).
+                <br><br>
+                Recently, working as a programming instructor, I had the opportunity to share my knowledge with others
+                by teaching some of what I know.
+                <br><br>
+                Nowadays, I work as a front-end developer, transforming visual identities and creating unique
+                experiences for all kind of people through the latest technologies (like Bootstrap 5 and React.js).
+            </h1>
+            <img src="img/grass-white.png" class="grass">
+            <img src="img/man.png" class="man" data-anime="bottom">
+        </section>
+
+        <section id="section5">
+            <h1 data-anime="bottom">MY PROJECTS</h1>
+            <div class="padBreaking">
+                <div class="project cyberpunk" data-anime="bottom" target="_blank"
+                    onclick="window.open('projects/Cyberpunk/index')">
+                    <img src="img/Cyberpunk.png" width="200">
                 </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-12">
-                    <div class="projects position-relative">
-                        <h1 class="manifesto">MY PROJECTS</h1>
-                        <div class="container">
-                            <div class="row">
-                                <div onmouseover="onProjectOver('cyberpunk')" onmouseout="onProjectOut('cyberpunk')"
-                                    class="col-lg mt-4 me-5 project-item cyberpunk p-5 shadow" data-tilt>
-                                    <img src="img/Cyberpunk.png" width="100%">
-                                    <a id="cyberpunk-btn" target="_blank" href="projects/Cyberpunk/index" class="btn-custom shadow d-none">Check it out!</a>
-                                </div>
-                                <div onmouseover="onProjectOver('spotify')" onmouseout="onProjectOut('spotify')"
-                                    class="col-lg mt-4 me-5 project-item spotify p-5 shadow" data-tilt>
-                                    <img src="img/Spotify.svg" width="100%">
-                                    <a id="spotify-btn" target="_blank" href="projects/Spotify/index" class="btn-custom shadow d-none">Check it out!</a>
-                                </div>
-                                <div onmouseover="onProjectOver('finans')" onmouseout="onProjectOut('finans')"
-                                    class="col-lg mt-4 project-item finans p-5 shadow" data-tilt>
-                                    <img src="img/Finans.png" width="100%">
-                                    <a id="finans-btn" target="_blank" href="projects/Finans/index" class="btn-custom shadow d-none">Check it out!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project spotify" data-anime="bottom" target="_blank"
+                    onclick="window.open('projects/Spotify/index')">
+                    <img src="img/spotify.svg" width="200">
                 </div>
-            </div>
-            <div id="contact" class="footer py-5">
-                <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-md-12">
-                            <h1>Lets talk?</h1>
-                            <p class="mt-5">
-                                Call me at +55 11 940419049 <br>
-                                Send me a message at luizfelipecav@outlook.com <br><br>
-                                or search for me on my social networks:
-                            </p>
-                            <div class="mobile-adjust">
-                                <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank" class="contact-btn mt-3"
-                                data-tilt>
-                                <span>LinkedIn</span>
-                                </a>
-                                <a href="https://instagram.com/el_lu.fe/" target="_blank" class="contact-btn ms-3 mt-3"
-                                    data-tilt>
-                                    <span>Instagram</span>
-                                </a>
-                                <a href="https://github.com/gitBiohazard" target="_blank" class="contact-btn ms-3 mt-3"
-                                    data-tilt>
-                                    <span>gitHub</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project finans" data-anime="bottom" target="_blank"
+                    onclick="window.open('projects/Finans/index')">
+                    <img src="img/Finans.png" width="200">
                 </div>
+                <div class="project torresmo d-none d-lg-block" data-anime="bottom" target="_blank"
+                    onclick="window.open('https://instagram.com/el_lu.fe')">
+                    <img src="img/torresmo.jpeg" width="100%">
+                </div>
+                <img src="img/grass-black.png" class="grass">
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="section6">
+            <h1 data-anime="bottom">Let's talk</h1>
+            <p data-anime="bottom">
+                Call me at +55 11 940419049 <br>
+                Send me a message at luizfelipecav@outlook.com <br><br>
+
+                or search for me on my social networks:
+            </p>
+            <h1 data-anime="bottom">
+                <a href="https://instagram.com/el_lu.fe" target="_blank">instagram</a>
+                <a href="https://www.linkedin.com/in/lufe-pedrosa/" target="_blank">linkedIn</a>
+                <a href="https://github.com/gitBiohazard" target="_blank">gitHub</a>
+            </h1>
+            <img src="img/grass-white.png" class="grass">
+            <img src="img/favicon.png" class="tree" data-anime="bottom">
+        </section>
+    </div>
+
 
     <!-- JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="js/cursor.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/locomotive.min.js"></script>
 </body>
 
 </html>
