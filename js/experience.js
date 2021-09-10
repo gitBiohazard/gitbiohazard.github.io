@@ -6,16 +6,18 @@
 
 // Locomotive Scroll
 window.addEventListener('load', () => {
-    let device = window.innerWidth;
-    if (device > 1025) {
-        (function () {
-            var scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true
-            });
-        })();
-    }
-    loadContent();
+    setTimeout(() => {
+        let device = window.innerWidth;
+        if (device > 1025) {
+            (function () {
+                new LocomotiveScroll({
+                    el: document.querySelector('[data-scroll-container]'),
+                    smooth: true
+                });
+            })();
+        }
+        loadContent();
+    }, 2000);
 })
 
 // Smooth jump
@@ -69,7 +71,11 @@ function petAppear() {
 
 // Load Content
 
+const pageBody = document.querySelector('body');
+pageBody.style.overflow = "hidden";
+
 function loadContent() {
     let load = document.querySelector('.loading');
     load.classList.add('d-none');
+    pageBody.style.overflow = "auto";
 }

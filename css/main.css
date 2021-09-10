@@ -158,6 +158,10 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .floating {  
     animation-name: floating;
     animation-duration: 3s;
