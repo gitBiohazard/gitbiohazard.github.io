@@ -488,7 +488,7 @@ noscript h1 {
 
 #projects .cyberpunk,
 #projects .spotify,
-#projects .finans {
+#projects .atech {
     margin-right: 20px;
     background: linear-gradient(45deg, #dbdbdb, #929292);
     transition: 1s;
@@ -502,8 +502,8 @@ noscript h1 {
     background: linear-gradient(45deg, #780096, #c300ff);
 }
 
-#projects .finans:hover {
-    background: linear-gradient(45deg, #00c77b, #00c451);
+#projects .atech:hover {
+    background: linear-gradient(45deg, #5e00e0, #00c3ff);
 }
 
 #projects a {
@@ -818,7 +818,7 @@ noscript h1 {
 
 #section5 .cyberpunk,
 #section5 .spotify,
-#section5 .finans {
+#section5 .atech {
     margin-bottom: 20px;
     background: linear-gradient(45deg, #dbdbdb, #929292);
     transition: 1s;
@@ -832,8 +832,8 @@ noscript h1 {
     background: linear-gradient(45deg, #780096, #c300ff);
 }
 
-#section5 .finans:hover {
-    background: linear-gradient(45deg, #00c77b, #00c451);
+#section5 .atech:hover {
+    background: linear-gradient(45deg, #5e00e0, #00c3ff);
 }
 
 #section5 .grass {

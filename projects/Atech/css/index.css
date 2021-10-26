@@ -1,0 +1,854 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #capa, #about, #howitworks, #projects {
+        overflow: hidden;
+    }
+
+    #capa .hero {
+        width: 300px !important;
+        transform: perspective(1000px) rotateX(65deg) !important;
+    }
+
+    #about {
+        height: auto !important;
+    }
+
+    #about h1 {
+        font-size: 36px !important;
+    }
+
+    #about .hero {
+        position: relative !important;
+        width: 300px !important;
+        transform: perspective(1000px) rotate(-20deg) !important;
+        bottom: -50px !important;
+    }
+
+    #howitworks {
+        padding: 10px !important;
+        height: 800px !important;
+    }
+
+    #howitworks h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #howitworks .hero {
+        width: 200px !important;
+        transform: perspective(1000px) rotateX(60deg) !important;
+        bottom: -200px !important;
+        left: calc(50% - 100px) !important;
+    }
+
+    #howitworks .hero:nth-child(4) {
+        width: 175px !important;
+        bottom: -230px !important;
+        left: calc(50% - 87.5px) !important;
+    }
+
+    #howitworks .hero:nth-child(5) {
+        width: 150px !important;
+        bottom: -260px !important;
+        left: calc(50% - 75px) !important;
+    }
+
+    #projects {
+        padding: 10px !important;
+        height: 949px !important;
+    }
+
+    #projects h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #projects .hero:nth-child(1) {
+        top: 0 !important;
+        left: -190px !important;
+    }
+
+    #projects .hero:nth-child(2) {
+        top: 20px !important;
+        left: -110px !important;
+    }
+
+    #projects .hero:nth-child(3) {
+        top: 40px !important;
+        left: -40px !important;
+    }
+
+    #projects .hero:nth-child(4) {
+        top: 60px !important;
+        left: 20px !important;
+    }
+
+    footer {
+        text-align: center !important;
+        height: auto !important;
+        padding-bottom: 50px !important;
+    }
+
+    footer .col-xl-3  {
+        height: 200px !important;
+        justify-content: center !important;
+
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#capa, #about, #howitworks, #projects {
+        overflow: hidden;
+    }
+
+    #capa .hero {
+        width: 300px !important;
+        transform: perspective(1000px) rotateX(65deg) !important;
+    }
+
+    #about {
+        height: auto !important;
+    }
+
+    #about h1 {
+        font-size: 36px !important;
+    }
+
+    #about .hero {
+        position: relative !important;
+        width: 300px !important;
+        transform: perspective(1000px) rotate(-20deg) !important;
+        bottom: -50px !important;
+    }
+
+    #howitworks {
+        padding: 10px !important;
+        height: 800px !important;
+    }
+
+    #howitworks h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #howitworks .hero {
+        width: 200px !important;
+        transform: perspective(1000px) rotateX(60deg) !important;
+        bottom: -200px !important;
+        left: calc(50% - 100px) !important;
+    }
+
+    #howitworks .hero:nth-child(4) {
+        width: 175px !important;
+        bottom: -230px !important;
+        left: calc(50% - 87.5px) !important;
+    }
+
+    #howitworks .hero:nth-child(5) {
+        width: 150px !important;
+        bottom: -260px !important;
+        left: calc(50% - 75px) !important;
+    }
+
+    #projects {
+        padding: 10px !important;
+        height: 949px !important;
+    }
+
+    #projects h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #projects .hero:nth-child(1) {
+        top: 0 !important;
+        left: -190px !important;
+    }
+
+    #projects .hero:nth-child(2) {
+        top: 20px !important;
+        left: -110px !important;
+    }
+
+    #projects .hero:nth-child(3) {
+        top: 40px !important;
+        left: -40px !important;
+    }
+
+    #projects .hero:nth-child(4) {
+        top: 60px !important;
+        left: 20px !important;
+    }
+
+    footer {
+        text-align: center !important;
+        height: auto !important;
+        padding-bottom: 50px !important;
+    }
+
+    footer .col-xl-3  {
+        height: 200px !important;
+        justify-content: center !important;
+
+    }	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#capa, #about, #howitworks, #projects {
+        overflow: hidden;
+    }
+
+    #capa .hero {
+        width: 300px !important;
+        transform: perspective(1000px) rotateX(65deg) !important;
+    }
+
+    #about {
+        height: auto !important;
+    }
+
+    #about h1 {
+        font-size: 36px !important;
+    }
+
+    #about .hero {
+        position: relative !important;
+        width: 300px !important;
+        transform: perspective(1000px) rotate(-20deg) !important;
+        bottom: -50px !important;
+    }
+
+    #howitworks {
+        padding: 10px !important;
+        height: 800px !important;
+    }
+
+    #howitworks h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #howitworks .hero {
+        width: 200px !important;
+        transform: perspective(1000px) rotateX(60deg) !important;
+        bottom: -200px !important;
+        left: calc(50% - 100px) !important;
+    }
+
+    #howitworks .hero:nth-child(4) {
+        width: 175px !important;
+        bottom: -230px !important;
+        left: calc(50% - 87.5px) !important;
+    }
+
+    #howitworks .hero:nth-child(5) {
+        width: 150px !important;
+        bottom: -260px !important;
+        left: calc(50% - 75px) !important;
+    }
+
+    #projects {
+        padding: 10px !important;
+        height: 949px !important;
+    }
+
+    #projects h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #projects .hero:nth-child(1) {
+        top: 0 !important;
+        left: -190px !important;
+    }
+
+    #projects .hero:nth-child(2) {
+        top: 20px !important;
+        left: -110px !important;
+    }
+
+    #projects .hero:nth-child(3) {
+        top: 40px !important;
+        left: -40px !important;
+    }
+
+    #projects .hero:nth-child(4) {
+        top: 60px !important;
+        left: 20px !important;
+    }
+
+    footer {
+        text-align: center !important;
+        height: auto !important;
+        padding-bottom: 50px !important;
+    }
+
+    footer .col-xl-3  {
+        height: 200px !important;
+        justify-content: center !important;
+
+    }	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#capa, #about, #howitworks, #projects {
+        overflow: hidden;
+    }
+
+    #capa .hero {
+        width: 300px !important;
+        transform: perspective(1000px) rotateX(65deg) !important;
+    }
+
+    #about {
+        height: auto !important;
+    }
+
+    #about h1 {
+        font-size: 36px !important;
+    }
+
+    #about .hero {
+        position: relative !important;
+        width: 300px !important;
+        transform: perspective(1000px) rotate(-20deg) !important;
+        bottom: -50px !important;
+    }
+
+    #howitworks {
+        padding: 10px !important;
+        height: 800px !important;
+    }
+
+    #howitworks h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #howitworks .hero {
+        width: 200px !important;
+        transform: perspective(1000px) rotateX(60deg) !important;
+        bottom: -200px !important;
+        left: calc(50% - 100px) !important;
+    }
+
+    #howitworks .hero:nth-child(4) {
+        width: 175px !important;
+        bottom: -230px !important;
+        left: calc(50% - 87.5px) !important;
+    }
+
+    #howitworks .hero:nth-child(5) {
+        width: 150px !important;
+        bottom: -260px !important;
+        left: calc(50% - 75px) !important;
+    }
+
+    #projects {
+        padding: 10px !important;
+        height: 949px !important;
+    }
+
+    #projects h1 {
+        margin-top: 30px !important;
+        font-size: 36px !important;
+    }
+
+    #projects .hero:nth-child(1) {
+        top: 0 !important;
+        left: -190px !important;
+    }
+
+    #projects .hero:nth-child(2) {
+        top: 20px !important;
+        left: -110px !important;
+    }
+
+    #projects .hero:nth-child(3) {
+        top: 40px !important;
+        left: -40px !important;
+    }
+
+    #projects .hero:nth-child(4) {
+        top: 60px !important;
+        left: 20px !important;
+    }
+
+    footer {
+        text-align: center !important;
+        height: auto !important;
+        padding-bottom: 50px !important;
+    }
+
+    footer .col-xl-3  {
+        height: 200px !important;
+        justify-content: center !important;
+
+    }	
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Universal */
+
+body {
+    background: black;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 70px;
+    z-index: 1031;
+    position: fixed;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Raleway';
+    background: -webkit-linear-gradient(45deg, #5e00e0, #00c3ff);
+    margin-right: 40px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header ul {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header ul li a {
+    font-family: 'Raleway';
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .5s;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+header .login {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background: transparent;
+    text-decoration: 0;
+    transition: .4s;
+    float: right;
+    font-size: 14px;
+    font-family: 'Raleway';
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+header .login:hover {
+    background: rgba(107, 0, 179,.4);
+}
+
+/* Capa */
+
+#capa {
+    overflow: visible;
+}
+
+#capa .col {
+    height: 700px;
+}
+
+#capa .logo {
+    font-size: 20px !important;
+    font-family: 'Raleway';
+    background: -webkit-linear-gradient(45deg, #5e00e0, #00c3ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#capa .content {
+    margin-top: -50px;
+    text-align: center;
+}
+
+#capa .content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 84px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
+
+#capa .content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #5e00e0;
+    margin-bottom: 0;
+    animation: neon 3s infinite;
+}
+
+#capa .content p.desc {
+    color: #808080;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#capa .content a {
+    margin-top: 50px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 45px #5e00e0;
+    background:linear-gradient(45deg, #5e00e0, #00c3ff);
+    text-decoration: 0;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: .4s;
+}
+
+#capa .content a:hover {
+    background: linear-gradient(45deg, #5e00e0, #e00070);
+    box-shadow: 0 0 15px #bb00e0!important;
+}
+
+#capa .hero {
+    transform: perspective(1000px) rotateX(70deg);
+    box-shadow: 0 0 245px #5e00e0;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 6;
+    bottom: -100px;
+}
+
+@keyframes neon {
+    from {
+        color:  #5e00e0;
+    }
+
+    50% {
+        color: #00c3ff;
+    }
+
+    to {
+        color: #5e00e0;
+    }
+}
+
+
+/* About */
+
+#about {
+    overflow: hidden;
+    position: relative;
+    height: 700px;
+    background: linear-gradient(45deg, #5e00e0, #00c3ff);
+}
+
+#about .separator {
+    width: 120%;
+    top: -300px;
+    left: -10px;
+    position: absolute;
+    height: 500px;
+    border-radius: 60px;
+    background: black;
+    transform: rotate(-5deg);
+}
+
+#about h1 {
+    margin-top: 300px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 60px;
+    color: white;;
+}
+
+#about p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#about .hero {
+    transform: perspective(1000px) rotateY(-45deg) rotate(-20deg);
+    box-shadow: 0 100px 245px #2b0066;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 6;
+    bottom: 100px;
+}
+
+/* How it works */
+
+#howitworks {
+    position: relative;
+    background: black;
+    height: 700px;
+    border-top: 2px solid rgba(255, 255, 255, .2);
+}
+
+#howitworks .col-xl-6 {
+    position: relative;
+}
+
+#howitworks .hero {
+    transform: perspective(1000px) rotateY(-45deg) rotate(90deg);
+    box-shadow: 0 0 245px #2b0066;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 6;
+}
+
+#howitworks .hero:nth-child(1) {
+    position: absolute;
+    top: 180px;
+    left: -100px;
+}
+
+#howitworks .hero:nth-child(2) {
+    position: absolute;
+    top: 280px;
+    left: 0px;
+}
+
+#howitworks .hero:nth-child(3) {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+
+#howitworks h1 {
+    margin-top: 200px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+#howitworks p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+#howitworks a {
+    margin-top: 50px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 45px #5e00e0;
+    background:linear-gradient(45deg, #5e00e0, #00c3ff);
+    text-decoration: 0;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: .4s;
+}
+
+#howitworks a:hover {
+    background: linear-gradient(45deg, #5e00e0, #e00070);
+    box-shadow: 0 0 15px #bb00e0!important;
+}
+
+/* Projects */
+
+#projects {
+    position: relative;
+    background: black;
+    height: 700px;
+}
+
+#projects .col-xl-6 {
+    position: relative;
+}
+
+#projects h1 {
+    margin-top: 200px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+}
+
+#projects p {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+#projects .cards {
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+
+#projects .hero {
+    transform: perspective(1000px) rotateY(-45deg) rotate(90deg);
+    box-shadow: 0 0 245px #2b0066;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 6;
+}
+
+#projects .hero:nth-child(1) {
+    position: absolute;
+    top: 180px;
+    z-index: 6;
+    left: -100px;
+}
+
+#projects .hero:nth-child(2) {
+    position: absolute;
+    top: 180px;
+    z-index: 5;
+    left: 0px;
+}
+
+#projects .hero:nth-child(3) {
+    position: absolute;
+    top: 180px;
+    z-index: 4;
+    left: 100px;
+}
+
+#projects .hero:nth-child(4) {
+    position: absolute;
+    top: 180px;
+    z-index: 3;
+    left: 200px;
+}
+
+#projects a {
+    margin-top: 50px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 45px #5e00e0;
+    background:linear-gradient(45deg, #5e00e0, #00c3ff);
+    text-decoration: 0;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: .4s;
+}
+
+#projects a:hover {
+    background: linear-gradient(45deg, #5e00e0, #e00070);
+    box-shadow: 0 0 15px #bb00e0!important;
+}
+
+/* Footer */
+
+footer {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to bottom, #141414, #0c0c0c);
+}
+
+footer .separator {
+    width: 120%;
+    top: -400px;
+    right: -10px;
+    position: absolute;
+    height: 500px;
+    border-radius: 60px;
+    background: black;
+    transform: rotate(4deg);
+}
+
+footer .col-xl-3 {
+    height: 400px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+footer h1 {
+    margin-top: 200px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+}
+
+footer ul li a {
+    font-family: 'Raleway';
+    text-decoration: none;
+    color: #bbbbbb;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .5s;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer p {
+    padding: 10px;
+    margin: 0;
+    color: #bbbbbb;
+}
+
+/* Animations */
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 25px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
