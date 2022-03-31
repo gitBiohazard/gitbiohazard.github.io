@@ -1,0 +1,208 @@
+<!-- 
+@author Luiz Felipe Pedrosa Cavalcante
+gitHub - @gitBiohazard
+sources:
+    Bootstrap v5
+    html5shiv.js
+    SmoothScroll.js
+    GSAP v3.9.1
+    Snackbar W3C
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/snackbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Weddings Lore</title>
+</head>
+
+<body>
+    <div id="snackbar">Links disabled in preview</div>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__nav__link">
+                    <h2 class="header__nav__logo">WL</h2>
+                </a>
+                <a href="#" class="header__nav__link">
+                    <h2 class="header__nav__menu">Menu</h2>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 vh-100 d-flex flex-wrap align-content-center justify-content-center text-center">
+                    <div class="main__box">
+                        <h1 class="main__box__disclaimer">Weddings Lore</h1>
+                        <p class="main__box__description">45 years rowing in the same direction</p>
+                        <a href="#" class="main__box__call">Discover ↘</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="description">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="description__box text-center">
+                        <h1 class="description__box__title">Make your dreams <br> come true</h1>
+                        <div class="description__box__separator"></div>
+                        <p class="description__box__description">
+                            Have the wedding of your dreams without worrying about
+                            anything. Leave it to someone who knows. Our team has been making dreams come true for 45
+                            years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nice">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="nice__title">French Weddings</h1>
+                    <div class="nice__separator"></div>
+                    <p class="nice__description">
+                        Getting married in France is a dream for many people, whether it be under the stunning Alpine
+                        peaks or amongst the vineyards and lavender fields of Provence. However, the logistics of
+                        organising a wedding can be stressful enough in your home country, never mind having to
+                        negotiate the rules and regulations of a foreign culture! Here we answer some of the most common
+                        questions relating to getting married in France. <br><br>
+
+                        A destination wedding is an exclusive event for you and your family and friends. People will
+                        travel from far and wide to share this moment with you and they will most likely enjoy turning
+                        it into a special getaway for themselves as well. The destination you pick is therefore as
+                        important to you as it is to your guests. <br><br>
+
+                        French law is very strict and in order to get married legally at the ‘Mairie’ or town hall you
+                        need to be a resident of the commune you would like to marry in for at least 40 days.
+                    </p>
+                    <a href="#" class="nice__call d-none d-lg-inline-block">Schedule ↘</a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center flex-wrap">
+                    <figure class="nice__figure mb-5">
+                        <img src="img/1.jpg" class="nice__figure__image" width="100%">
+                    </figure>
+                    <a href="#" class="nice__call d-lg-none d-inline-block">Schedule ↘</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="photoshoot">
+        <div class="container">
+            <h1 class="photoshoot__title">Photoshoot</h1>
+            <div class="photoshoot__separator"></div>
+            <p class="photoshoot__description">
+                Have the best professionals recording every moment of the most special day of your life.
+            </p>
+            <div class="row mb-5">
+                <div class="col-lg">
+                    <figure class="photoshoot__figure">
+                        <img src="img/2.jpg" class="photoshoot__figure__image" width="100%">
+                    </figure>
+                </div>
+                <div class="col-lg">
+                    <figure class="photoshoot__figure">
+                        <img src="img/3.jpg" class="photoshoot__figure__image" width="100%">
+                    </figure>
+                </div>
+                <div class="col-lg">
+                    <figure class="photoshoot__figure">
+                        <img src="img/4.jpg" class="photoshoot__figure__image" width="100%">
+                    </figure>
+                </div>
+                <div class="col-lg">
+                    <figure class="photoshoot__figure">
+                        <img src="img/5.jpg" class="photoshoot__figure__image" width="100%">
+                    </figure>
+                </div>
+            </div>
+            <a href="#" class="photoshoot__call">View more ↘</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h1 class="contact__title">Get in touch</h1>
+            <div class="contact__separator"></div>
+            <div class="row">
+                <div class="col-lg text-center">
+                    <h2 class="contact__text">
+                        Hello! My name is
+                        <input class="contact__input" type="text" name="name" id="name">
+                        and i would like to plan my wedding in
+                        <input class="contact__input" type="text" name="local" id="local">
+                        france. My budget is
+                        <input class="contact__input" type="number" name="budget" id="budget" placeholder="US">.
+                        Contact me at
+                        <input class="contact__input" type="email" name="email" id="email">.
+                    </h2>
+                    <a href="#" class="contact__call">Send ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <a href="#" class="footer__link">Home</a>
+                <a href="#" class="footer__link">About</a>
+                <a href="#" class="footer__link">Photos</a>
+                <a href="#" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__separator"></div>
+            <p class="footer__copyright">
+                Developed with love by 
+                <span role="button" onclick="location.href='https://github.com/gitBiohazard'" target="_blank">
+                    @gitBiohazard
+                </span>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        // const rellax = new Rellax('.rellax')
+        SmoothScroll({
+            frameRate: 150,
+            animationTime: 1000,
+            stepSize: 100,
+            pulseAlgorithm: 1,
+            pulseScale: 4,
+            pulseNormalize: 1,
+            accelerationDelta: 50,
+            accelerationMax: 3,
+            keyboardSupport: 1,
+            arrowScroll: 50,
+            fixedBackground: 0
+        });
+    </script>
+</body>
+
+</html>

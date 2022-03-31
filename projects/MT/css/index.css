@@ -1,0 +1,509 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+/* Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .header .container {
+        padding: 0 !important;
+    }
+
+    .header__nav__menu {
+        right: 50px;
+    }
+
+    .main {
+        background-position-x: center !important;
+    }
+
+    .main__box__disclaimer {
+        font-size: 60px !important;
+    }
+
+    .description {
+        padding: 100px 0;
+    }
+
+    .description__box {
+        padding: 0 20px !important;
+    }
+
+    .nice .col-lg-6 {
+        padding: 0 20px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .contact {
+        padding: 100px 20px !important;
+    }
+
+    .footer__link {
+        padding: 0 !important;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+		
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+		
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+		
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Universal */
+
+@font-face {
+    font-family: "Font George X";
+    src: url("../fonts/george-x-regular.woff2") format("woff2"),
+         url("../fonts/george-x-regular.woff") format("woff");
+}
+
+body {
+    overflow-x: hidden;
+}
+
+figure {
+    overflow: hidden;
+}
+
+h1 {
+    overflow: hidden;
+    position: relative;
+}
+
+h1 span {
+    display: inline-block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* JavaScript */
+
+.scrolled {
+    background: white !important;
+}
+
+.scrolled * {
+    color: #a78424 !important;
+}
+
+.scrolled .header__nav {
+    height: 70px !important;
+}
+
+.scrolled .header__nav__menu::after,
+.scrolled .header__nav__menu::before {
+    background: #a78424;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 9000;
+    transition: .4s;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 87.5px;
+    transition: .3s;
+}
+
+.header__nav__link {
+    text-decoration: none;
+}
+
+.header__nav__link:hover {
+    color: #a78424;
+}
+
+.header__nav__logo {
+    margin-bottom: 0;
+    font-family: 'Font George X';
+    font-size: 36px;
+    color: white;
+}
+
+.header__nav__menu {
+    position: relative;
+    margin-bottom: 0;
+    font-family: 'Font George X';
+    font-size: 24px;
+    color: white;
+}
+
+.header__nav__menu::after,
+.header__nav__menu::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    display: block;
+    background: white;
+    position: absolute;
+}
+
+.header__nav__menu::after {
+    top: 17px;
+    right: -40px;
+}
+
+.header__nav__menu::before {
+    top: 13px;
+    right: -40px;
+}
+
+/* Main */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.png),
+                #131313;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main__box__disclaimer {
+    text-align: center;
+    font-family: 'Font George X';
+    font-size: 100px;
+    /* line-height: 80px; */
+    color: white;
+}
+
+.main__box__description {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+}
+
+.main__box__call {
+    padding: 10px 25px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 100;
+    /* font-style: italic; */
+    color: white;
+    transition: .4s ease;
+}
+
+.main__box__call:hover {
+    background: white;
+    color: #a78424;
+}
+
+/* Description */
+
+.description .col {
+    height: 400px;
+    padding: 0;
+}
+
+.description__box {
+    width: 600px;
+}
+
+.description__box__title {
+    text-align: center;
+    font-family: 'Font George X';
+    font-size: 60px;
+    /* line-height: 45px; */
+    color: #a78424;
+}
+
+.description__box__separator {
+    width: 100px;
+    height: 1px;
+    margin: 20px 0;
+    display: inline-block;
+    background: #a78424;
+}
+
+.description__box__description {
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #a78424; 
+}
+
+/* Nice */
+
+.nice {
+    background: #eee;
+    padding: 100px 0;
+}
+
+.nice__title {
+    text-align: start;
+    font-family: 'Font George X';
+    font-size: 60px;
+    /* line-height: 45px; */
+    color: #a78424;
+}
+
+.nice__separator {
+    width: 100px;
+    height: 1px;
+    margin: 20px 0;
+    display: inline-block;
+    background: #a78424;
+}
+
+.nice__description {
+    margin-bottom: 60px;
+    text-align: start;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #a78424;
+}
+
+.nice__call {
+    padding: 10px 25px;
+    border: 1px solid #a78424;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    color: #a78424;
+    transition: .4s ease;
+}
+
+.nice__call:hover {
+    background: #a78424;
+    color: white;
+}
+
+.nice__figure {
+    width: 80%;
+    position: relative;
+}
+
+.nice__figure::after {
+    content: 'Mary & John - 05-21-2017';
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    color: #a78424;
+    position: absolute;
+    top: 80px;
+    right: -100px;
+    width: max-content;
+    height: 15px;
+    transform: rotate(90deg);
+}
+
+/* Photoshoot */
+
+.photoshoot {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.photoshoot__title {
+    font-family: 'Font George X';
+    font-size: 60px;
+    /* line-height: 45px; */
+    color: #a78424;
+}
+
+.photoshoot__separator {
+    width: 100px;
+    height: 1px;
+    margin: 20px 0;
+    display: inline-block;
+    background: #a78424;
+}
+
+.photoshoot__description {
+    margin-bottom: 60px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 400;
+    color: #a78424;
+}
+
+.photoshoot__figure {
+    width: 80%;
+    position: relative;
+}
+
+.photoshoot__figure::after {
+    /* content: 'Mary & John - 05-21-2017'; */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400;
+    color: #a78424;
+    position: absolute;
+    top: 80px;
+    right: -100px;
+    width: max-content;
+    height: 15px;
+    transform: rotate(90deg);
+}
+
+.photoshoot .col-lg {
+    display: flex;
+    justify-content: center;
+}
+
+.photoshoot .col-lg:nth-child(1) .photoshoot__figure::after {
+    content: 'Anna & Joey - 01-12-2020';
+}
+
+.photoshoot .col-lg:nth-child(2) .photoshoot__figure::after {
+    content: 'Mark & Clay - 11-18-2021';
+}
+
+.photoshoot .col-lg:nth-child(3) .photoshoot__figure::after {
+    content: 'Yale & Mike - 03-09-2015';
+}
+
+.photoshoot .col-lg:nth-child(4) .photoshoot__figure::after {
+    content: 'Heda & Levi - 07-07-2020';
+}
+
+.photoshoot__call {
+    padding: 10px 25px;
+    border: 1px solid #a78424;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 24px;
+    color: #a78424;
+    transition: .4s ease;
+}
+
+.photoshoot__call:hover {
+    background: #a78424;
+    color: white;
+}
+
+/* Contact */
+
+.contact {
+    padding: 100px 0;
+    background: #eee;
+}
+
+.contact__title {
+    font-family: 'Font George X';
+    font-size: 60px;
+    /* line-height: 45px; */
+    color: #a78424;
+}
+
+.contact__separator {
+    width: 100px;
+    height: 1px;
+    margin: 20px 0;
+    display: inline-block;
+    background: #a78424;
+}
+
+.contact__text {
+    text-align: start !important;
+    margin-bottom: 40px;
+    font-family: 'Raleway';
+    font-weight: 100;
+    line-height: 60px;
+    color: #a78424;
+}
+
+.contact__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a78424;
+    color: #a78424 !important;
+}
+
+.contact__input:focus {
+    outline: none;
+}
+
+.contact__input::placeholder {
+    color: #a78424;
+}
+
+.contact__call {
+    padding: 10px 25px;
+    border: 1px solid #a78424;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 36px;
+    color: #a78424;
+    transition: .4s ease;
+}
+
+.contact__call:hover {
+    background: #a78424;
+    color: white;
+}
+
+/* Footer */
+
+.footer {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer__link {
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: 'Font George X';
+    font-size: 24px;
+    font-weight: 600;
+    color: #a78424;
+    transition: .4s;
+}
+
+.footer__link:hover {
+    background: #a78424;
+    color: white;
+}
+
+.footer__separator {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    display: inline-block;
+    background: #a78424;
+}
+
+.footer__copyright {
+    font-family: 'Raleway';
+    color: #a78424;
+}
