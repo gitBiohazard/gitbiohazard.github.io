@@ -4,177 +4,130 @@
  *
  */
 
-/* Raleway font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-
-    .header .container {
-        padding: 0 !important;
-    }
-
-    .header__nav__menu {
-        right: 50px;
-    }
-
-    .main {
-        background-position-x: center !important;
-    }
-
-    .main__box__disclaimer {
-        font-size: 60px !important;
-    }
-
-    .description {
-        padding: 100px 0;
-    }
-
-    .description__box {
-        padding: 0 20px !important;
-    }
-
-    .nice .col-lg-6 {
-        padding: 0 20px !important;
-        margin-bottom: 30px !important;
-    }
-
-    .contact {
-        padding: 100px 20px !important;
-    }
-
-    .footer__link {
-        padding: 0 !important;
-    }
-
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-		
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-		
-}
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-		
+@media (max-width: 991.98px) {
+    html, body {
+        font-size: calc(100vw / 1920 * 22) !important;
+    }
+    
+    .main__row__col__left {
+        align-content: center !important;
+        text-align: center !important;
+        height: 100vh !important;
+    }
+    .main__row__col__right {
+        display: none !important;
+    }
+    .gallery__content__box__right {
+        background: transparent !important;
+        height: 120% !important;
+        width: 100% !important;
+        margin-top: 4rem;
+        margin-left: 0 !important;
+    }
+    .contact {
+        height: auto !important;
+    }
+    .contact__row__col__left {
+        height: 50vh !important;
+    }
+    .contact__row__col__right {
+        align-content: center !important;
+        background: #0a0a0c !important;
+        height: 80vh !important;
+    }
+    .contact__row__col__right__title {
+        height: max-content !important;
+        padding: 4rem 0 !important;
+        margin-bottom: 6rem !important;
+    }
+    .contact__row__col__right__subtitle {
+        height: max-content !important;
+        margin-bottom: 6rem !important;
+    }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
 
 /* Universal */
 
-@font-face {
-    font-family: "Font George X";
-    src: url("../fonts/george-x-regular.woff2") format("woff2"),
-         url("../fonts/george-x-regular.woff") format("woff");
-}
-
-body {
+html, body {
+    font-size: calc(100vw / 1920 * 10);
+    background: #eeeeee;
     overflow-x: hidden;
+    height: 100vh;
+    padding: 0%;
+    width: 100%;
+    margin: 0%;
 }
 
-figure {
-    overflow: hidden;
+* {
+    user-select: none;
 }
 
-h1 {
-    overflow: hidden;
-    position: relative;
-}
-
-h1 span {
-    display: inline-block;
+@font-face {
+    font-family: 'Glimmer';
+    src: url('../fonts/glimmer.woff2') format('woff2'),
+        url('../fonts/glimmer.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-/* JavaScript */
+/* Nav */
 
-.scrolled {
-    background: white !important;
-}
-
-.scrolled * {
-    color: #a78424 !important;
-}
-
-.scrolled .header__nav {
-    height: 70px !important;
-}
-
-.scrolled .header__nav__menu::after,
-.scrolled .header__nav__menu::before {
-    background: #a78424;
-}
-
-/* Header */
-
-.header {
-    width: 100%;
-    position: fixed;
-    z-index: 9000;
-    transition: .4s;
-}
-
-.header__nav {
-    display: flex;
+.nav__content {
     justify-content: space-between;
+    mix-blend-mode: difference;
     align-items: center;
-    height: 87.5px;
-    transition: .3s;
+    position: fixed;
+    z-index: 1031;
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-.header__nav__link {
+.nav__content__logo__link {
+    mix-blend-mode: difference;
+    font-family: 'Glimmer';
     text-decoration: none;
+    padding-left: 2rem;
+    color: #afafaf;
+    font-size: 3rem;
 }
 
-.header__nav__link:hover {
-    color: #a78424;
+.nav__content__logo__link:hover {
+    color: #afafaf;
+    opacity: 1;
 }
 
-.header__nav__logo {
-    margin-bottom: 0;
-    font-family: 'Font George X';
-    font-size: 36px;
+.nav__content__search__link {
+    font-family: 'George X';
+    text-decoration: none;
+    padding-right: 2rem;
+    color: #afafaf;
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.nav__content__search__link__icon {
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 1.6rem;
+    opacity: .5;
+}
+
+.nav__content__search__link:hover {
     color: white;
-}
-
-.header__nav__menu {
-    position: relative;
-    margin-bottom: 0;
-    font-family: 'Font George X';
-    font-size: 24px;
-    color: white;
-}
-
-.header__nav__menu::after,
-.header__nav__menu::before {
-    content: '';
-    width: 30px;
-    height: 2px;
-    display: block;
-    background: white;
-    position: absolute;
-}
-
-.header__nav__menu::after {
-    top: 17px;
-    right: -40px;
-}
-
-.header__nav__menu::before {
-    top: 13px;
-    right: -40px;
 }
 
 /* Main */
@@ -182,328 +135,388 @@ h1 span {
 .main {
     width: 100%;
     height: 100vh;
-    background: url(../img/bg.png),
-                #131313;
-    background-size: cover;
-    background-attachment: fixed;
+    background: #0a0a0c;
 }
 
-.main__box__disclaimer {
-    text-align: center;
-    font-family: 'Font George X';
-    font-size: 100px;
-    /* line-height: 80px; */
-    color: white;
-}
-
-.main__box__description {
-    margin-bottom: 40px;
-    text-align: center;
-    font-family: 'Raleway';
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 100;
-    color: white;
-}
-
-.main__box__call {
-    padding: 10px 25px;
-    border: 1px solid white;
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-size: 24px;
-    font-weight: 100;
-    /* font-style: italic; */
-    color: white;
-    transition: .4s ease;
-}
-
-.main__box__call:hover {
-    background: white;
-    color: #a78424;
-}
-
-/* Description */
-
-.description .col {
-    height: 400px;
-    padding: 0;
-}
-
-.description__box {
-    width: 600px;
-}
-
-.description__box__title {
-    text-align: center;
-    font-family: 'Font George X';
-    font-size: 60px;
-    /* line-height: 45px; */
-    color: #a78424;
-}
-
-.description__box__separator {
-    width: 100px;
-    height: 1px;
-    margin: 20px 0;
-    display: inline-block;
-    background: #a78424;
-}
-
-.description__box__description {
-    text-align: center;
-    font-family: 'Raleway';
-    font-size: 20px;
-    font-weight: 400;
-    color: #a78424; 
-}
-
-/* Nice */
-
-.nice {
-    background: #eee;
-    padding: 100px 0;
-}
-
-.nice__title {
-    text-align: start;
-    font-family: 'Font George X';
-    font-size: 60px;
-    /* line-height: 45px; */
-    color: #a78424;
-}
-
-.nice__separator {
-    width: 100px;
-    height: 1px;
-    margin: 20px 0;
-    display: inline-block;
-    background: #a78424;
-}
-
-.nice__description {
-    margin-bottom: 60px;
-    text-align: start;
-    font-family: 'Raleway';
-    font-size: 20px;
-    font-weight: 400;
-    color: #a78424;
-}
-
-.nice__call {
-    padding: 10px 25px;
-    border: 1px solid #a78424;
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 24px;
-    color: #a78424;
-    transition: .4s ease;
-}
-
-.nice__call:hover {
-    background: #a78424;
-    color: white;
-}
-
-.nice__figure {
-    width: 80%;
-    position: relative;
-}
-
-.nice__figure::after {
-    content: 'Mary & John - 05-21-2017';
-    font-family: 'Raleway';
-    font-size: 14px;
-    font-weight: 400;
-    color: #a78424;
-    position: absolute;
-    top: 80px;
-    right: -100px;
-    width: max-content;
-    height: 15px;
-    transform: rotate(90deg);
-}
-
-/* Photoshoot */
-
-.photoshoot {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.photoshoot__title {
-    font-family: 'Font George X';
-    font-size: 60px;
-    /* line-height: 45px; */
-    color: #a78424;
-}
-
-.photoshoot__separator {
-    width: 100px;
-    height: 1px;
-    margin: 20px 0;
-    display: inline-block;
-    background: #a78424;
-}
-
-.photoshoot__description {
-    margin-bottom: 60px;
-    font-family: 'Raleway';
-    font-size: 20px;
-    font-weight: 400;
-    color: #a78424;
-}
-
-.photoshoot__figure {
-    width: 80%;
-    position: relative;
-}
-
-.photoshoot__figure::after {
-    /* content: 'Mary & John - 05-21-2017'; */
-    font-family: 'Raleway';
-    font-size: 14px;
-    font-weight: 400;
-    color: #a78424;
-    position: absolute;
-    top: 80px;
-    right: -100px;
-    width: max-content;
-    height: 15px;
-    transform: rotate(90deg);
-}
-
-.photoshoot .col-lg {
+.main__row {
     display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.main__row__col__right {
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.main__row__col__right__title {
+    mix-blend-mode: color-dodge;
+    font-family: 'Glimmer';
+    position: absolute;
+    color: #a3a3a3;
+    font-size: 16rem;
+    text-align: end;
+    z-index: 1000;
+    opacity: .6;
+    bottom: 5%;
+    right: 5%;
+}
+
+.main__row__col__right__wrapper {
+    height: 100vh;
+}
+
+.main__row__col__left {
     justify-content: center;
+    padding: 0 !important;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
 }
 
-.photoshoot .col-lg:nth-child(1) .photoshoot__figure::after {
-    content: 'Anna & Joey - 01-12-2020';
+.main__row__col__left__sub {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 100;
+    color: #262626;
 }
 
-.photoshoot .col-lg:nth-child(2) .photoshoot__figure::after {
-    content: 'Mark & Clay - 11-18-2021';
+.main__row__col__left__title {
+    font-family: 'Glimmer';
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    -webkit-text-stroke: .05rem;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-size: 6rem;
 }
 
-.photoshoot .col-lg:nth-child(3) .photoshoot__figure::after {
-    content: 'Yale & Mike - 03-09-2015';
+.main__row__col__left__text {
+    font-family: 'George X';
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 100;
+    font-size: 3rem;
+    color: #999999;
 }
 
-.photoshoot .col-lg:nth-child(4) .photoshoot__figure::after {
-    content: 'Heda & Levi - 07-07-2020';
+.main__row__col__left__price {
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    border-top: .5px solid rgba(255, 255, 255, .4);
+    justify-content: center;
+    margin-top: 6rem;
+    padding: 4rem 0;
+    display: flex;
+    width: 70%;
 }
 
-.photoshoot__call {
-    padding: 10px 25px;
-    border: 1px solid #a78424;
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 24px;
-    color: #a78424;
-    transition: .4s ease;
-}
-
-.photoshoot__call:hover {
-    background: #a78424;
+.main__row__col__left__price__cart {
+    height: 6rem;
+    border: none;
+    font-size: 2.4rem;
+    line-height: 100%;
+    font-weight: bolder;
+    border: 1px solid rgb(50, 49, 49);
+    background: transparent;
     color: white;
+    font-family: 'George X';
+    padding: .5rem 4rem;
+}
+
+.main__row__col__left__price__cart:hover {
+    background: rgb(50, 49, 49);
+}
+
+/* Gallery */
+
+.gallery {
+    justify-content: center;
+    background: #080808;
+    align-items: center;
+    display: flex;
+    height: 140vh;
+}
+
+.gallery__content {
+    text-align: center;
+    width: 70%;
+}
+
+.gallery__content__title {
+    font-family: 'Glimmer';
+    margin-bottom: 12rem;
+    -webkit-text-stroke: .05rem;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-size: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    border-top: .5px solid rgba(255, 255, 255, .4);
+    padding: 4rem 0;
+}
+
+.gallery__content__box {
+    display: flex;
+    height: 70rem;
+}
+
+.gallery__content__box__left {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.gallery__content__box__left__item {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    transition: .4s;
+    opacity: 0;
+}
+
+.gallery__content__box__right__control__next,
+.gallery__content__box__right__control__prev {
+    -webkit-text-stroke: .001rem;
+    -webkit-text-stroke-color: white;
+    background: transparent;
+    font-family: 'Glimmer';
+    height: max-content;
+    font-weight: bold;
+    font-size: 3rem;
+    color: transparent;
+    border: none;
+}
+
+.gallery__content__box__right__control__prev .arrow,
+.gallery__content__box__right__control__next .arrow {
+    position: relative;
+    transition: .5s;
+}
+
+.gallery__content__box__right__control__prev:hover .arrow {
+    left: -2rem;
+}
+
+.gallery__content__box__right__control__next:hover .arrow {
+    right: -2rem;
+}
+
+.gallery__content__box__right {
+    background: #080808;
+    position: relative;
+    margin-left: 16rem;
+    flex-wrap: wrap;
+    height: 110%;
+    width: 120%;
+    z-index: 5;
+    top: -5%;
+}
+
+.gallery__content__box__right__title {
+    background: transparent;
+    font-family: 'Glimmer';
+    height: max-content;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    color: white;
+    border: none;
+}
+
+.gallery__content__box__right__description {
+    width: 70%;
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 100;
+    font-size: 2.6rem;
+    color: #999999;
+    font-family: 'George X';
+}
+
+.gallery__content__box__right__subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 100;
+    color: #383838;
+}
+
+[data-slider-item].active {
+    opacity: 1;
+}
+
+.details {
+    text-align: start;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 6rem;
+}
+
+.point {
+    color: white;
+    font-size: 3rem;
 }
 
 /* Contact */
 
 .contact {
-    padding: 100px 0;
-    background: #eee;
+    background: #0a0a0c;
+    width: 100%;
+    height: 100vh;
 }
 
-.contact__title {
-    font-family: 'Font George X';
-    font-size: 60px;
-    /* line-height: 45px; */
-    color: #a78424;
+.contact__row {
+    display: flex;
+    position: relative;
+    align-items: center;
 }
 
-.contact__separator {
-    width: 100px;
-    height: 1px;
-    margin: 20px 0;
-    display: inline-block;
-    background: #a78424;
+.contact__row__col__left {
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
 }
 
-.contact__text {
-    text-align: start !important;
-    margin-bottom: 40px;
-    font-family: 'Raleway';
+.contact__row__col__left__wrapper {
+    height: 100vh;
+}
+
+.contact__row__col__right {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.contact__row__col__right__title {
+    width: 90%;
+    text-align: center;
+    font-family: 'Glimmer';
+    margin-bottom: 4rem;
+    -webkit-text-stroke: .05rem;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-size: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    border-top: .5px solid rgba(255, 255, 255, .4);
+    padding: 4rem 0;
+}
+
+.contact__row__col__right__subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
     font-weight: 100;
-    line-height: 60px;
-    color: #a78424;
+    color: #383838;
+    margin-bottom: 4rem;
 }
 
-.contact__input {
+.contact__row__col__right__form {
+    width: 90%;
+}
+
+.contact__row__col__right__label {
+    -webkit-text-stroke: .001rem;
+    -webkit-text-stroke-color: white;
     background: transparent;
+    font-family: 'Glimmer';
+    height: max-content;
+    font-weight: bold;
+    font-size: 3rem;
+    color: transparent;
     border: none;
-    border-bottom: 1px solid #a78424;
-    color: #a78424 !important;
 }
 
-.contact__input:focus {
-    outline: none;
-}
-
-.contact__input::placeholder {
-    color: #a78424;
-}
-
-.contact__call {
-    padding: 10px 25px;
-    border: 1px solid #a78424;
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 36px;
-    color: #a78424;
-    transition: .4s ease;
-}
-
-.contact__call:hover {
-    background: #a78424;
+.contact__row__col__right__input {
+    width: 100%;
+    padding: 2rem !important;
+    font-size: 3rem !important;
+    font-family: "George X";
+    font-weight: bolder;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
     color: white;
+}
+
+.contact__row__col__right__input:focus-within {
+    outline: none;
+    box-shadow: none;
+}
+
+.contact__row__col__right__button {
+    height: 6rem;
+    border: none;
+    font-size: 2.4rem;
+    line-height: 100%;
+    font-weight: bolder;
+    border: 1px solid rgb(50, 49, 49);
+    background: transparent;
+    color: white;
+    font-family: 'George X';
+    padding: .5rem 4rem;
+}
+
+.contact__row__col__right__button:hover {
+    background: rgb(50, 49, 49);
 }
 
 /* Footer */
 
 .footer {
-    padding: 30px 0;
-    text-align: center;
-}
-
-.footer__link {
-    padding: 5px 20px;
-    text-decoration: none;
-    font-family: 'Font George X';
-    font-size: 24px;
-    font-weight: 600;
-    color: #a78424;
-    transition: .4s;
-}
-
-.footer__link:hover {
-    background: #a78424;
-    color: white;
-}
-
-.footer__separator {
-    width: 100%;
-    height: 1px;
-    margin: 20px 0;
-    display: inline-block;
-    background: #a78424;
+    height: 25vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer__copyright {
-    font-family: 'Raleway';
-    color: #a78424;
+    color: white;
+    font-family: 'Glimmer';
+    font-size: 2rem;
+    padding: 4rem 0;
+}
+
+.footer__copyright button {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 4rem 0;
+    border-bottom: 2px solid white;
+}
+
+.footer__links__link {
+    position: relative;
+    text-decoration: none;
+    -webkit-text-stroke: .001rem;
+    -webkit-text-stroke-color: white;
+    background: transparent;
+    font-family: 'Glimmer';
+    height: max-content;
+    font-weight: bold;
+    font-size: 3rem;
+    color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+.footer__links__link:hover {
+    color: transparent;
+    border-bottom: 2px solid white;
 }

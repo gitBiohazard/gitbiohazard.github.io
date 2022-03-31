@@ -4,205 +4,226 @@ gitHub - @gitBiohazard
 sources:
     Bootstrap v5
     html5shiv.js
-    SmoothScroll.js
     GSAP v3.9.1
-    Snackbar W3C
+    Three.js
+    TweenMax.js
+    HoverEffect.js
 -->
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--[if lt IE 9]>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 		<![endif]-->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/snackbar.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Weddings Lore</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="css/snackbar.css">
+      <link rel="stylesheet" href="css/index.css">
+      <title>Mr. Twins</title>
 </head>
 
 <body>
     <div id="snackbar">Links disabled in preview</div>
-    <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <a href="#" class="header__nav__link">
-                    <h2 class="header__nav__logo">WL</h2>
-                </a>
-                <a href="#" class="header__nav__link">
-                    <h2 class="header__nav__menu">Menu</h2>
-                </a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 vh-100 d-flex flex-wrap align-content-center justify-content-center text-center">
-                    <div class="main__box">
-                        <h1 class="main__box__disclaimer">Weddings Lore</h1>
-                        <p class="main__box__description">45 years rowing in the same direction</p>
-                        <a href="#" class="main__box__call">Discover ↘</a>
-                    </div>
-                </div>
+    <nav class="nav">
+            <div class="container">
+                  <div class="nav__content">
+                        <div class="nav__content__logo">
+                              <a href="#" class="nav__content__logo__link">Mr. Twins</a>
+                        </div>
+                        <div class="nav__content__links">
+                        </div>
+                        <div class="nav__content__search">
+                              <a href="#" class="nav__content__search__link">
+                                    Search
+                                    <img src="img/Search.svg" class="nav__content__search__link__icon">
+                              </a>
+                        </div>
+                  </div>
             </div>
-        </div>
-    </main>
-
-    <section class="description">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <div class="description__box text-center">
-                        <h1 class="description__box__title">Make your dreams <br> come true</h1>
-                        <div class="description__box__separator"></div>
-                        <p class="description__box__description">
-                            Have the wedding of your dreams without worrying about
-                            anything. Leave it to someone who knows. Our team has been making dreams come true for 45
-                            years.
+      </nav>
+      <div class="main">
+            <div class="main__row row">
+                  <div class="main__row__col main__row__col__left col-lg">
+                        <p class="main__row__col__left__sub">
+                              Cigarettes & Cigars
                         </p>
-                    </div>
-                </div>
+                        <h1 class="main__row__col__left__title">
+                              Original Twins Cigar
+                        </h1>
+                        <div>
+                              <p class="main__row__col__left__sub">
+                                    6 UNITIES PER BOX
+                              </p>
+                              <p class="main__row__col__left__text">
+                                    Get your Twins Cigar Original now and enjoy life, <br> and really feel alive.
+                              </p>
+                        </div>
+                        <div class="main__row__col__left__price">
+
+                              <button class="main__row__col__left__price__cart">Get it now</button>
+                        </div>
+                  </div>
+                  <div class="main__row__col main__row__col__right col-lg">
+                        <!-- <h1 class="main__row__col__right__title">Montserrat Twins</h1> -->
+                        <div class="main__row__col__right__wrapper"></div>
+                  </div>
             </div>
-        </div>
-    </section>
+      </div>
 
-    <section class="nice">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="nice__title">French Weddings</h1>
-                    <div class="nice__separator"></div>
-                    <p class="nice__description">
-                        Getting married in France is a dream for many people, whether it be under the stunning Alpine
-                        peaks or amongst the vineyards and lavender fields of Provence. However, the logistics of
-                        organising a wedding can be stressful enough in your home country, never mind having to
-                        negotiate the rules and regulations of a foreign culture! Here we answer some of the most common
-                        questions relating to getting married in France. <br><br>
+      <div class="gallery">
+            <div class="gallery__content">
+                  <h1 class="gallery__content__title">
+                        Smoke, sweet smoke
+                  </h1>
+                  <div class="row d-flex justify-content-around">
+                        <div class="col-lg-5">
+                              <div class="gallery__content__box gallery__content__box__left">
+                                    <div class="gallery__content__box__left__item" data-slider-item="0"></div>
+                                    <div class="gallery__content__box__left__item" data-slider-item="1"></div>
+                                    <div class="gallery__content__box__left__item" data-slider-item="2"></div>
+                                    <div class="gallery__content__box__left__item" data-slider-item="3"></div>
+                                    <div class="gallery__content__box__left__item" data-slider-item="4"></div>
+                                    <div class="gallery__content__box__left__item" data-slider-item="5"></div>
+                              </div>
+                        </div>
+                        <div class="col-lg-7">
+                              <div class="gallery__content__box gallery__content__box__right">
+                                    <div class="details">
+                                          <h1 class="gallery__content__box__right__title"></h1>
+                                          <h4 class="gallery__content__box__right__subtitle"></h4>
+                                          <p class="gallery__content__box__right__description">
+                                          </p>
+                                          <div class="w-100 buttons">
+                                                <button class="gallery__content__box__right__control__prev"><span
+                                                            class="arrow">
+                                                            <- </span>Prev</button>
+                                                &nbsp;<span class="point">♣</span>&nbsp;
+                                                <button class="gallery__content__box__right__control__next">Next<span
+                                                            class="arrow"> -></span></button>
 
-                        A destination wedding is an exclusive event for you and your family and friends. People will
-                        travel from far and wide to share this moment with you and they will most likely enjoy turning
-                        it into a special getaway for themselves as well. The destination you pick is therefore as
-                        important to you as it is to your guests. <br><br>
-
-                        French law is very strict and in order to get married legally at the ‘Mairie’ or town hall you
-                        need to be a resident of the commune you would like to marry in for at least 40 days.
-                    </p>
-                    <a href="#" class="nice__call d-none d-lg-inline-block">Schedule ↘</a>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center flex-wrap">
-                    <figure class="nice__figure mb-5">
-                        <img src="img/1.jpg" class="nice__figure__image" width="100%">
-                    </figure>
-                    <a href="#" class="nice__call d-lg-none d-inline-block">Schedule ↘</a>
-                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
             </div>
-        </div>
-    </section>
+      </div>
 
-    <section class="photoshoot">
-        <div class="container">
-            <h1 class="photoshoot__title">Photoshoot</h1>
-            <div class="photoshoot__separator"></div>
-            <p class="photoshoot__description">
-                Have the best professionals recording every moment of the most special day of your life.
-            </p>
-            <div class="row mb-5">
-                <div class="col-lg">
-                    <figure class="photoshoot__figure">
-                        <img src="img/2.jpg" class="photoshoot__figure__image" width="100%">
-                    </figure>
-                </div>
-                <div class="col-lg">
-                    <figure class="photoshoot__figure">
-                        <img src="img/3.jpg" class="photoshoot__figure__image" width="100%">
-                    </figure>
-                </div>
-                <div class="col-lg">
-                    <figure class="photoshoot__figure">
-                        <img src="img/4.jpg" class="photoshoot__figure__image" width="100%">
-                    </figure>
-                </div>
-                <div class="col-lg">
-                    <figure class="photoshoot__figure">
-                        <img src="img/5.jpg" class="photoshoot__figure__image" width="100%">
-                    </figure>
-                </div>
+      <div class="contact">
+            <div class="contact__row row">
+                  <div class="contact__row__col contact__row__col__left col-lg">
+                        <div class="contact__row__col__left__wrapper"></div>
+                  </div>
+                  <div class="contact__row__col contact__row__col__right col-lg">
+                        <h1 class="contact__row__col__right__title">
+                              Get in touch
+                        </h1>
+                        <p class="contact__row__col__right__subtitle">
+                              Leave your data below that we will <br> contact you as soon as possible.
+                        </p>
+                        <form class="contact__row__col__right__form">
+                              <h2 class="contact__row__col__right__label">Name</h2>
+                              <input type="text" class="contact__row__col__right__input mb-5" required>
+                              <h2 class="contact__row__col__right__label">E-mail</h2>
+                              <input type="text" class="contact__row__col__right__input mb-5" required>
+                              <h2 class="contact__row__col__right__label">Order</h2>
+                              <input type="text" class="contact__row__col__right__input mb-5" required>
+                              <button class="contact__row__col__right__button" onclick="console.log('Send!')">Send</button>
+                        </form>
+                  </div>
             </div>
-            <a href="#" class="photoshoot__call">View more ↘</a>
-        </div>
-    </section>
+      </div>
 
-    <section class="contact">
-        <div class="container">
-            <h1 class="contact__title">Get in touch</h1>
-            <div class="contact__separator"></div>
-            <div class="row">
-                <div class="col-lg text-center">
-                    <h2 class="contact__text">
-                        Hello! My name is
-                        <input class="contact__input" type="text" name="name" id="name">
-                        and i would like to plan my wedding in
-                        <input class="contact__input" type="text" name="local" id="local">
-                        france. My budget is
-                        <input class="contact__input" type="number" name="budget" id="budget" placeholder="US">.
-                        Contact me at
-                        <input class="contact__input" type="email" name="email" id="email">.
-                    </h2>
-                    <a href="#" class="contact__call">Send ↗</a>
-                </div>
+      <footer class="footer">
+            <div class="footer__links">
+                  <a href="#" class="footer__links__link">Main website</a>
+                  <a href="#" class="footer__links__link">Features</a>
+                  <a href="#" class="footer__links__link">contact</a>
+                  <a href="#" class="footer__links__link">Back to top</a>
             </div>
-        </div>
-    </section>
+            <h1 class="footer__copyright">
+                  Developed with love by <button onclick="window.open('https://github.com/gitBiohazard')">@gitBiohazard</button>
+            </h1>
+      </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <a href="#" class="footer__link">Home</a>
-                <a href="#" class="footer__link">About</a>
-                <a href="#" class="footer__link">Photos</a>
-                <a href="#" class="footer__link">Contact</a>
-            </div>
-            <div class="footer__separator"></div>
-            <p class="footer__copyright">
-                Developed with love by 
-                <span role="button" onclick="location.href='https://github.com/gitBiohazard'" target="_blank">
-                    @gitBiohazard
-                </span>
-            </p>
-        </div>
-    </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+      <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="js/hover-effect.umd.js"></script>
+      <script src="js/index.js"></script>
 
+      <script>
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('.main__row__col__right__wrapper'),
+                  intensity: 0.5,
+                  image1: 'img/cape__one.png',
+                  image2: 'img/cape__two.png',
+                  displacementImage: 'img/2.png'
+            });
 
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/smoothscroll.min.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-        // const rellax = new Rellax('.rellax')
-        SmoothScroll({
-            frameRate: 150,
-            animationTime: 1000,
-            stepSize: 100,
-            pulseAlgorithm: 1,
-            pulseScale: 4,
-            pulseNormalize: 1,
-            accelerationDelta: 50,
-            accelerationMax: 3,
-            keyboardSupport: 1,
-            arrowScroll: 50,
-            fixedBackground: 0
-        });
-    </script>
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('[data-slider-item="0"]'),
+                  intensity: 0.5,
+                  image1: 'img/data__item__1__one.png',
+                  image2: 'img/data__item__1__two.png',
+                  displacementImage: 'img/1.jpg'
+            });
+
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('[data-slider-item="1"]'),
+                  intensity: 0.5,
+                  image1: 'img/data__item__2__one.png',
+                  image2: 'img/data__item__2__two.png',
+                  displacementImage: 'img/2.png'
+            });
+
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('[data-slider-item="2"]'),
+                  intensity: 0.5,
+                  image1: 'img/data__item__3__one.png',
+                  image2: 'img/data__item__3__two.png',
+                  displacementImage: 'img/3.jpg'
+            });
+
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('[data-slider-item="3"]'),
+                  intensity: 0.5,
+                  image1: 'img/data__item__4__one.png',
+                  image2: 'img/data__item__4__two.png',
+                  displacementImage: 'img/4.jpg'
+            });
+
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('[data-slider-item="4"]'),
+                  intensity: 0.5,
+                  image1: 'img/data__item__5__one.png',
+                  image2: 'img/data__item__5__two.png',
+                  displacementImage: 'img/5.jpg'
+            });
+
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('[data-slider-item="5"]'),
+                  intensity: 0.5,
+                  image1: 'img/data__item__6__one.png',
+                  image2: 'img/data__item__6__two.png',
+                  displacementImage: 'img/6.jpg'
+            });
+
+            var hoverDistort = new hoverEffect({
+                  parent: document.querySelector('.contact__row__col__left__wrapper'),
+                  intensity: 0.5,
+                  image1: 'img/contact__one.png',
+                  image2: 'img/contact__two.png',
+                  displacementImage: 'img/2.png'
+            });
+      </script>
 </body>
 
 </html>
