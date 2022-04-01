@@ -12,15 +12,17 @@
     html, body {
         font-size: calc(100vw / 1920 * 22) !important;
     }
-    
+
     .main__row__col__left {
         align-content: center !important;
         text-align: center !important;
         height: 100vh !important;
     }
+
     .main__row__col__right {
         display: none !important;
     }
+
     .gallery__content__box__right {
         background: transparent !important;
         height: 120% !important;
@@ -28,22 +30,27 @@
         margin-top: 4rem;
         margin-left: 0 !important;
     }
+
     .contact {
         height: auto !important;
     }
+
     .contact__row__col__left {
         height: 50vh !important;
     }
+
     .contact__row__col__right {
         align-content: center !important;
         background: #0a0a0c !important;
         height: 80vh !important;
     }
+
     .contact__row__col__right__title {
         height: max-content !important;
         padding: 4rem 0 !important;
         margin-bottom: 6rem !important;
     }
+
     .contact__row__col__right__subtitle {
         height: max-content !important;
         margin-bottom: 6rem !important;
@@ -71,6 +78,15 @@ html, body {
     font-family: 'Glimmer';
     src: url('../fonts/glimmer.woff2') format('woff2'),
         url('../fonts/glimmer.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "George X";
+    src: url("../fonts/george-x-regular.woff2") format("woff2"),
+        url("../fonts/george-x-regular.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
