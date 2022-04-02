@@ -129,6 +129,7 @@ html, body {
     font-family: 'George X';
     text-decoration: none;
     padding-right: 2rem;
+    font-weight: bold;
     color: #afafaf;
     font-size: 3rem;
     padding: .5rem;
@@ -198,7 +199,7 @@ html, body {
     text-transform: uppercase;
     text-align: center;
     font-size: 2.4rem;
-    font-weight: 100;
+    font-weight: bold;
     color: #262626;
 }
 
@@ -216,7 +217,7 @@ html, body {
     font-family: 'George X';
     text-align: center;
     margin-top: 4rem;
-    font-weight: 100;
+    font-weight: bold;
     font-size: 3rem;
     color: #999999;
 }
@@ -245,6 +246,96 @@ html, body {
 }
 
 .main__row__col__left__price__cart:hover {
+    background: rgb(50, 49, 49);
+}
+
+/* Contact */
+
+.contact {
+    background: #0a0a0c;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact__row {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.contact__row__col__left {
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact__row__col__left__wrapper {
+    height: 100vh;
+}
+
+
+.contact__row__col__right {
+    justify-content: center;
+    padding: 0 !important;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.contact__row__col__right__sub {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #262626;
+}
+
+.contact__row__col__right__title {
+    font-family: 'Glimmer';
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    -webkit-text-stroke: .05rem;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-size: 6rem;
+}
+
+.contact__row__col__right__text {
+    font-family: 'George X';
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #999999;
+}
+
+.contact__row__col__right__price {
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    border-top: .5px solid rgba(255, 255, 255, .4);
+    justify-content: center;
+    margin-top: 6rem;
+    padding: 4rem 0;
+    display: flex;
+    width: 70%;
+}
+
+.contact__row__col__right__price__cart {
+    height: 6rem;
+    border: none;
+    font-size: 2.4rem;
+    line-height: 100%;
+    font-weight: bolder;
+    border: 1px solid rgb(50, 49, 49);
+    background: transparent;
+    color: white;
+    font-family: 'George X';
+    padding: .5rem 4rem;
+}
+
+.contact__row__col__right__price__cart:hover {
     background: rgb(50, 49, 49);
 }
 
@@ -295,29 +386,13 @@ html, body {
 
 .gallery__content__box__right__control__next,
 .gallery__content__box__right__control__prev {
-    -webkit-text-stroke: .001rem;
-    -webkit-text-stroke-color: white;
     background: transparent;
-    font-family: 'Glimmer';
+    font-family: 'George X';
     height: max-content;
     font-weight: bold;
     font-size: 3rem;
-    color: transparent;
+    color: white;
     border: none;
-}
-
-.gallery__content__box__right__control__prev .arrow,
-.gallery__content__box__right__control__next .arrow {
-    position: relative;
-    transition: .5s;
-}
-
-.gallery__content__box__right__control__prev:hover .arrow {
-    left: -2rem;
-}
-
-.gallery__content__box__right__control__next:hover .arrow {
-    right: -2rem;
 }
 
 .gallery__content__box__right {
@@ -333,11 +408,11 @@ html, body {
 
 .gallery__content__box__right__title {
     background: transparent;
-    font-family: 'Glimmer';
+    font-family: 'Geroge X';
     height: max-content;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    font-size: 4rem;
+    font-size: 7rem;
     color: white;
     border: none;
 }
@@ -347,7 +422,7 @@ html, body {
     color: white;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    font-weight: 100;
+    font-weight: bold;
     font-size: 2.6rem;
     color: #999999;
     font-family: 'George X';
@@ -357,7 +432,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-size: 2.4rem;
-    font-weight: 100;
+    font-weight: bold;
     color: #383838;
 }
 
@@ -370,117 +445,16 @@ html, body {
 }
 
 .buttons {
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    border-top: .5px solid rgba(255, 255, 255, .4);
     position: absolute;
+    padding: 4rem 0;
     bottom: 6rem;
 }
 
 .point {
     color: white;
     font-size: 3rem;
-}
-
-/* Contact */
-
-.contact {
-    background: #0a0a0c;
-    width: 100%;
-    height: 100vh;
-}
-
-.contact__row {
-    display: flex;
-    position: relative;
-    align-items: center;
-}
-
-.contact__row__col__left {
-    padding: 0 !important;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact__row__col__left__wrapper {
-    height: 100vh;
-}
-
-.contact__row__col__right {
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.contact__row__col__right__title {
-    width: 90%;
-    text-align: center;
-    font-family: 'Glimmer';
-    margin-bottom: 4rem;
-    -webkit-text-stroke: .05rem;
-    -webkit-text-stroke-color: white;
-    color: transparent;
-    font-size: 6rem;
-    border-bottom: 1px solid rgba(255, 255, 255, .4);
-    border-top: .5px solid rgba(255, 255, 255, .4);
-    padding: 4rem 0;
-}
-
-.contact__row__col__right__subtitle {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    font-weight: 100;
-    color: #383838;
-    margin-bottom: 4rem;
-}
-
-.contact__row__col__right__form {
-    width: 90%;
-}
-
-.contact__row__col__right__label {
-    -webkit-text-stroke: .001rem;
-    -webkit-text-stroke-color: white;
-    background: transparent;
-    font-family: 'Glimmer';
-    height: max-content;
-    font-weight: bold;
-    font-size: 3rem;
-    color: transparent;
-    border: none;
-}
-
-.contact__row__col__right__input {
-    width: 100%;
-    padding: 2rem !important;
-    font-size: 3rem !important;
-    font-family: "George X";
-    font-weight: bolder;
-    border: none;
-    border-bottom: 2px solid white;
-    background: transparent;
-    color: white;
-}
-
-.contact__row__col__right__input:focus-within {
-    outline: none;
-    box-shadow: none;
-}
-
-.contact__row__col__right__button {
-    height: 6rem;
-    border: none;
-    font-size: 2.4rem;
-    line-height: 100%;
-    font-weight: bolder;
-    border: 1px solid rgb(50, 49, 49);
-    background: transparent;
-    color: white;
-    font-family: 'George X';
-    padding: .5rem 4rem;
-}
-
-.contact__row__col__right__button:hover {
-    background: rgb(50, 49, 49);
 }
 
 /* Footer */
@@ -496,7 +470,7 @@ html, body {
 
 .footer__copyright {
     color: white;
-    font-family: 'Glimmer';
+    font-family: 'George X';
     font-size: 2rem;
     padding: 4rem 0;
 }
