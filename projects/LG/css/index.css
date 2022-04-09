@@ -1,0 +1,206 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+    html, body {
+        font-size: calc(100vw / 1920 * 30) !important;
+    }
+
+    .home__content.triggered {
+        top: -30% !important;
+    }
+
+    .home__closer {
+        top: unset !important;
+        bottom: 12% !important;
+        right: unset !important;
+        left: calc(50% - 1rem);
+    }
+
+    .home__gallery {
+        top: 28% !important;
+    }
+
+    .home__gallery__item {
+        width: 50vw !important;
+    }
+}
+
+
+/* Universal */
+
+html, body {
+    --main-yellow: #E2EA00;
+    --main-blue: #000000;
+    font-size: calc(100vw / 1920 * 10);
+    background: #eeeeee;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0%;
+}
+
+* {
+    user-select: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Home */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/BG.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home__nav {
+    width: 40rem;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    padding: 1.6rem 2rem;
+    background: var(--main-yellow);
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-family: 'Roboto';
+    letter-spacing: .5rem;
+}
+
+.home__tooltip {
+    font-weight: 900;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    color: var(--main-yellow);
+    position: absolute;
+    top: 14%;
+    left: -1.5%;
+    transform: rotate(-90deg);
+}
+
+.home__content {
+    top: -4%;
+    position: relative;
+    font-family: 'Roboto';
+    color: var(--main-yellow);
+    text-align: center;
+}
+
+.home__content__clock {
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.home__content__title {
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.home__content.triggered {
+    top: -40%;
+}
+
+.home__content.triggered .home__content__clock {
+    font-size: 2.5rem;
+} 
+
+.home__content.triggered .home__content__title {
+    font-size: 4rem;
+} 
+
+.home__phrase {
+    font-family: 'Ink Free';
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: 3%;
+    color: white;
+}
+
+.home__trigger {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1rem solid var(--main-yellow);
+    border-right: 1rem solid var(--main-yellow);
+    transform: rotate(-45deg);
+    position:absolute;
+    right: 5%;
+    z-index: 2;
+    animation: fadeIn .4s forwards;
+}
+
+.home__closer {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1rem solid var(--main-yellow);
+    border-right: 1rem solid var(--main-yellow);
+    transform: rotate(135deg);
+    position:absolute;
+    top: 7.6%;
+    right: 3%;
+    z-index: 2;
+    animation: fadeIn .4s forwards;
+}
+
+.home__gallery {
+    height: 50vh;
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    z-index: 1;
+    transform: translateX(100%);
+    cursor:zoom-in;
+}
+
+.home__gallery__item {
+    width: 30vw;
+    margin-right: 5rem;
+    height: 100%;
+    background: #E2EA00;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__gallerY__item__image {
+    position: absolute;
+    width: 100%;
+}
