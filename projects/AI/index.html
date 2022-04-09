@@ -1,0 +1,120 @@
+<!-- 
+@author Luiz Felipe Pedrosa Cavalcante
+gitHub - @gitBiohazard
+sources:
+    Bootstrap v5
+    html5shiv.js
+    TweenMax.js
+    Pixi.js
+    rgbKineticSlider.js
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+      <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/snackbar.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Apple Immersion</title>
+</head>
+
+<body>
+    <div id="snackbar">Links disabled in preview</div>
+    <nav class="nav">
+    <a href="#" class="nav__link">
+      <img src="img/logo.png" alt="Logo" class="nav__link__logo" width="100%">
+    </a>
+    <div class="nav__menu">
+      <a href="#" class="nav__menu__link">Store</a>
+      <a href="#" class="nav__menu__link">Mac</a>
+      <a href="#" class="nav__menu__link">iPad</a>
+      <a href="#" class="nav__menu__link">iPhone</a>
+      <a href="#" class="nav__menu__link">Watch</a>
+      <a href="#" class="nav__menu__link">AirPods</a>
+      <a href="#" class="nav__menu__link">TV & Home</a>
+      <a href="#" class="nav__menu__link">Only on Apple</a>
+      <a href="#" class="nav__menu__link">Accessories</a>
+      <a href="#" class="nav__menu__link">Support</a>
+    </div>
+    <div class="nav__customer">
+      <a href="#" class="nav__customer__link me-3">
+        Learn more >
+      </a>
+    </div>
+  </nav>
+  <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+
+  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./js/TweenMax.min.js"></script>
+  <script src="./js/rgbKineticSlider.js"></script>
+  <script src="./js/pixi.min.js"></script>
+  <script src="./js/index.js"></script>
+
+  <script>
+    const images = [
+      "../img/1.jpg",
+      "../img/2.jpg",
+      "../img/3.jpg",
+      "../img/4.jpg",
+      "../img/5.jpg",
+    ]
+    const texts = [
+      ["Mirrorless ", "Swipe left or right"],
+      ["AirPods", "All-new with Spatial Audio, \n it's magic remastered."],
+      ["Camera", "Blur the background to focus your point"],
+      ["Glowing ", "Glow your future like this phone"],
+      ["Broken ", "Don't be the broken one"],
+    ]
+    rgbKineticSlider = new rgbKineticSlider({
+      slideImages: images,
+      itemsTitles: texts,
+      backgroundDisplacementSprite: "img/map.jpg",
+      cursorDisplacementSprite: "img/map1.png",
+      cursorImgEffect: true,
+      cursorTextEffect: false,
+      cursorScaleIntensity: 0.65,
+      cursorMomentum: 0.14,
+      swipe: true,
+      swipeDistance: window.innerWidth * 0.4,
+      swipeScaleIntensity: 2,
+      slideTransitionDuration: 1,
+      transitionScaleIntensity: 30,
+      transitionScaleAmplitude: 160,
+      nav: false,
+      imagesRgbEffect: true,
+      imagesRgbIntensity: 0.9,
+      navImagesRgbIntensity: 80,
+      textsDisplay: true,
+      textsSubTitleDisplay: true,
+      textsTiltEffect: true,
+      googleFonts: ["Mulish:700", "Poppins:400"],
+      buttonMode: false,
+      textsRgbEffect: true,
+      textsRgbIntensity: 0.03,
+      navTextsRgbIntensity: 15,
+      textTitleColor: "#fff",
+      textTitleSize: 150,
+      mobileTextTitleSize: 80,
+      textTitleLetterspacing: 0,
+      textSubTitleColor: "white",
+      textSubTitleSize: 21,
+      mobileTextSubTitleSize: 21,
+      textSubTitleLetterspacing: 2,
+      textSubTitleAlign: 'center',
+      textSubTitleOffsetTop: 90,
+      mobileTextSubTitleOffsetTop: 90,
+    })
+  </script>
+</body>
+
+</html>
