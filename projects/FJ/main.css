@@ -16,12 +16,22 @@
 /* Universal */
 
 html, body {
+    user-select: none;
     font-size: calc(100vw / 1920 * 10);
     background: #000;
     overflow: hidden;
     width: 100%;
     padding: 0%;
     margin: 0%;
+}
+
+p {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+figure {
+    overflow: hidden;
 }
 
 
