@@ -1,0 +1,571 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+    html, body {
+        font-size: calc(100vw / 1920 * 20) !important;
+    }
+}
+
+
+/* Universal */
+
+html, body {
+    font-size: calc(100vw / 1920 * 10);
+    background: #000;
+    overflow: hidden;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+@font-face {
+    font-family: 'Monument';
+    src: url('./fonts/MonumentExtended-Regular.woff2') format('woff2'),
+        url('./fonts/MonumentExtended-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.z {
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+/* Brand */
+
+.brand {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+}
+
+.brand__link {
+    font-family: 'Monument';
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: white;
+}
+
+/* Menus */
+
+.share {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 2.6rem;
+    bottom: 5rem;
+    left: 5rem;
+}
+
+.search {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.6rem;
+    top: 5rem;
+    right: 20rem;
+}
+
+.menu {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.6rem;
+    top: 5rem;
+    right: 10rem;
+}
+
+/* Nav */
+
+.nav {
+    transform: rotate(90deg);
+    position: absolute;
+    right: -15rem;
+    display: flex;
+    width: auto;
+    top: 50%;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0 4rem;
+    color: white;
+    opacity: .7;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* Controller */
+
+.controller {
+    padding: 2rem;
+    width: 8rem;
+    border-radius: 7rem;
+    background: white;
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controller__back {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.controller__forward {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+/* Content one */
+
+.content_one {
+    transition: 1s;
+    background: #131313;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.content__one__media {
+    position: absolute;
+    right: 30rem;
+    width: 30%;
+}
+
+.content__one__title {
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    font-family: 'Monument';
+    z-index: 5;
+}
+
+.content__one__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__one__description {
+    width: 40rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
+
+.content__one__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+/* Content two */
+
+.content_two {
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background: #74b5eb;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transform: translateY(180%) rotate(45deg);
+}
+
+.content__two__media {
+    bottom: 10rem;
+    right: 30rem;
+    transform: rotate(6deg);
+    position: absolute;
+    width: 30%;
+}
+
+.content__two__title {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    font-family: 'Monument';
+    top: 20rem;
+    left: 20rem;
+    z-index: 5;
+}
+
+.content__two__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__two__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+.content__two__description {
+    width: 50rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
+
+/* Content three */
+
+.content_three {
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transform: translateY(180%) rotate(45deg);
+}
+
+.content__three__media {
+    position: absolute;
+    bottom: 20rem;
+    right: 20rem;
+    width: 40%;
+}
+
+.content__three__title {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    font-family: 'Monument';
+    top: 20rem;
+    left: 20rem;
+    z-index: 5;
+}
+
+.content__three__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__three__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+.content__three__description {
+    width: 50rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
+
+/* Content four */
+
+.content_four {
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background: #ed9e53;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transform: translateY(180%) rotate(45deg);
+}
+
+.content__four__media {
+    position: absolute;
+    bottom: 20rem;
+    right: 20rem;
+    width: 40%;
+}
+
+.content__four__title {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    font-family: 'Monument';
+    top: 20rem;
+    left: 20rem;
+    z-index: 5;
+}
+
+.content__four__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__four__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+.content__four__description {
+    width: 50rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
+
+/* Content five */
+
+.content_five {
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background: #b10e0e;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transform: translateY(180%) rotate(45deg);
+}
+
+.content__five__media {
+    position: absolute;
+    right: 20rem;
+    width: 35%;
+}
+
+.content__five__title {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    font-family: 'Monument';
+    top: 20rem;
+    left: 20rem;
+    z-index: 5;
+}
+
+.content__five__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__five__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+.content__five__description {
+    width: 50rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
+
+/* Content four */
+
+.content_four {
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background: #ed9e53;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transform: translateY(180%) rotate(45deg);
+}
+
+.content__four__media {
+    position: absolute;
+    bottom: 20rem;
+    right: 20rem;
+    width: 40%;
+}
+
+.content__four__title {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    font-family: 'Monument';
+    top: 20rem;
+    left: 20rem;
+    z-index: 5;
+}
+
+.content__four__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__four__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+.content__four__description {
+    width: 50rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
+
+/* Content six */
+
+.content_six {
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    background: #dcd81a;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transform: translateY(180%) rotate(45deg);
+}
+
+.content__six__media {
+    position: absolute;
+    right: 20rem;
+    width: 35%;
+}
+
+.content__six__title {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    font-family: 'Monument';
+    top: 20rem;
+    left: 20rem;
+    z-index: 5;
+}
+
+.content__six__title__stroke {
+    color: transparent;
+    -webkit-text-stroke: .1rem #fff;
+}
+
+.content__six__slide {
+    font-size: 4rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+}
+
+.content__six__description {
+    width: 55rem;
+    font-size: 2rem;
+    font-family: 'Monument';
+    letter-spacing: .3rem;
+    color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+}
