@@ -1,0 +1,987 @@
+/*
+ * @author Lufe Pedrosa
+ * @gitHub gitBiohazard
+ *
+ */
+
+/* Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Fonts:
+
+font-family: myriad-pro,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: myriad-pro-condensed,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+*/
+
+/* Universal */
+
+div, img, nav, li {
+    user-select: none;
+}
+
+html, body, .desktop {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background: url(../images/bg.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-minimized {
+    opacity: 0 !important;
+}
+
+/* Desktop */
+
+.desktop {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav */
+
+.nav {
+    height: 2rem;
+    width: calc(100% - 40px);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 20px;
+    backdrop-filter: blur(500px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 30px #373636;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.holder__one {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.holder__two {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.nav__logo {
+    width: 1rem;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    list-style: none;
+}
+
+.nav__list__link {
+    font-size: .9rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    transition: .4s ease;
+}
+
+.nav__list__link:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.nav__list__link a {
+    color: #131313;
+    text-decoration: none;
+}
+
+.holder__two {
+    display: flex;
+}
+
+.nav__date {
+    color: #131313;
+    font-size: .9rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Toolbar */
+
+.toolbar {
+    position: absolute;
+    width: auto;
+    display: flex;
+    bottom: 20px;
+    padding: .3rem;
+    padding-bottom: .4rem;
+    border-radius: .9em;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px #373636;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.toolbar__app {
+    position: relative;
+    margin: 0 2.5px;
+    transition: .4s ease;
+    cursor: pointer;
+    width: 50px;
+}
+
+.toolbar__app.active::after {
+    transition: .4s;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 4px);
+    background: #160a4b;
+    width: 8px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.toolbar__app:hover .toolbar__app__image {
+    transform: translateY(-5px);
+}
+
+.toolbar__app__image {
+    transition: .4s;
+}
+
+/* Windows */
+
+.window {
+
+    position: absolute;
+    /* background: #eeeeee; */
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px #373636;
+    overflow: hidden;
+    border-radius: .9em;
+    animation: getApp .2s forwards;
+}
+
+.window__header {
+    /* background: #d2d2d2; */
+    padding: 0 10px;
+    border-bottom: 1px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    cursor: move;
+}
+
+.window__header__buttons {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    width: max-content;
+}
+
+.window__header__buttons__button {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: .4s ease;
+}
+
+.window__header__buttons__button:nth-child(1) {
+    background: #ca0909;
+}
+
+.window__header__buttons__button:nth-child(1):hover {
+    background: #801313;
+}
+
+.window__header__buttons__button:nth-child(2) {
+    background: #e6d00d;
+}
+
+.window__header__buttons__button:nth-child(2):hover {
+    background: #8a7e18;
+}
+
+.window__header__buttons__button:nth-child(3) {
+    background: #13ca09;
+}
+
+.window__header__buttons__button:nth-child(3):hover {
+    background: #11570d;
+}
+
+@keyframes getApp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.window__header__app {
+    margin-left: 15px;
+    color: #131313;
+    font-size: .9rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.window__body {
+    background: #eeeeee;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.window__focus {
+    z-index: 99;
+}
+
+/* Safari */
+
+[data-window="safari"] {
+    width: 747.6px;
+    height: 460px;
+}
+
+.safari__site {
+    transform: scale(0.39);
+    position: absolute;
+    top: -330px;
+    left: -586px
+}
+
+/* Photos */
+
+[data-window="photos"] {
+    width: 800px;
+    height: 500px;
+}
+
+.photo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.photo__list {
+    width: 45%;
+    height: 100%;
+    border-right: 1px solid #d2d2d2;
+}
+
+.photo__list__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.photo__list__table * {
+    color: #131313;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.photo__list__table th {
+    padding: 5px 10px 5px 10px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.photo__list__table td {
+    padding: 5px 10px 5px 10px;
+    text-align: start;
+}
+
+.photo__list__table tbody tr:hover {
+    cursor: pointer;
+    background: #d2d2d2 !important;
+}
+
+.photo__list__table tbody tr.active {
+    background: #dddddd;
+}
+
+.photo__view {
+    width: 55%;
+    height: calc(100% - 70px);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.photo__view__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #131313;
+    font-size: 1.2rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    z-index: 2;
+}
+
+.photo__view__render {
+    border-radius: 4px;
+    box-shadow: 0 0 20px #a7a7a7;
+    z-index: 1;
+}
+
+/* Instagram */
+
+[data-window="instagram"] {
+    width: 300px;
+    height: 600px;
+}
+
+.instagram__body {
+    width: calc(100% - 30px);
+    height: 100%;
+    padding: 15px;
+    position: relative;
+}
+
+.instagram__body__title {
+    margin-top: 0 !important;
+    color: #131313;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+}
+
+.instagram__body__profile {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.instagram__body__profile__picture {
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: relative;
+    z-index: 3;
+}
+
+.story__border {
+    position: absolute;
+    margin-top: 6.8px;
+    margin-left: -3px;
+    display: inline-block;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    z-index: 2;
+    background: linear-gradient(45deg, #f6b911, #e80e0e, #7a13c4);
+}
+
+.instagram__body__profile__posts {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.instagram__body__profile__posts__title,
+.instagram__body__profile__posts__count,
+.instagram__body__profile__posts__type {
+    margin: 0 !important;
+    color: #131313;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.instagram__post {
+    box-shadow: 0 0 30px #c3c3c3;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px !important;
+}
+
+.instagram__post div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.instagram__body {
+    overflow: scroll;
+}
+
+.instagram__post__author {
+    margin: 0 !important;
+    color: #131313;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+}
+
+.instagram__post__caption {
+    margin: 0 !important;
+    color: #131313;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.follow__button {
+    display: inline-block;
+    width: 40%;
+    padding: 5px;
+    background: #24a1e9;
+    color: white;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    border: 2px solid #24a1e9;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+
+.follow__button:hover {
+    background: #1b2e96;
+    border: 2px solid #1b2e96;
+}
+
+.message__button {
+    display: inline-block;
+    width: 40%;
+    padding: 5px;
+    color: #131313;
+    font-size: .8rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    border: 2px solid #131313;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+
+.message__button:hover {
+    background: #131313;
+    border: 2px solid #131313;
+    color: white;
+}
+
+.instagram__body__content {
+    padding-bottom: 50px !important;
+}
+
+/* Notepad */
+
+[data-window="notepad"] {
+    width: 300px;
+    height: 320px;
+}
+
+.text__block {
+    padding: 15px;
+}
+
+.text__block__line {
+    display: block;
+    width: 100%;
+    font-family: 'Raleway';
+    border-bottom: 1px solid #d2d2d2;
+}
+
+/* Spotify */
+
+[data-window="spotify"] {
+    width: 300px;
+    height: auto;
+}
+
+.spotify {
+    /* background: #373636; */
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid #131313;
+}
+
+.spotify .window__header__app {
+    color: white !important;
+}
+
+[data-window="spotify"] {
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(50px);
+}
+
+[data-window="spotify"] .window__body {
+    background: #272727 !important;
+}
+
+.spotify__profile {
+    border-bottom: 1px solid #404040;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 40px !important;
+}
+
+.spotify__profile__picture {
+    border-radius: 50%;
+}
+
+.spotify__profile__label {
+    font-family: 'Raleway';
+    color: white;
+    font-size: .6em;
+    margin: 0 !important;
+    margin-top: 10px !important;
+}
+
+.spotify__profile__username {
+    font-family: 'Raleway';
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5px !important;
+}
+
+.spotify__profile__follow__button {
+    margin-top: 30px !important;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #56c750;
+    color: black;
+    font-size: .8em;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.spotify__profile__follow__button:hover {
+    background: #44ac3d;
+}
+
+.spotify__music {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px;
+    background: #202020;
+    height: 70px;
+    border-radius: 0 0 12px 12px;
+    transition: .4s;
+    border-bottom: 4px solid #181818;
+}
+
+.spotify__music.active {
+    border-bottom: 4px solid #56c750;
+}
+
+.spotify__music__picture {
+    border-radius: 4px;
+}
+
+.spotify__music__info {
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.spotify__music__info__title {
+    margin: 0 !important;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: white;
+    font-size: .8em;
+}
+
+.spotify__music__info__author {
+    margin: 0 !important;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: white;
+    font-size: .7em;
+    opacity: .6;
+}
+
+.spotify__music__trigger {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    right: 15px;
+    background: #eeeeee;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.spotify__music__trigger:hover {
+    background: #d6d6d6;
+}
+
+/* Discord */
+
+[data-window="discord"] {
+    width: 300px;
+    height: auto;
+}
+
+.discord {
+    /* background: #373636; */
+    border-bottom: 1px solid #131313;
+}
+
+.discord .window__header__app {
+    color: white !important;
+}
+
+[data-window="discord"] {
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(50px);
+}
+[data-window="discord"] .window__body {
+    background: #272727 !important;
+}
+
+.discord__header {
+    background: linear-gradient(45deg, #6058f1, #4e2ec4);
+    height: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.discord__header__picture {
+    position: relative;
+    border-radius: 50%;
+    border: 6px solid #131313;
+    top: 25px;
+    left: 15px;
+}
+
+.discord__header__logo {
+    width: 40px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.discord__info {
+    padding: 0 20px 20px 20px;
+}
+
+.discord__info__username {
+    margin: 0;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 1.4em;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #404040;
+    transition: .4s;
+    position: relative;
+}
+
+.discord__feedback {
+    position: absolute;
+    top: -30px;
+    right: 115px;
+    font-size: .6em;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background: #44ac3d;
+    color: white !important;
+    animation: getApp .2s forwards;
+}
+
+.discord__feedback div {
+    width: 10px;
+    height: 10px;
+    background: #44ac3d;
+    transform: rotate(45deg);
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: -5px;
+}
+
+.discord__info__username:hover {
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.discord__info__username span {
+    opacity: .6;
+}
+
+.discord__info__about {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: .8em;
+    opacity: .6;
+}
+
+.discord__info__text {
+    color: white;
+    font-family: 'Raleway';
+    font-size: .8em;
+}
+
+/* VSCode */
+
+[data-window="vscode"] {
+    width: 800px;
+    height: auto;
+}
+
+.vscode {
+    /* background: #373636; */
+    border-bottom: 1px solid #131313;
+}
+
+.vscode .window__header__app {
+    color: white !important;
+}
+
+[data-window="vscode"] {
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(50px);
+}
+
+[data-window="vscode"] .window__body {
+    background: #272727 !important;
+}
+
+.vscode__header {
+    background: #0e112c;
+}
+
+.vscode__header__tabs {
+    position: relative;
+    z-index: 5;
+}
+
+.vscode__header__tabs__tab {
+    padding: 10px 40px 10px 20px;
+    width: max-content;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Raleway';
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.js {
+    color: #ecb920;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .6em;
+    margin-right: 5px;
+}
+
+.main {
+    color: #5fbef9;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .8em;
+    margin-right: 5px;
+}
+
+.stop {
+    color: #9f40df;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .8em;
+    margin-right: 5px; 
+}
+
+.vscode__header__path {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway';
+    font-size: .8em;
+    color: white;
+    padding: 2px 20px;
+    height: 20px;
+    box-shadow: 0 5px 5px #2c0d40;
+    position: relative;
+    z-index: 4;
+}
+
+.vscode__file {
+    padding-bottom: 20px;
+}
+
+.vscode__file__table {
+    width: 100%;
+    margin-top: 2px;
+    font-family: 'Raleway';
+    color: white;
+    border-collapse: collapse;
+}
+
+.vscode__file__table td {
+    padding-left: 10px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.vscode__file__table .red {
+    color: #ff136d;
+}
+
+.vscode__file__table .pink {
+    color: #d70fca;
+}
+
+.vscode__file__table .blue {
+    color: #3979e7;
+}
+
+.vscode__file__table .baby {
+    color: #81a2da;
+}
+
+.vscode__file__table .aqua {
+    color: #27eaea;
+}
+
+.vscode__file__table .yellow {
+    color: #f3d300;
+}
+
+.vscode__file__table tbody tr:hover {
+    cursor: pointer;
+    background: #2c1f62 !important;
+}
+
+/* Figma */
+
+[data-window="figma"] {
+    width: 280px;
+    height: max-content;
+}
+
+.iframe__holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 605px;
+}
+
+/* Settings */
+
+[data-window="settings"] {
+    width: 250px;
+    height: max-content;
+}
+
+[data-window="settings"] .window__body {
+    background: rgba(0, 0, 0, .1);
+}
+
+.message {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message__text {
+    font-family: 'raleway';
+    font-weight: 500;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .3);
+    height: 40px;
+}
+
+.button__dismiss {
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: #3678dc;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button__dismiss:hover {
+    color: #5d93e5;
+}

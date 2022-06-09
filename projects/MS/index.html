@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacOS Simulator by @gitBIohazard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="desktop">
+        <nav class="nav">
+            <div class="holder__one">
+                <img src="images/logo.png" alt="Logo apple" class="nav__logo">
+                <ul class="nav__list">
+                    <li class="nav__list__link"><a href="mailto:luizfelipecav@outlook.com">Mail</a></li>
+                    <li class="nav__list__link"><a href="https://felipepedrosa.com.br" target="_blank">Projects</a></li>
+                    <li class="nav__list__link"><a href="https://felipepedrosa.com.br/about" target="_blank">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="holder__two">
+                <span class="nav__date"></span>
+            </div>
+        </nav>
+        <div class="toolbar">
+            <div class="toolbar__app" data-app="safari">
+                <img class="toolbar__app__image" src="images/icons/safari.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="photos">
+                <img class="toolbar__app__image" src="images/icons/photos.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="instagram">
+                <img class="toolbar__app__image" src="images/icons/instagram.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="notepad">
+                <img class="toolbar__app__image" src="images/icons/notes.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="spotify">
+                <img class="toolbar__app__image" src="images/icons/spotify.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="discord">
+                <img class="toolbar__app__image" src="images/icons/discord.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="vscode">
+                <img class="toolbar__app__image" src="images/icons/vscode.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="figma">
+                <img class="toolbar__app__image" src="images/icons/figma.png" alt="Icon" width="100%">
+            </div>
+            <div class="toolbar__app" data-app="settings">
+                <img class="toolbar__app__image" src="images/icons/settings.png" alt="Icon" width="100%">
+            </div>
+        </div>
+
+        <!-- Safari Modal -->
+
+        <div class="window d-none" data-window="safari">
+            <div class="window__header safari" data-header="safari">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="safari"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="safari"></li>
+                </ul>
+                <span class="window__header__app">Safari - https://felipepedrosa.com.br</span>
+            </div>
+            <div class="window__body">
+                <object class="safari__site" type="text/html" data="https://felipepedrosa.com.br" width="1920px"
+                    height="1080px"></object>
+            </div>
+        </div>
+
+        <!-- Photos Modal -->
+
+        <div class="window d-none" data-window="photos">
+            <div class="window__header photos" data-header="photos">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="photos"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="photos"></li>
+                </ul>
+                <span class="window__header__app">Photos - Gramado, RS (Trip 2022)</span>
+            </div>
+            <div class="window__body">
+                <div class="photo">
+                    <div class="photo__list">
+                        <table class="photo__list__table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-photo="me.JPEG">
+                                    <td>
+                                        me.JPEG
+                                    </td>
+                                    <td>
+                                        05/31/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="at_the_park.JPEG">
+                                    <td>
+                                        at_the_park.JPEG
+                                    </td>
+                                    <td>
+                                        05/31/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="me_and_her.JPEG">
+                                    <td>
+                                        me_and_her.JPEG
+                                    </td>
+                                    <td>
+                                        06/01/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="ice_chair.JPEG">
+                                    <td>
+                                        ice_chair.JPEG
+                                    </td>
+                                    <td>
+                                        05/31/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="helmsman.JPEG">
+                                    <td>
+                                        helmsman.JPEG
+                                    </td>
+                                    <td>
+                                        05/31/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="iced_lake.JPEG">
+                                    <td>
+                                        iced_lake.JPEG
+                                    </td>
+                                    <td>
+                                        06/01/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="kiss_in_front_of_church.JPEG">
+                                    <td>
+                                        kiss_in_front_of_church.JP...
+                                    </td>
+                                    <td>
+                                        06/02/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="mini_world.JPEG">
+                                    <td>
+                                        mini_world.JPEG
+                                    </td>
+                                    <td>
+                                        05/31/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="minus_twenty_three_degrees.JPEG">
+                                    <td>
+                                        minus_twenty_three_degr...
+                                    </td>
+                                    <td>
+                                        05/31/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                                <tr data-photo="something_wrong.JPEG">
+                                    <td>
+                                        something_wrong.JPEG
+                                    </td>
+                                    <td>
+                                        06/02/2022
+                                    </td>
+                                    <td>
+                                        Photo
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="photo__view">
+                        <h1 class="photo__view__title">me.JPEG</h1>
+                        <img src="images/photos/me.jpeg" alt="Photo" class="photo__view__render" height="80%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram Modal -->
+
+        <div class="window d-none" data-window="instagram">
+            <div class="window__header instagram" data-header="instagram">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="instagram"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="instagram"></li>
+                </ul>
+                <span class="window__header__app">Instagram - @el_lu.fe</span>
+            </div>
+            <div class="window__body">
+                <div class="instagram__body">
+                    <div class="instagram__body__profile">
+                        <div class="story__border"></div>
+                        <a href="https://instagram.com/el_lu.fe" target="_blank">
+                            <img src="images/social/profile.jpg" alt="Profile photo"
+                                class="instagram__body__profile__picture" width="80px">
+                        </a>
+                        <div class="instagram__body__profile__posts">
+                            <h1 class="instagram__body__title"></h1>
+                            <span class="instagram__body__profile__posts__count"></span>
+                            <span class="instagram__body__profile__posts__title">Posts</span><br>
+                            <span class="instagram__body__profile__posts__type"></span>
+                            <span class="instagram__body__profile__posts__title">ACCOUNT</span>
+                        </div>
+                        <a href="https://instagram.com/el_lu.fe" target="_blank" class="follow__button">Follow me</a>
+                        <a href="https://instagram.com/el_lu.fe" target="_blank" class="message__button">Message</a>
+                    </div>
+                    <div class="instagram__body__content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notepad Modal -->
+
+        <div class="window d-none" data-window="notepad">
+            <div class="window__header notepad" data-header="notepad">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="notepad"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="notepad"></li>
+                </ul>
+                <span class="window__header__app">Notepad</span>
+            </div>
+            <div class="window__body">
+                <div class="text__block">
+                    <span class="text__block__line">This is a MacOS simulator made with</span>
+                    <span class="text__block__line">love by @gitBiohazard ❤</span>
+                    <span class="text__block__line"> </span>
+                    <span class="text__block__line">Follow me on social for more dev</span>
+                    <span class="text__block__line">content and inspirations!</span>
+                    <span class="text__block__line"> </span>
+                    <span class="text__block__line"><a href="https://www.linkedin.com/in/lufe-pedrosa/"
+                            target="_blank">My linkedin</a></span>
+                    <span class="text__block__line"><a href="https://github.com/gitBiohazard" target="_blank">My
+                            github</a></span>
+                    <span class="text__block__line"><a href="https://felipepedrosa.com.br" target="_blank">My
+                            website</a></span>
+                    <span class="text__block__line"> </span>
+                    <span class="text__block__line">Thanks for coming and share with</span>
+                    <span class="text__block__line">your friends! =D</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spotify Modal -->
+
+        <div class="window d-none" data-window="spotify">
+            <div class="window__header spotify" data-header="spotify">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="spotify"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="spotify"></li>
+                </ul>
+                <span class="window__header__app">Spotify - @bio.lufe</span>
+            </div>
+            <div class="window__body">
+                <div class="spotify__profile">
+                    <img src="images/social/profile.jpg" alt="Me" class="spotify__profile__picture" width="50%">
+                    <h6 class="spotify__profile__label">PROFILE</h6>
+                    <h1 class="spotify__profile__username">bio.lufe</h1>
+                    <a href="https://open.spotify.com/user/vbiohazard?si=9f589a01d61d4ad8" target="_blank"
+                        class="spotify__profile__follow__button">Follow me</a>
+                </div>
+                <div class="spotify__music">
+                    <img src="images/social/music.png" alt="Picture" class="spotify__music__picture" width="50px">
+                    <div class="spotify__music__info">
+                        <h1 class="spotify__music__info__title">93 Million Miles</h1>
+                        <h6 class="spotify__music__info__author">Jason Mraz</h6>
+                    </div>
+                    <audio id="spotify__music__file" controls loop class="d-none">
+                        <source src="images/social/music.mp3" type="audio/mpeg">
+                    </audio>
+                    <button class="spotify__music__trigger">
+                        <img src="images/social/play.svg" alt="Icon" class="spotify__music__trigger__state"
+                            width="15px">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discord Modal -->
+
+        <div class="window d-none" data-window="discord">
+            <div class="window__header discord" data-header="discord">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="discord"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="discord"></li>
+                </ul>
+                <span class="window__header__app">Discord App</span>
+            </div>
+            <div class="window__body">
+                <div class="discord__header">
+                    <img src="images/social/discord.png" alt="Logo" class="discord__header__logo">
+                    <img src="images/social/casual.png" alt="Me" class="discord__header__picture" width="100px">
+                </div>
+                <div class="discord__info">
+                    <h1 class="discord__info__username">
+                        gitBiohazard<span>#1817</span>
+                        <div class="discord__feedback d-none">
+                            Copied!
+                            <div></div>
+                        </div>
+                    </h1>
+                    <h2 class="discord__info__about">ABOUT ME</h2>
+                    <p class="discord__info__text">
+                        Happy, and passionate about web development ❤
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- VSCode Modal -->
+
+        <div class="window d-none" data-window="vscode">
+            <div class="window__header vscode" data-header="vscode">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="vscode"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="vscode"></li>
+                </ul>
+                <span class="window__header__app">VSCode • hello_world.js</span>
+            </div>
+            <div class="window__body">
+                <div class="vscode__header">
+                    <div class="vscode__header__tabs">
+                        <div class="vscode__header__tabs__tab"><span class="js">JS</span>hello_world.js</div>
+                    </div>
+                    <div class="vscode__header__path">
+                        first_project&emsp;>&emsp;<span class="js">JS</span>hello.world.js&emsp;>&emsp;<span
+                            class="main">►</span>World&emsp;>&emsp;<span class="stop">Σ</span>createWorld
+                    </div>
+                    <div class="vscode__file">
+                        <table class="vscode__file__table">
+                            <tbody>
+                                <tr>
+                                    <td width="5%" class="red">1</td>
+                                    <td>
+                                        <span class="pink">class</span>
+                                        <span class="baby">World</span>
+                                        <span class="blue">extends</span>
+                                        <i class="pink">Universe</i>
+                                        <span class="yellow">{</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">2</td>
+                                    <td>
+                                        &emsp;
+                                        <span class="pink">constructor(</span>
+                                        <span class="blue">{</span>
+                                        <span class="pink">stuff</span>
+                                        <span class="blue">}</span>
+                                        <span class="pink">) {</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">3</td>
+                                    <td>
+                                        &emsp;&emsp;
+                                        <span class="pink">if</span>
+                                        <span class="blue">( stuff</span><span class="red">.coffee</span>
+                                        <span class="pink">&&</span>
+                                        <span class="blue">stuff</span><span class="red">.programming</span>
+                                        <span class="blue">) {</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">4</td>
+                                    <td>
+                                        &emsp;&emsp;&emsp;
+                                        <span class="baby">this</span><span class="red">.world</span> <span
+                                            class="pink">=</span> <span class="yellow">{</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">5</td>
+                                    <td>
+                                        &emsp;&emsp;&emsp;&emsp;
+                                        <span class="red">name:</span><span class="aqua"> "My world"</span><span
+                                            class="red">,</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">6</td>
+                                    <td>
+                                        &emsp;&emsp;&emsp;&emsp;
+                                        <span class="red">size:</span><span class="yellow"> 8e9</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">7</td>
+                                    <td>
+                                        &emsp;&emsp;&emsp;
+                                        <span class="yellow">}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">8</td>
+                                    <td>
+                                        &emsp;&emsp;&emsp;
+                                        <span class="baby">this</span><span class="red">.</span><span
+                                            class="yellow">createWorld()</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">9</td>
+                                    <td>
+                                        &emsp;&emsp;
+                                        <span class="blue">}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">10</td>
+                                    <td>
+                                        &emsp;
+                                        <span class="pink">}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">11</td>
+                                    <td>
+                                        &emsp;
+                                        <span class="yellow">createWorld</span><span class="pink">() {</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">12</td>
+                                    <td>
+                                        &emsp;&emsp;
+                                        <span class="yellow">alert</span><span class="blue">(</span><span
+                                            class="aqua">`</span><span class="yellow">${</span><span
+                                            class="baby">this</span><span class="red">.world.name</span><span
+                                            class="yellow">}</span><span class="aqua"> was created!`</span><span
+                                            class="blue">)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">13</td>
+                                    <td>
+                                        &emsp;&emsp;
+                                        <span class="blue">console</span><span class="red">.</span><span
+                                            class="yellow">log</span><span class="blue">(</span><span
+                                            class="aqua">"Hello World"</span><span class="blue">)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">14</td>
+                                    <td>
+                                        &emsp;
+                                        <span class="pink">}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">15</td>
+                                    <td>
+                                        <span class="yellow">}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">16</td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">17</td>
+                                    <td>
+                                        <span class="pink">new </span><span class="yellow">World(</span><span
+                                            class="pink">{</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">18</td>
+                                    <td>
+                                        &emsp;
+                                        <span class="red">stuff:</span> <span class="blue">{</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">19</td>
+                                    <td>
+                                        &emsp;&emsp;
+                                        <span class="red">coffee:</span> <span class="aqua">"Extra-fort"</span><span
+                                            class="red">,</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">20</td>
+                                    <td>
+                                        &emsp;&emsp;
+                                        <span class="red">programming:</span> <span class="aqua">"JavaScript"</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">21</td>
+                                    <td>
+                                        &emsp;
+                                        <span class="blue">}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">22</td>
+                                    <td>
+                                        <span class="pink">}</span><span class="yellow">)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="5%" class="red">23</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Figma Modal -->
+
+        <div class="window d-none" data-window="figma">
+            <div class="window__header figma" data-header="figma">
+                <ul class="window__header__buttons">
+                    <li class="window__header__buttons__button" data-dismiss="figma"></li>
+                    <li class="window__header__buttons__button"></li>
+                    <li class="window__header__buttons__button" data-minimize="figma"></li>
+                </ul>
+                <span class="window__header__app">Figma - App proto...</span>
+            </div>
+            <div class="window__body">
+                <div class="iframe__holder">
+                    <iframe width="100%" height="100%"
+                        src="https://xd.adobe.com/embed/536bdd3b-9584-4902-a28c-26a83f8be14b-0638/" frameborder="0"
+                        allowfullscreen class="iframe"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Figma Modal -->
+
+        <div class="window d-none" data-window="settings">
+            <div class="window__body">
+                <div class="message">
+                    <span class="message__text">Unable to access settings during preview mode.</span>
+                </div>
+                <div class="button">
+                    <span class="button__dismiss" data-dismiss="settings">OK</span>
+                    <span class="d-none" data-minimize="settings"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="scripts/Mac.js"></script>
+</body>
+
+</html>
