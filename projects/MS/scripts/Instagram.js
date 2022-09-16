@@ -3,7 +3,7 @@ import App from "./App.js";
 export default class Instagram extends App {
     constructor({ name, window, shortcut, dismiss, minimize, header, fields }) {
         super({ name, window, shortcut, dismiss, minimize, header })
-        this.token = "IGQVJWMkpkN1BzcjNhQmVkUFc5MEpSVXM3XzItMWFqTUlpTXY5X1A2TWVsT2NFVTJhYUpXRTdTSnFVU3ZAVV2ItZATZAQOW1oeWh3cTltdm1pcUhTSFBVYU50R3pTU0t2VnAxSXktLXlaQXQzaE9TcVY1bgZDZD"
+        this.token = "IGQVJXaUVOU3dURk9jbzlWdnA4U2ZAMdzA4WXk1VGQzVS1rQlc4bVVpbW4zc3hQVmR1TXNOeTc2Rl9GTXV1ZAW9CSV8zVkpoNXpPakZAYQkJsLU5zY0JHZATA2aFZAaa1pDb0Y1NlRIZA3hFY0xzSlczcTh1YwZDZD"
         this.mediaUrl = `https://graph.instagram.com/me/media?access_token=${this.token}&fields=media_url,media_type,caption,permalink`
         this.userUrl = `https://graph.instagram.com/me?fields=id,username,account_type,media_count&access_token=${this.token}`
         this.fields = {
